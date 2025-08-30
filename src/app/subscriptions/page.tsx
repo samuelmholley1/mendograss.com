@@ -3,9 +3,51 @@
 import Image from "next/image";
 import { useState } from 'react';
 
+// Note: Metadata export not available in client components, handled in layout
+const subscriptionsJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'Product',
+  name: 'Mendo Grass Microgreens Subscription',
+  description: 'Weekly subscription service for fresh organic microgreens and wheatgrass',
+  brand: {
+    '@type': 'Brand',
+    name: 'Mendo Grass',
+  },
+  offers: [
+    {
+      '@type': 'Offer',
+      name: 'Microgreens 5oz Weekly',
+      price: '17.50',
+      priceCurrency: 'USD',
+      availability: 'https://schema.org/InStock',
+      itemCondition: 'https://schema.org/NewCondition',
+    },
+    {
+      '@type': 'Offer',
+      name: 'Microgreens 8oz Weekly',
+      price: '22.50',
+      priceCurrency: 'USD',
+      availability: 'https://schema.org/InStock',
+      itemCondition: 'https://schema.org/NewCondition',
+    },
+    {
+      '@type': 'Offer',
+      name: 'Wheatgrass Live Tray Weekly',
+      price: '20.00',
+      priceCurrency: 'USD',
+      availability: 'https://schema.org/InStock',
+      itemCondition: 'https://schema.org/NewCondition',
+    },
+  ],
+}
+
 export default function Subscriptions() {
   return (
     <div className="min-h-screen py-16">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(subscriptionsJsonLd) }}
+      />
       {/* Header Section */}
       <section className="text-center mb-16">
         <div className="max-w-4xl mx-auto px-4">

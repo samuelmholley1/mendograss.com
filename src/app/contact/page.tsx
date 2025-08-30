@@ -1,3 +1,14 @@
+import { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'Contact Us - Get in Touch',
+  description: 'Contact Mendo Grass for questions about our organic microgreens, wholesale orders, or farm visits. Located in Ukiah, Mendocino County. Call (707) 555-0123.',
+  openGraph: {
+    title: 'Contact Mendo Grass - Organic Microgreens Farm',
+    description: 'Get in touch with our organic microgreens farm in Mendocino County. Contact us for orders, questions, or farm visits.',
+  },
+}
+
 export default function ContactPage() {
   return (
     <div className="min-h-screen bg-white">

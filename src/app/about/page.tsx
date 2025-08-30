@@ -1,8 +1,74 @@
 import Image from 'next/image'
+import { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'About Us - Organic Microgreens Farm',
+  description: 'Learn about Mendo Grass, our sustainable growing practices, and our mission to provide premium organic microgreens in Mendocino County. USDA Certified Organic since our founding.',
+  openGraph: {
+    title: 'About Mendo Grass - Organic Microgreens Farm',
+    description: 'Sustainable organic microgreens farming in Mendocino County. Learn about our mission, values, and USDA certification.',
+    images: ['/images/about.svg'],
+  },
+}
+
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'Organization',
+  name: 'Mendo Grass',
+  url: 'https://mendograss.com',
+  logo: 'https://mendograss.com/images/logo.svg',
+  description: 'Premium organic microgreens and wheatgrass farm in Mendocino County, California',
+  address: {
+    '@type': 'PostalAddress',
+    streetAddress: '123 Organic Way',
+    addressLocality: 'Ukiah',
+    addressRegion: 'CA',
+    postalCode: '95482',
+    addressCountry: 'US',
+  },
+  contactPoint: {
+    '@type': 'ContactPoint',
+    telephone: '+1-707-555-0123',
+    contactType: 'customer service',
+    email: 'hello@mendograss.com',
+  },
+  sameAs: [
+    'https://facebook.com/mendograss',
+    'https://instagram.com/mendograss',
+  ],
+  foundingDate: '2020',
+  areaServed: 'Mendocino County, CA',
+  hasOfferCatalog: {
+    '@type': 'OfferCatalog',
+    name: 'Organic Microgreens & Wheatgrass',
+    itemListElement: [
+      {
+        '@type': 'Offer',
+        itemOffered: {
+          '@type': 'Product',
+          name: 'Organic Microgreens',
+          category: 'Fresh Produce',
+        },
+      },
+      {
+        '@type': 'Offer',
+        itemOffered: {
+          '@type': 'Product',
+          name: 'Organic Wheatgrass',
+          category: 'Fresh Produce',
+        },
+      },
+    ],
+  },
+}
 
 export default function AboutPage() {
   return (
     <div className="min-h-screen bg-white">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       {/* Hero Section */}
       <div className="bg-gradient-to-b from-green-50 to-white py-16 sm:py-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
