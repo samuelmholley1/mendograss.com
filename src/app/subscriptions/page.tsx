@@ -13,6 +13,14 @@ const subscriptionsJsonLd = {
     '@type': 'Brand',
     name: 'Mendo Grass',
   },
+  aggregateOffer: {
+    '@type': 'AggregateOffer',
+    lowPrice: '17.50',
+    highPrice: '22.50',
+    priceCurrency: 'USD',
+    availability: 'https://schema.org/InStock',
+    offerCount: 3
+  },
   offers: [
     {
       '@type': 'Offer',
@@ -21,6 +29,8 @@ const subscriptionsJsonLd = {
       priceCurrency: 'USD',
       availability: 'https://schema.org/InStock',
       itemCondition: 'https://schema.org/NewCondition',
+      deliveryMethod: 'https://schema.org/OnSitePickup',
+      areaServed: 'Mendocino County, CA'
     },
     {
       '@type': 'Offer',
@@ -29,6 +39,8 @@ const subscriptionsJsonLd = {
       priceCurrency: 'USD',
       availability: 'https://schema.org/InStock',
       itemCondition: 'https://schema.org/NewCondition',
+      deliveryMethod: 'https://schema.org/OnSitePickup',
+      areaServed: 'Mendocino County, CA'
     },
     {
       '@type': 'Offer',
@@ -37,8 +49,49 @@ const subscriptionsJsonLd = {
       priceCurrency: 'USD',
       availability: 'https://schema.org/InStock',
       itemCondition: 'https://schema.org/NewCondition',
+      deliveryMethod: 'https://schema.org/OnSitePickup',
+      areaServed: 'Mendocino County, CA'
     },
   ],
+}
+
+const faqJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: [
+    {
+      '@type': 'Question',
+      name: 'How does weekly ordering work?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: "We'll text you when we're getting ready to grow your greens. Add-on extras to your order, or 'skip' by 9pm that day to opt out of that week's share, at no charge."
+      }
+    },
+    {
+      '@type': 'Question', 
+      name: 'Where do you deliver?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: "We offer local delivery throughout Ukiah, Healdsburg, & Sebastopol. Alternatively, you can opt to pickup your share at your local farmers' market."
+      }
+    },
+    {
+      '@type': 'Question',
+      name: 'Can I customize my subscription?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Yes! You can choose your preferred size, frequency, and delivery method. You can also add weekly extras like our signature pea shoot pesto.'
+      }
+    },
+    {
+      '@type': 'Question',
+      name: 'What payment methods do you accept?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'We accept all major credit cards and debit cards. Payment is processed securely and automatically for each delivery.'
+      }
+    }
+  ]
 }
 
 export default function Subscriptions() {
@@ -47,6 +100,10 @@ export default function Subscriptions() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(subscriptionsJsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
       />
       {/* Header Section */}
       <section className="text-center mb-16">

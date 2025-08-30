@@ -13,7 +13,7 @@ export const metadata: Metadata = {
 
 const jsonLd = {
   '@context': 'https://schema.org',
-  '@type': 'Organization',
+  '@type': ['Organization', 'LocalBusiness', 'Store'],
   name: 'Mendo Grass',
   url: 'https://mendograss.com',
   logo: 'https://mendograss.com/images/logo.svg',
@@ -26,18 +26,56 @@ const jsonLd = {
     postalCode: '95482',
     addressCountry: 'US',
   },
+  geo: {
+    '@type': 'GeoCoordinates',
+    latitude: '39.1507',
+    longitude: '-123.2077'
+  },
   contactPoint: {
     '@type': 'ContactPoint',
     telephone: '+1-707-555-0123',
     contactType: 'customer service',
     email: 'hello@mendograss.com',
+    availableLanguage: 'English'
   },
+  openingHours: [
+    'Mo-Fr 08:00-17:00',
+    'Sa 09:00-15:00'
+  ],
+  paymentAccepted: ['Cash', 'Credit Card', 'Debit Card'],
+  currenciesAccepted: 'USD',
+  priceRange: '$15-$50',
+  areaServed: [
+    {
+      '@type': 'City',
+      name: 'Ukiah',
+      containedInPlace: {
+        '@type': 'State',
+        name: 'California'
+      }
+    },
+    {
+      '@type': 'City', 
+      name: 'Healdsburg',
+      containedInPlace: {
+        '@type': 'State',
+        name: 'California'
+      }
+    },
+    {
+      '@type': 'City',
+      name: 'Sebastopol', 
+      containedInPlace: {
+        '@type': 'State',
+        name: 'California'
+      }
+    }
+  ],
   sameAs: [
     'https://facebook.com/mendograss',
     'https://instagram.com/mendograss',
   ],
   foundingDate: '2020',
-  areaServed: 'Mendocino County, CA',
   hasOfferCatalog: {
     '@type': 'OfferCatalog',
     name: 'Organic Microgreens & Wheatgrass',
@@ -48,6 +86,10 @@ const jsonLd = {
           '@type': 'Product',
           name: 'Organic Microgreens',
           category: 'Fresh Produce',
+          brand: {
+            '@type': 'Brand',
+            name: 'Mendo Grass'
+          }
         },
       },
       {
@@ -56,10 +98,22 @@ const jsonLd = {
           '@type': 'Product',
           name: 'Organic Wheatgrass',
           category: 'Fresh Produce',
+          brand: {
+            '@type': 'Brand',
+            name: 'Mendo Grass'
+          }
         },
       },
     ],
   },
+  makesOffer: {
+    '@type': 'Offer',
+    name: 'Weekly CSA Subscription',
+    description: 'Fresh organic microgreens delivered weekly',
+    price: '17.50',
+    priceCurrency: 'USD',
+    availability: 'https://schema.org/InStock'
+  }
 }
 
 export default function AboutPage() {
