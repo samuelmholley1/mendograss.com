@@ -4,7 +4,8 @@
   "private": true,
   "scripts": {
     "dev": "next dev --turbopack",
-    "build": "playwright test && next build --turbopack",
+    "build": "next build --turbopack",
+    "build:test": "playwright test && next build --turbopack",
     "build:only": "next build --turbopack",
     "start": "next start",
     "lint": "eslint",
