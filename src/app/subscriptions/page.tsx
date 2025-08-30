@@ -128,7 +128,7 @@ export default function Subscriptions() {
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {/* Subscription #1 - Microgreens 5oz */}
-            <div className="bg-white rounded-lg shadow-lg p-6">
+            <div className="bg-white rounded-lg shadow-lg p-6 hover:shadow-xl hover:scale-105 transform transition-all duration-300">
               <div className="mb-6">
                 <Image
                   src="/images/sub1.jpg"
@@ -164,7 +164,7 @@ export default function Subscriptions() {
             </div>
 
             {/* Subscription #2 - Microgreens 8oz */}
-            <div className="bg-white rounded-lg shadow-lg p-6">
+            <div className="bg-white rounded-lg shadow-lg p-6 hover:shadow-xl hover:scale-105 transform transition-all duration-300">
               <div className="mb-6">
                 <Image
                   src="/images/sub2.jpg"
@@ -200,7 +200,7 @@ export default function Subscriptions() {
             </div>
 
             {/* Subscription #3 - Wheatgrass Live Tray */}
-            <div className="bg-white rounded-lg shadow-lg p-6">
+            <div className="bg-white rounded-lg shadow-lg p-6 hover:shadow-xl hover:scale-105 transform transition-all duration-300">
               <div className="mb-6">
                 <Image
                   src="/images/sub3.jpg"

@@ -63,14 +63,14 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {/* Microgreens */}
-            <div className="text-center">
+            <div className="text-center group hover:scale-105 transform transition-all duration-300">
               <div className="mb-6">
                 <Image
                   src="/images/microgreens.svg"
                   alt="Microgreens"
                   width={400}
                   height={300}
-                  className="rounded-lg shadow-md mx-auto"
+                  className="rounded-lg shadow-md mx-auto group-hover:shadow-lg transition-shadow"
                 />
               </div>
               <h3 className="text-2xl font-bold text-gray-900 mb-4">Microgreens</h3>
@@ -80,14 +80,14 @@ export default function Home() {
             </div>
 
             {/* Wheatgrass */}
-            <div className="text-center">
+            <div className="text-center group hover:scale-105 transform transition-all duration-300">
               <div className="mb-6">
                 <Image
                   src="/images/wheatgrass.svg"
                   alt="Wheatgrass"
                   width={400}
                   height={300}
-                  className="rounded-lg shadow-md mx-auto"
+                  className="rounded-lg shadow-md mx-auto group-hover:shadow-lg transition-shadow"
                 />
               </div>
               <h3 className="text-2xl font-bold text-gray-900 mb-4">Wheatgrass</h3>
@@ -97,14 +97,14 @@ export default function Home() {
             </div>
 
             {/* PeaSto */}
-            <div className="text-center">
+            <div className="text-center group hover:scale-105 transform transition-all duration-300">
               <div className="mb-6">
                 <Image
                   src="/images/peasto.svg"
                   alt="PeaSto"
                   width={400}
                   height={300}
-                  className="rounded-lg shadow-md mx-auto"
+                  className="rounded-lg shadow-md mx-auto group-hover:shadow-lg transition-shadow"
                 />
               </div>
               <h3 className="text-2xl font-bold text-gray-900 mb-4">PeaSto</h3>
