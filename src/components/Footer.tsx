@@ -85,7 +85,7 @@ export default function Footer() {
                 <p className="text-gray-300 text-sm">
                   Asahi Sushi & Kitchen<br />
                   Black Oak Coffee Roasters<br />
-                  Mama's Cafe<br />
+                  Mama&apos;s Cafe<br />
                   Pizzando<br />
                   Troubadour
                 </p>

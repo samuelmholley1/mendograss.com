@@ -59,7 +59,7 @@ export default function Subscriptions() {
               </div>
               <h3 className="text-xl font-bold text-gray-900 mb-4">Subscribe</h3>
               <p className="text-gray-700">
-                Select your pickup or delivery address and enter payment once. We'll store it securely so you can order easily via SMS each week.
+                Select your pickup or delivery address and enter payment once. We&apos;ll store it securely so you can order easily via SMS each week.
               </p>
             </div>
 
@@ -76,7 +76,7 @@ export default function Subscriptions() {
               </div>
               <h3 className="text-xl font-bold text-gray-900 mb-4">Skip when needed</h3>
               <p className="text-gray-700">
-                We'll send you a text weekly before we grow – add on items or skip any week, for any reason, at no charge.
+                We&apos;ll send you a text weekly before we grow – add on items or skip any week, for any reason, at no charge.
               </p>
             </div>
           </div>

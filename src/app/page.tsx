@@ -142,7 +142,7 @@ export default function Home() {
               
               <div className="space-y-6 text-gray-700 leading-relaxed">
                 <p>
-                  Welcome to Mendo Grass, where we are on a mission to provide sustainable and organic superfoods to our community. Founded by Adam, Amanda, and our daughter, Arden, our family's journey began at the Solar Living Institute, where we discovered the incredible healing powers of wheatgrass. Inspired by its impact on a friend's health, we set out to create a farm dedicated to growing wheatgrass and microgreens.
+                  Welcome to Mendo Grass, where we are on a mission to provide sustainable and organic superfoods to our community. Founded by Adam, Amanda, and our daughter, Arden, our family&apos;s journey began at the Solar Living Institute, where we discovered the incredible healing powers of wheatgrass. Inspired by its impact on a friend&apos;s health, we set out to create a farm dedicated to growing wheatgrass and microgreens.
                 </p>
                 
                 <p>
