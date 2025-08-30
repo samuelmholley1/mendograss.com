@@ -63,14 +63,39 @@ export default function Navbar() {
               >
                 Subscriptions
               </Link>
-              <a
-                href="https://www.gofarmhand.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-gray-700 hover:text-green-600 px-3 py-2 text-sm font-medium transition-colors"
-              >
-                Newsletter
-              </a>
+              <div className="relative group">
+                <button className="text-gray-700 hover:text-green-600 px-3 py-2 text-sm font-medium transition-colors flex items-center">
+                  Newsletter
+                  <svg className="ml-1 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                  </svg>
+                </button>
+                <div className="absolute left-0 mt-2 w-56 bg-white rounded-md shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+                  <div className="py-2">
+                    <Link
+                      href="/general-newsletter"
+                      className="block px-4 py-2 text-sm text-gray-700 hover:bg-green-50 hover:text-green-600"
+                      onClick={closeMenu}
+                    >
+                      General Newsletter
+                    </Link>
+                    <Link
+                      href="/schools-newsletter"
+                      className="block px-4 py-2 text-sm text-gray-700 hover:bg-green-50 hover:text-green-600"
+                      onClick={closeMenu}
+                    >
+                      Schools Newsletter
+                    </Link>
+                    <Link
+                      href="/restaurants-newsletter"
+                      className="block px-4 py-2 text-sm text-gray-700 hover:bg-green-50 hover:text-green-600"
+                      onClick={closeMenu}
+                    >
+                      Restaurants Newsletter
+                    </Link>
+                  </div>
+                </div>
+              </div>
               <Link
                 href="/wholesale"
                 className="text-gray-700 hover:text-green-600 px-3 py-2 text-sm font-medium transition-colors"
@@ -143,15 +168,32 @@ export default function Navbar() {
               >
                 Subscriptions
               </Link>
-              <a
-                href="https://www.gofarmhand.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-gray-700 hover:text-green-600 block px-3 py-2 text-base font-medium transition-colors"
-                onClick={closeMenu}
-              >
-                Newsletter
-              </a>
+              <div className="px-3">
+                <div className="text-gray-700 py-2 text-base font-medium">Newsletter</div>
+                <div className="pl-4 space-y-1">
+                  <Link
+                    href="/general-newsletter"
+                    className="text-gray-600 hover:text-green-600 block py-2 text-sm transition-colors"
+                    onClick={closeMenu}
+                  >
+                    General Newsletter
+                  </Link>
+                  <Link
+                    href="/schools-newsletter"
+                    className="text-gray-600 hover:text-green-600 block py-2 text-sm transition-colors"
+                    onClick={closeMenu}
+                  >
+                    Schools Newsletter
+                  </Link>
+                  <Link
+                    href="/restaurants-newsletter"
+                    className="text-gray-600 hover:text-green-600 block py-2 text-sm transition-colors"
+                    onClick={closeMenu}
+                  >
+                    Restaurants Newsletter
+                  </Link>
+                </div>
+              </div>
               <Link
                 href="/wholesale"
                 className="text-gray-700 hover:text-green-600 block px-3 py-2 text-base font-medium transition-colors"
