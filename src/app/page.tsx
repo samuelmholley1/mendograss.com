@@ -19,7 +19,7 @@ export default function Home() {
       <section className="relative h-screen flex items-center justify-center bg-gradient-to-r from-green-50 to-green-100">
         <div 
           className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-20"
-          style={{ backgroundImage: "url('/images/hero.jpg')" }}
+          style={{ backgroundImage: "url('/images/hero.svg')" }}
         ></div>
         <div className="relative z-10 text-center max-w-4xl mx-auto px-4">
           <h1 className="text-5xl md:text-7xl font-bold text-gray-900 mb-8 leading-tight">
@@ -66,7 +66,7 @@ export default function Home() {
             <div className="text-center">
               <div className="mb-6">
                 <Image
-                  src="/images/microgreens.jpg"
+                  src="/images/microgreens.svg"
                   alt="Microgreens"
                   width={400}
                   height={300}
@@ -83,7 +83,7 @@ export default function Home() {
             <div className="text-center">
               <div className="mb-6">
                 <Image
-                  src="/images/wheatgrass.jpg"
+                  src="/images/wheatgrass.svg"
                   alt="Wheatgrass"
                   width={400}
                   height={300}
@@ -100,7 +100,7 @@ export default function Home() {
             <div className="text-center">
               <div className="mb-6">
                 <Image
-                  src="/images/peasto.jpg"
+                  src="/images/peasto.svg"
                   alt="PeaSto"
                   width={400}
                   height={300}
@@ -157,7 +157,7 @@ export default function Home() {
             
             <div className="flex justify-center">
               <Image
-                src="/images/about.jpg"
+                src="/images/about.svg"
                 alt="Our family farm"
                 width={500}
                 height={400}
