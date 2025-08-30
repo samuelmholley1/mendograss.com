@@ -142,7 +142,9 @@ Based on the README plan, the core website implementation and production readine
 - ✅ **Created /about page**: Comprehensive About Us page with mission, values, certifications, and call-to-action
 - ✅ **Created /contact page**: Full contact page with form, business info, FAQ, and map placeholder
 - ✅ **Created /find-us page**: Complete directory of farmers markets, stores, restaurants, and delivery info
-- ✅ **Updated navigation**: Changed navbar from anchor links to proper Next.js Link components for dedicated pages
+- ✅ **Created /wholesale page**: Full product catalog with pricing for microgreens, wheatgrass, and pantry items
+- ✅ **Enhanced /subscriptions page**: Merged with interactive subscription form (size, frequency, payment, delivery options)
+- ✅ **Updated navigation**: Changed navbar from anchor links and external redirects to proper Next.js Link components
 - ✅ **Build verification**: All new pages successfully generating as static content
 
 ### **Phase 11: Functionality Enhancement** 🎯 NEXT AVAILABLE

@@ -71,14 +71,13 @@ export default function Navbar() {
               >
                 Newsletter
               </a>
-              <a
-                href="https://www.gofarmhand.com"
-                target="_blank"
-                rel="noopener noreferrer"
+              <Link
+                href="/wholesale"
                 className="text-gray-700 hover:text-green-600 px-3 py-2 text-sm font-medium transition-colors"
+                onClick={closeMenu}
               >
                 Wholesale
-              </a>
+              </Link>
             </div>
           </div>
 
@@ -153,15 +152,13 @@ export default function Navbar() {
               >
                 Newsletter
               </a>
-              <a
-                href="https://www.gofarmhand.com"
-                target="_blank"
-                rel="noopener noreferrer"
+              <Link
+                href="/wholesale"
                 className="text-gray-700 hover:text-green-600 block px-3 py-2 text-base font-medium transition-colors"
                 onClick={closeMenu}
               >
                 Wholesale
-              </a>
+              </Link>
             </div>
           </div>
         )}

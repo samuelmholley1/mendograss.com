@@ -1,4 +1,7 @@
+'use client'
+
 import Image from "next/image";
+import { useState } from 'react';
 
 export default function Subscriptions() {
   return (
@@ -9,19 +12,28 @@ export default function Subscriptions() {
           <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-8">
             Subscribe to access weekly, grown-to-order microgreens & wheatgrass
           </h1>
-          <a
-            href="https://www.gofarmhand.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-block bg-green-600 text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-green-700 transition-colors shadow-lg"
-          >
-            Select Subscription
-          </a>
+          <p className="text-lg text-gray-600 mb-8">
+            Join our CSA and get fresh, locally-grown microgreens delivered weekly
+          </p>
+        </div>
+      </section>
+
+      {/* Interactive Subscription Form */}
+      <section className="py-16 bg-gray-50">
+        <div className="max-w-4xl mx-auto px-4">
+          <div className="bg-white rounded-2xl shadow-lg p-8">
+            <div className="text-center mb-8">
+              <h2 className="text-3xl font-bold text-gray-900 mb-4">Personalize your farm membership</h2>
+              <p className="text-lg text-gray-600">Mendo Grass Subscription Plans</p>
+            </div>
+
+            <SubscriptionForm />
+          </div>
         </div>
       </section>
 
       {/* How It Works Section */}
-      <section id="howitworks" className="py-16 bg-gray-50">
+      <section id="howitworks" className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4">
           <h2 className="text-3xl font-bold text-center text-gray-900 mb-4">How It Works</h2>
           <p className="text-center text-lg text-gray-700 mb-12">
@@ -80,22 +92,11 @@ export default function Subscriptions() {
               </p>
             </div>
           </div>
-
-          <div className="text-center">
-            <a
-              href="https://www.gofarmhand.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-block bg-green-600 text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-green-700 transition-colors shadow-lg"
-            >
-              Select Subscription
-            </a>
-          </div>
         </div>
       </section>
 
       {/* Pickup & Delivery Section */}
-      <section className="py-16 bg-white">
+      <section className="py-16 bg-gray-50">
         <div className="max-w-4xl mx-auto px-4">
           <h2 className="text-3xl font-bold text-center text-gray-900 mb-8">Pickup & Delivery</h2>
           <p className="text-lg text-gray-700 text-center mb-8">
@@ -121,129 +122,40 @@ export default function Subscriptions() {
         </div>
       </section>
 
-      {/* Subscription Plans Section */}
-      <section id="subscriptions" className="py-16 bg-gray-50">
-        <div className="max-w-7xl mx-auto px-4">
-          <h2 className="text-3xl font-bold text-center text-gray-900 mb-12">Subscription Plans</h2>
+      {/* FAQ Section */}
+      <section className="py-16 bg-white">
+        <div className="max-w-4xl mx-auto px-4">
+          <h2 className="text-3xl font-bold text-center text-gray-900 mb-12">Frequently Asked Questions</h2>
           
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {/* Subscription #1 - Microgreens 5oz */}
-            <div className="bg-white rounded-lg shadow-lg p-6 hover:shadow-xl hover:scale-105 transform transition-all duration-300">
-              <div className="mb-6">
-                <Image
-                  src="/images/sub1.jpg"
-                  alt="Microgreens 5oz tray"
-                  width={400}
-                  height={250}
-                  className="rounded-lg w-full object-cover"
-                />
-              </div>
-              <div className="text-center">
-                <div className="bg-green-100 text-green-800 text-sm font-semibold px-3 py-1 rounded-full inline-block mb-3">
-                  Subscription #1
-                </div>
-                <h3 className="text-2xl font-bold text-gray-900 mb-2">Microgreens - 5oz</h3>
-                <p className="text-3xl font-bold text-green-600 mb-4">$17.50/WEEK</p>
-                
-                <div className="text-left text-gray-700 space-y-2 mb-6">
-                  <p>• A weekly order of our 5 oz microgreens.</p>
-                  <p>• Combinations can include pea shoots, radish, sunflower, and buckwheat.</p>
-                  <p>• Sized for 2 people.</p>
-                  <p>• Skip any week at no charge.</p>
-                </div>
-                
-                <a
-                  href="https://www.gofarmhand.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="block w-full bg-green-600 text-white py-3 rounded-lg font-semibold hover:bg-green-700 transition-colors text-center"
-                >
-                  Subscribe
-                </a>
-              </div>
+          <div className="space-y-8">
+            <div>
+              <h3 className="text-xl font-semibold text-gray-900 mb-3">How does weekly ordering work?</h3>
+              <p className="text-gray-700">
+                We&apos;ll text you when we&apos;re getting ready to grow your greens. Add-on extras to your order, or &quot;skip&quot; by 9pm that day to opt out of that week&apos;s share, at no charge.
+              </p>
+            </div>
+            
+            <div>
+              <h3 className="text-xl font-semibold text-gray-900 mb-3">Where do you deliver?</h3>
+              <p className="text-gray-700">
+                We offer local delivery throughout Ukiah, Healdsburg, & Sebastopol. Alternatively, you can opt to pickup your share at your local farmers&apos; market.
+              </p>
             </div>
 
-            {/* Subscription #2 - Microgreens 8oz */}
-            <div className="bg-white rounded-lg shadow-lg p-6 hover:shadow-xl hover:scale-105 transform transition-all duration-300">
-              <div className="mb-6">
-                <Image
-                  src="/images/sub2.jpg"
-                  alt="Microgreens 8oz tray"
-                  width={400}
-                  height={250}
-                  className="rounded-lg w-full object-cover"
-                />
-              </div>
-              <div className="text-center">
-                <div className="bg-green-100 text-green-800 text-sm font-semibold px-3 py-1 rounded-full inline-block mb-3">
-                  Subscription #2
-                </div>
-                <h3 className="text-2xl font-bold text-gray-900 mb-2">Microgreens - 8oz</h3>
-                <p className="text-3xl font-bold text-green-600 mb-4">$22.50/WEEK</p>
-                
-                <div className="text-left text-gray-700 space-y-2 mb-6">
-                  <p>• A weekly order of our 8 oz microgreens.</p>
-                  <p>• Combinations can include pea shoots, radish, sunflower, and buckwheat.</p>
-                  <p>• Sized for 4 people.</p>
-                  <p>• Skip any week at no charge.</p>
-                </div>
-                
-                <a
-                  href="https://www.gofarmhand.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="block w-full bg-green-600 text-white py-3 rounded-lg font-semibold hover:bg-green-700 transition-colors text-center"
-                >
-                  Subscribe
-                </a>
-              </div>
+            <div>
+              <h3 className="text-xl font-semibold text-gray-900 mb-3">Can I customize my subscription?</h3>
+              <p className="text-gray-700">
+                Yes! You can choose your preferred size, frequency, and delivery method. You can also add weekly extras like our signature pea shoot pesto.
+              </p>
             </div>
 
-            {/* Subscription #3 - Wheatgrass Live Tray */}
-            <div className="bg-white rounded-lg shadow-lg p-6 hover:shadow-xl hover:scale-105 transform transition-all duration-300">
-              <div className="mb-6">
-                <Image
-                  src="/images/sub3.jpg"
-                  alt="Wheatgrass live tray"
-                  width={400}
-                  height={250}
-                  className="rounded-lg w-full object-cover"
-                />
-              </div>
-              <div className="text-center">
-                <div className="bg-green-100 text-green-800 text-sm font-semibold px-3 py-1 rounded-full inline-block mb-3">
-                  Subscription #3
-                </div>
-                <h3 className="text-2xl font-bold text-gray-900 mb-2">Wheatgrass - Live Tray</h3>
-                <p className="text-3xl font-bold text-green-600 mb-4">$20/WEEK</p>
-                
-                <div className="text-left text-gray-700 space-y-2 mb-6">
-                  <p>• A weekly order of a live tray of wheatgrass so you can harvest it fresh at home!</p>
-                  <p>• Sized for 4 people.</p>
-                  <p>• Skip any week at no charge.</p>
-                </div>
-                
-                <a
-                  href="https://www.gofarmhand.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="block w-full bg-green-600 text-white py-3 rounded-lg font-semibold hover:bg-green-700 transition-colors text-center"
-                >
-                  Subscribe
-                </a>
-              </div>
+            <div>
+              <h3 className="text-xl font-semibold text-gray-900 mb-3">What payment methods do you accept?</h3>
+              <p className="text-gray-700">
+                We accept all major credit cards and debit cards. Payment is processed securely and automatically for each delivery.
+              </p>
             </div>
           </div>
-        </div>
-      </section>
-
-      {/* Weekly Add-ons Section */}
-      <section className="py-16 bg-white">
-        <div className="max-w-4xl mx-auto px-4 text-center">
-          <h2 className="text-3xl font-bold text-gray-900 mb-4">Weekly add-ons</h2>
-          <p className="text-lg text-gray-700">
-            Enhance your weekly subscription with extra greens, pantry staples, and merch
-          </p>
         </div>
       </section>
 
@@ -255,15 +167,180 @@ export default function Subscriptions() {
             Join today for a fresh and flexible way to enjoy your weekly greens.
           </p>
           <a
-            href="https://www.gofarmhand.com"
-            target="_blank"
-            rel="noopener noreferrer"
+            href="#subscription-form"
             className="inline-block bg-white text-green-600 px-8 py-4 rounded-full text-lg font-semibold hover:bg-gray-100 transition-colors shadow-lg"
           >
-            Select Subscription
+            Start Your Subscription
           </a>
         </div>
       </section>
+    </div>
+  );
+}
+
+// Interactive Subscription Form Component
+function SubscriptionForm() {
+  const [selectedPlan, setSelectedPlan] = useState<keyof typeof plans>('microgreens-5oz');
+  const [frequency, setFrequency] = useState('weekly');
+  const [paymentPlan, setPaymentPlan] = useState('weekly');
+  const [deliveryMethod, setDeliveryMethod] = useState('delivery');
+
+  const plans = {
+    'microgreens-5oz': { name: 'Microgreens 5oz', price: 17.50 },
+    'microgreens-8oz': { name: 'Microgreens 8oz', price: 22.50 },
+    'wheatgrass-tray': { name: 'Wheatgrass Live Tray', price: 20.00 }
+  };
+
+  const getSubtotal = () => {
+    const basePrice = plans[selectedPlan].price;
+    if (paymentPlan === 'monthly') {
+      return basePrice * 4;
+    }
+    return basePrice;
+  };
+
+  return (
+    <div id="subscription-form" className="space-y-8">
+      {/* Plan Selection */}
+      <div>
+        <label className="block text-lg font-semibold text-gray-900 mb-4">Size:</label>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+          {Object.entries(plans).map(([key, plan]) => (
+            <div
+              key={key}
+              className={`border-2 rounded-lg p-4 cursor-pointer transition-all ${
+                selectedPlan === key 
+                  ? 'border-green-500 bg-green-50' 
+                  : 'border-gray-200 hover:border-green-300'
+              }`}
+              onClick={() => setSelectedPlan(key as keyof typeof plans)}
+            >
+              <div className="text-center">
+                <h3 className="font-semibold text-gray-900">{plan.name}</h3>
+                <p className="text-green-600 font-bold">${plan.price}/week</p>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      {/* Frequency */}
+      <div>
+        <label className="block text-lg font-semibold text-gray-900 mb-4">Frequency:</label>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div
+            className={`border-2 rounded-lg p-4 cursor-pointer transition-all ${
+              frequency === 'weekly' 
+                ? 'border-green-500 bg-green-50' 
+                : 'border-gray-200 hover:border-green-300'
+            }`}
+            onClick={() => setFrequency('weekly')}
+          >
+            <div className="text-center">
+              <h3 className="font-semibold text-gray-900">Weekly</h3>
+              <p className="text-sm text-gray-600">Every week</p>
+            </div>
+          </div>
+          <div
+            className={`border-2 rounded-lg p-4 cursor-pointer transition-all ${
+              frequency === 'biweekly' 
+                ? 'border-green-500 bg-green-50' 
+                : 'border-gray-200 hover:border-green-300'
+            }`}
+            onClick={() => setFrequency('biweekly')}
+          >
+            <div className="text-center">
+              <h3 className="font-semibold text-gray-900">Bi-weekly</h3>
+              <p className="text-sm text-gray-600">Every other week</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Payment Plan */}
+      <div>
+        <label className="block text-lg font-semibold text-gray-900 mb-4">Payment plan:</label>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div
+            className={`border-2 rounded-lg p-4 cursor-pointer transition-all ${
+              paymentPlan === 'weekly' 
+                ? 'border-green-500 bg-green-50' 
+                : 'border-gray-200 hover:border-green-300'
+            }`}
+            onClick={() => setPaymentPlan('weekly')}
+          >
+            <div className="text-center">
+              <h3 className="font-semibold text-gray-900">Pay Weekly</h3>
+              <p className="text-sm text-gray-600">Charged each delivery</p>
+            </div>
+          </div>
+          <div
+            className={`border-2 rounded-lg p-4 cursor-pointer transition-all ${
+              paymentPlan === 'monthly' 
+                ? 'border-green-500 bg-green-50' 
+                : 'border-gray-200 hover:border-green-300'
+            }`}
+            onClick={() => setPaymentPlan('monthly')}
+          >
+            <div className="text-center">
+              <h3 className="font-semibold text-gray-900">Pay Monthly</h3>
+              <p className="text-sm text-gray-600">Charged monthly</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Pickup or Delivery */}
+      <div>
+        <label className="block text-lg font-semibold text-gray-900 mb-4">Pickup or delivery?</label>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div
+            className={`border-2 rounded-lg p-4 cursor-pointer transition-all ${
+              deliveryMethod === 'delivery' 
+                ? 'border-green-500 bg-green-50' 
+                : 'border-gray-200 hover:border-green-300'
+            }`}
+            onClick={() => setDeliveryMethod('delivery')}
+          >
+            <div className="text-center">
+              <h3 className="font-semibold text-gray-900">🚚 Delivery</h3>
+              <p className="text-sm text-gray-600">Ukiah, Healdsburg, Sebastopol</p>
+            </div>
+          </div>
+          <div
+            className={`border-2 rounded-lg p-4 cursor-pointer transition-all ${
+              deliveryMethod === 'pickup' 
+                ? 'border-green-500 bg-green-50' 
+                : 'border-gray-200 hover:border-green-300'
+            }`}
+            onClick={() => setDeliveryMethod('pickup')}
+          >
+            <div className="text-center">
+              <h3 className="font-semibold text-gray-900">📍 Pickup</h3>
+              <p className="text-sm text-gray-600">Farmers markets</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Subtotal and Continue */}
+      <div className="border-t pt-6">
+        <div className="flex justify-between items-center mb-6">
+          <span className="text-lg font-semibold text-gray-900">Subtotal</span>
+          <span className="text-2xl font-bold text-green-600">
+            ${getSubtotal().toFixed(2)}
+            {paymentPlan === 'monthly' ? '/month' : '/week'}
+          </span>
+        </div>
+        
+        <button className="w-full bg-green-600 text-white py-4 rounded-lg text-lg font-semibold hover:bg-green-700 transition-colors">
+          Continue to Checkout
+        </button>
+        
+        <p className="text-center text-sm text-gray-500 mt-4">
+          Secure checkout powered by Farmhand
+        </p>
+      </div>
     </div>
   );
 }
