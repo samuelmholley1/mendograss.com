@@ -35,27 +35,27 @@ export default function Navbar() {
           {/* Desktop Navigation */}
           <div className="hidden md:block">
             <div className="ml-10 flex items-baseline space-x-8">
-              <a
-                href="#about"
+              <Link
+                href="/about"
                 className="text-gray-700 hover:text-green-600 px-3 py-2 text-sm font-medium transition-colors"
                 onClick={closeMenu}
               >
                 About
-              </a>
-              <a
-                href="#findus"
+              </Link>
+              <Link
+                href="/find-us"
                 className="text-gray-700 hover:text-green-600 px-3 py-2 text-sm font-medium transition-colors"
                 onClick={closeMenu}
               >
                 Find Us
-              </a>
-              <a
-                href="#contact"
+              </Link>
+              <Link
+                href="/contact"
                 className="text-gray-700 hover:text-green-600 px-3 py-2 text-sm font-medium transition-colors"
                 onClick={closeMenu}
               >
                 Contact
-              </a>
+              </Link>
               <Link
                 href="/subscriptions"
                 className="text-gray-700 hover:text-green-600 px-3 py-2 text-sm font-medium transition-colors"
@@ -116,27 +116,27 @@ export default function Navbar() {
         {isMenuOpen && (
           <div className="md:hidden">
             <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white border-t border-gray-200">
-              <a
-                href="#about"
+              <Link
+                href="/about"
                 className="text-gray-700 hover:text-green-600 block px-3 py-2 text-base font-medium transition-colors"
                 onClick={closeMenu}
               >
                 About
-              </a>
-              <a
-                href="#findus"
+              </Link>
+              <Link
+                href="/find-us"
                 className="text-gray-700 hover:text-green-600 block px-3 py-2 text-base font-medium transition-colors"
                 onClick={closeMenu}
               >
                 Find Us
-              </a>
-              <a
-                href="#contact"
+              </Link>
+              <Link
+                href="/contact"
                 className="text-gray-700 hover:text-green-600 block px-3 py-2 text-base font-medium transition-colors"
                 onClick={closeMenu}
               >
                 Contact
-              </a>
+              </Link>
               <Link
                 href="/subscriptions"
                 className="text-gray-700 hover:text-green-600 block px-3 py-2 text-base font-medium transition-colors"
