@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'About Mendo Grass - Organic Microgreens Farm',
     description: 'Sustainable organic microgreens farming in Mendocino County. Learn about our mission, values, and USDA certification.',
-    images: ['/images/about.svg'],
+    images: ['/arden_micros.jpg'],
   },
 }
 
@@ -16,7 +16,7 @@ const jsonLd = {
   '@type': ['Organization', 'LocalBusiness', 'Store'],
   name: 'Mendo Grass',
   url: 'https://mendograss.com',
-  logo: 'https://mendograss.com/images/logo.svg',
+  logo: 'https://mendograss.com/logo_colored.jpg',
   description: 'Premium organic microgreens and wheatgrass farm in Mendocino County, California',
   address: {
     '@type': 'PostalAddress',
@@ -142,8 +142,8 @@ export default function AboutPage() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div>
             <Image
-              src="/images/about.svg"
-              alt="Mendo Grass farm and growing operation"
+              src="/greenhouse_purple.jpg"
+              alt="Mendo Grass greenhouse and growing operation"
               width={600}
               height={400}
               className="rounded-lg shadow-lg"

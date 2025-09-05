@@ -23,7 +23,7 @@ export default function Navbar() {
           <div className="flex-shrink-0">
             <Link href="/" onClick={closeMenu}>
               <Image
-                src="/images/logo.svg"
+                src="/logo_transparent.png"
                 alt="Mendo Grass logo"
                 width={50}
                 height={50}
@@ -41,6 +41,13 @@ export default function Navbar() {
                 onClick={closeMenu}
               >
                 About
+              </Link>
+              <Link
+                href="/launch"
+                className="bg-green-600 text-white hover:bg-green-700 px-4 py-2 text-sm font-medium transition-colors rounded-md"
+                onClick={closeMenu}
+              >
+                Launch Event
               </Link>
               <Link
                 href="/find-us"
@@ -146,6 +153,13 @@ export default function Navbar() {
                 onClick={closeMenu}
               >
                 About
+              </Link>
+              <Link
+                href="/launch"
+                className="bg-green-600 text-white hover:bg-green-700 block px-3 py-2 text-base font-medium transition-colors rounded-md mx-3"
+                onClick={closeMenu}
+              >
+                🎉 Launch Event
               </Link>
               <Link
                 href="/find-us"

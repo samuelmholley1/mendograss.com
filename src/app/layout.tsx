@@ -58,7 +58,7 @@ export const metadata: Metadata = {
     description: 'Fresh, sun-grown organic microgreens and wheatgrass delivered weekly in Mendocino County. USDA Certified Organic.',
     images: [
       {
-        url: '/images/hero.svg',
+        url: '/wheatgrass_background.jpg',
         width: 1200,
         height: 630,
         alt: 'Mendo Grass - Fresh Organic Microgreens',
@@ -69,7 +69,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Mendo Grass - Premium Organic Microgreens & Wheatgrass',
     description: 'Fresh, sun-grown organic microgreens and wheatgrass delivered weekly in Mendocino County.',
-    images: ['/images/hero.svg'],
+    images: ['/wheatgrass_background.jpg'],
   },
   verification: {
     google: process.env.GOOGLE_SITE_VERIFICATION,

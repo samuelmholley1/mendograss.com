@@ -144,11 +144,11 @@ export default function Subscriptions() {
             <div className="text-center">
               <div className="mb-4">
                 <Image
-                  src="/images/select-size.png"
+                  src="/micros_multicolor.jpg"
                   alt="Select a size"
                   width={80}
                   height={80}
-                  className="mx-auto"
+                  className="mx-auto rounded-full object-cover"
                 />
               </div>
               <h3 className="text-xl font-bold text-gray-900 mb-4">Select a size</h3>
@@ -161,11 +161,11 @@ export default function Subscriptions() {
             <div className="text-center">
               <div className="mb-4">
                 <Image
-                  src="/images/subscribe.png"
+                  src="/mendograss_tote.jpg"
                   alt="Subscribe"
                   width={80}
                   height={80}
-                  className="mx-auto"
+                  className="mx-auto rounded-full object-cover"
                 />
               </div>
               <h3 className="text-xl font-bold text-gray-900 mb-4">Subscribe</h3>
@@ -178,11 +178,11 @@ export default function Subscriptions() {
             <div className="text-center">
               <div className="mb-4">
                 <Image
-                  src="/images/skip.png"
+                  src="/arden_micros.jpg"
                   alt="Skip when needed"
                   width={80}
                   height={80}
-                  className="mx-auto"
+                  className="mx-auto rounded-full object-cover"
                 />
               </div>
               <h3 className="text-xl font-bold text-gray-900 mb-4">Skip when needed</h3>

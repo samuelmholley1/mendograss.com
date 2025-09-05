@@ -16,21 +16,30 @@ export default function Home() {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="relative h-screen flex items-center justify-center bg-gradient-to-r from-green-50 to-green-100">
-        <div 
-          className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-20"
-          style={{ backgroundImage: "url('/images/hero.svg')" }}
-        ></div>
+      <section 
+        className="relative h-screen flex items-center justify-center bg-cover bg-center bg-no-repeat"
+        style={{
+          backgroundImage: "linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/wheatgrass_background.jpg')"
+        }}
+      >
         <div className="relative z-10 text-center max-w-4xl mx-auto px-4">
-          <h1 className="text-5xl md:text-7xl font-bold text-gray-900 mb-8 leading-tight">
+          <h1 className="text-5xl md:text-7xl font-bold text-white mb-8 leading-tight">
             Growing organic green goodness under the California sun
           </h1>
-          <Link 
-            href="/subscriptions"
-            className="inline-block bg-green-600 text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-green-700 transition-colors shadow-lg"
-          >
-            Shop
-          </Link>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Link 
+              href="/subscriptions"
+              className="inline-block bg-green-600 text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-green-700 transition-colors shadow-lg"
+            >
+              Shop
+            </Link>
+            <Link 
+              href="/launch"
+              className="inline-block border-2 border-white text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-white hover:text-gray-900 transition-colors"
+            >
+              🎉 Join Our Launch Event
+            </Link>
+          </div>
         </div>
       </section>
 
@@ -66,8 +75,8 @@ export default function Home() {
             <div className="text-center group hover:scale-105 transform transition-all duration-300">
               <div className="mb-6">
                 <Image
-                  src="/images/microgreens.svg"
-                  alt="Microgreens"
+                  src="/micros_multicolor.jpg"
+                  alt="Fresh colorful microgreens"
                   width={400}
                   height={300}
                   className="rounded-lg shadow-md mx-auto group-hover:shadow-lg transition-shadow"
@@ -83,8 +92,8 @@ export default function Home() {
             <div className="text-center group hover:scale-105 transform transition-all duration-300">
               <div className="mb-6">
                 <Image
-                  src="/images/wheatgrass.svg"
-                  alt="Wheatgrass"
+                  src="/wheatgrass_shots.jpg"
+                  alt="Fresh wheatgrass shots"
                   width={400}
                   height={300}
                   className="rounded-lg shadow-md mx-auto group-hover:shadow-lg transition-shadow"
@@ -100,8 +109,8 @@ export default function Home() {
             <div className="text-center group hover:scale-105 transform transition-all duration-300">
               <div className="mb-6">
                 <Image
-                  src="/images/peasto.svg"
-                  alt="PeaSto"
+                  src="/peasto_4jars.jpg"
+                  alt="PeaSto pea shoot pesto jars"
                   width={400}
                   height={300}
                   className="rounded-lg shadow-md mx-auto group-hover:shadow-lg transition-shadow"
@@ -157,8 +166,8 @@ export default function Home() {
             
             <div className="flex justify-center">
               <Image
-                src="/images/about.svg"
-                alt="Our family farm"
+                src="/family_sunflowers.jpg"
+                alt="Mendo Grass family with sunflowers"
                 width={500}
                 height={400}
                 className="rounded-lg shadow-lg"

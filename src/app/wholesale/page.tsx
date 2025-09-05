@@ -4,7 +4,7 @@ export default function WholesalePage() {
   const microgreens = [
     {
       name: "Buckwheat Microgreens",
-      image: "/images/microgreens.svg",
+      image: "/micros_multicolor.jpg",
       prices: [
         { size: "3 oz", price: 5.00 },
         { size: "8 oz", price: 22.50 },
@@ -14,7 +14,7 @@ export default function WholesalePage() {
     },
     {
       name: "Emerald Fire Micro Mix",
-      image: "/images/microgreens.svg",
+      image: "/arden_micros.jpg",
       prices: [
         { size: "3 oz", price: 5.00 },
         { size: "8 oz", price: 25.00 },
@@ -23,7 +23,7 @@ export default function WholesalePage() {
     },
     {
       name: "Pea Shoots",
-      image: "/images/peasto.svg",
+      image: "/peasto_4jars.jpg",
       prices: [
         { size: "3 oz", price: 4.00 },
         { size: "8 oz", price: 22.50 },
@@ -33,7 +33,7 @@ export default function WholesalePage() {
     },
     {
       name: "Radish Microgreens",
-      image: "/images/microgreens.svg",
+      image: "/greens_and_grass.jpg",
       prices: [
         { size: "3 oz", price: 5.00 },
         { size: "8 oz", price: 22.50 },
@@ -43,7 +43,7 @@ export default function WholesalePage() {
     },
     {
       name: "Summer Breeze Micro Mix",
-      image: "/images/microgreens.svg",
+      image: "/micros_multicolor.jpg",
       prices: [
         { size: "3 oz", price: 5.00 },
         { size: "8 oz", price: 25.00 },
@@ -52,7 +52,7 @@ export default function WholesalePage() {
     },
     {
       name: "Sunflowers Microgreens",
-      image: "/images/microgreens.svg",
+      image: "/family_sunflowers.jpg",
       prices: [
         { size: "3 oz", price: 4.00 },
         { size: "8 oz", price: 22.50 },
@@ -64,7 +64,7 @@ export default function WholesalePage() {
 
   const wheatgrass = {
     name: "Wheatgrass",
-    image: "/images/wheatgrass.svg",
+    image: "/wheatgrass_shots.jpg",
     prices: [
       { size: "17x17 Flat", price: 20.00 }
     ]
@@ -73,7 +73,7 @@ export default function WholesalePage() {
   const pantryItems = [
     {
       name: "Pea Shoot Pesto",
-      image: "/images/peasto.svg",
+      image: "/peasto_4jars.jpg",
       prices: [
         { size: "6.5 oz", price: 12.00 },
         { size: "30 oz", price: 55.00 },
