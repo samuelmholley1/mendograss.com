@@ -34,10 +34,10 @@ export default function Home() {
               Shop
             </Link>
             <Link 
-              href="/launch"
+              href="/wholesale"
               className="inline-block border-2 border-white text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-white hover:text-gray-900 transition-colors"
             >
-              🎉 Join Our Launch Event
+              Wholesale Orders
             </Link>
           </div>
         </div>
