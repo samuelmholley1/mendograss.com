@@ -23,7 +23,7 @@ export default function Navbar() {
           <div className="flex-shrink-0">
             <Link href="/" onClick={closeMenu}>
               <Image
-                src="/logo_transparent.png"
+                src="/logo_colored.jpg"
                 alt="Mendo Grass logo"
                 width={50}
                 height={50}
