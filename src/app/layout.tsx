@@ -4,6 +4,7 @@ import { GoogleAnalytics, GoogleTagManager } from '@next/third-parties/google'
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import StructuredData from "@/components/StructuredData";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -16,28 +17,17 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://mendograss.com'),
   title: {
-    default: "Mendo Grass - Premium Organic Microgreens & Wheatgrass | Mendocino County, CA",
-    template: "%s | Mendo Grass"
+    default: 'Mendo Grass - Fresh Organic Microgreens | Mendocino County Farm',
+    template: '%s | Mendo Grass'
   },
-  description: "Fresh, sun-grown organic microgreens and wheatgrass delivered weekly in Mendocino County. Farm-to-table nutrition with convenient subscription service. USDA Certified Organic.",
-  keywords: [
-    "microgreens",
-    "wheatgrass", 
-    "organic",
-    "Mendocino County",
-    "Ukiah",
-    "farm fresh",
-    "CSA",
-    "subscription",
-    "farmers market",
-    "local delivery",
-    "nutrition",
-    "superfood"
-  ],
-  authors: [{ name: "Mendo Grass" }],
-  creator: "Mendo Grass",
-  publisher: "Mendo Grass",
+  description: 'Premium organic microgreens and wheatgrass from Mendocino County, California. Fresh, locally grown greens for restaurants, schools, and health-conscious consumers.',
+  keywords: 'microgreens, wheatgrass, organic, Mendocino County, California, farm fresh, restaurants, wholesale, pea shoots, radish microgreens, farm to table, sustainable agriculture',
+  authors: [{ name: 'Mendo Grass Farm' }],
+  creator: 'Mendo Grass',
+  publisher: 'Mendo Grass',
+  category: 'Agriculture',
   robots: {
     index: true,
     follow: true,
@@ -53,15 +43,16 @@ export const metadata: Metadata = {
     type: 'website',
     locale: 'en_US',
     url: 'https://mendograss.com',
+    title: 'Mendo Grass - Fresh Organic Microgreens',
+    description: 'Premium organic microgreens and wheatgrass from Mendocino County, California.',
     siteName: 'Mendo Grass',
-    title: 'Mendo Grass - Premium Organic Microgreens & Wheatgrass',
-    description: 'Fresh, sun-grown organic microgreens and wheatgrass delivered weekly in Mendocino County. USDA Certified Organic.',
     images: [
       {
         url: '/wheatgrass_background.jpg',
         width: 1200,
         height: 630,
         alt: 'Mendo Grass - Fresh Organic Microgreens',
+        type: 'image/jpeg',
       },
     ],
   },
@@ -70,6 +61,8 @@ export const metadata: Metadata = {
     title: 'Mendo Grass - Premium Organic Microgreens & Wheatgrass',
     description: 'Fresh, sun-grown organic microgreens and wheatgrass delivered weekly in Mendocino County.',
     images: ['/wheatgrass_background.jpg'],
+    creator: '@mendograss',
+    site: '@mendograss',
   },
   verification: {
     google: process.env.GOOGLE_SITE_VERIFICATION,
@@ -77,7 +70,11 @@ export const metadata: Metadata = {
   alternates: {
     canonical: 'https://mendograss.com',
   },
-  category: 'food',
+  icons: {
+    icon: '/favicon.ico',
+    shortcut: '/favicon.ico',
+    apple: '/favicon.ico',
+  },
 };
 
 export default function RootLayout({
@@ -88,8 +85,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
+        <StructuredData />
         <meta name="google-site-verification" content={process.env.GOOGLE_SITE_VERIFICATION} />
         <link rel="canonical" href="https://mendograss.com" />
+        <link rel="icon" href="/favicon.ico" sizes="any" />
       </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
