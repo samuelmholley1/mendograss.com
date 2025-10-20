@@ -56,7 +56,7 @@ You are absolutely right. My apologies. In my previous response, I did not inclu
 *   **Newsletter Sign-up**: A section encourages visitors to subscribe for updates: "Get recipes and updates every month." [13] followed by a "Subscribe" button/form field. Upon form submission, the site displays a success message "Thank you! Your submission has been received!" or an error message "Oops! Something went wrong while submitting the form.” [14]
 *   **Contact Information**: Under "Contact Us", the home page lists contact details for the farm:
     *   **Address**: 1321 Sirah Ct. Ukiah, CA 95482
-    *   **Email**: micros@mendograss.com
+    *   **Email**: adam@mendograss.com
     *   **Phone**: (707) 391-9659
 *   **Social Links**: Facebook and Instagram (icon links) [15].
 *   **Farmers Market Locations (Find Us)**: The site lists where to find Mendo Grass at local markets, under a "Markets" section:
@@ -164,7 +164,7 @@ Return the JSX for this Navbar component.
 
 1.  A **Contact Us** section with:
     *   Address: 1321 Sirah Ct. Ukiah, CA 95482
-    *   Email: `micros@mendograss.com` (as a `mailto:` link)
+    *   Email: `adam@mendograss.com` (as a `mailto:` link)
     *   Phone: `(707) 391-9659` (as a `tel:` link)
     *   Icon links for Facebook and Instagram (placeholders).
 2.  A **Markets** section listing:

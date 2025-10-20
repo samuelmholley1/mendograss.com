@@ -13,10 +13,10 @@ export default function Footer() {
               </p>
               <p>
                 <a 
-                  href="mailto:micros@mendograss.com"
+                  href="mailto:adam@mendograss.com"
                   className="text-gray-300 hover:text-green-400 transition-colors"
                 >
-                  micros@mendograss.com
+                  adam@mendograss.com
                 </a>
               </p>
               <p>

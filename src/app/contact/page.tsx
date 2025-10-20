@@ -56,10 +56,10 @@ export default function ContactPage() {
                 <div>
                   <h3 className="text-lg font-semibold text-gray-900">Email</h3>
                   <a 
-                    href="mailto:hello@mendograss.com" 
+                    href="mailto:adam@mendograss.com" 
                     className="text-green-600 hover:text-green-700 transition-colors"
                   >
-                    hello@mendograss.com
+                    adam@mendograss.com
                   </a>
                 </div>
               </div>

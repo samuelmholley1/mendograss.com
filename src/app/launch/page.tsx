@@ -402,7 +402,7 @@ export default function LaunchPage() {
 
           <div className="mt-12 text-gray-400">
             <p className="mb-2">
-              <strong>Event Coordinator:</strong> hello@mendograss.com
+              <strong>Event Coordinator:</strong> adam@mendograss.com
             </p>
             <p>
               <strong>Phone:</strong> (707) 555-0123

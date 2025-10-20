@@ -71,9 +71,9 @@ export const metadata: Metadata = {
     canonical: 'https://mendograss.com',
   },
   icons: {
-    icon: '/favicon.ico',
-    shortcut: '/favicon.ico',
-    apple: '/favicon.ico',
+    icon: '/logo_colored.jpg',
+    shortcut: '/logo_colored.jpg',
+    apple: '/logo_colored.jpg',
   },
 };
 
@@ -88,7 +88,7 @@ export default function RootLayout({
         <StructuredData />
         <meta name="google-site-verification" content={process.env.GOOGLE_SITE_VERIFICATION} />
         <link rel="canonical" href="https://mendograss.com" />
-        <link rel="icon" href="/favicon.ico" sizes="any" />
+  <link rel="icon" href="/logo_colored.jpg" sizes="any" />
       </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}

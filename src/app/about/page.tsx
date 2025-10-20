@@ -35,7 +35,7 @@ const jsonLd = {
     '@type': 'ContactPoint',
     telephone: '+1-707-555-0123',
     contactType: 'customer service',
-    email: 'hello@mendograss.com',
+    email: 'adam@mendograss.com',
     availableLanguage: 'English'
   },
   openingHours: [

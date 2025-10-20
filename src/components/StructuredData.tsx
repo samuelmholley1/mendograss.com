@@ -22,7 +22,7 @@ export default function StructuredData() {
         },
         "contactPoint": {
           "@type": "ContactPoint",
-          "email": "hello@mendograss.com",
+          "email": "adam@mendograss.com",
           "contactType": "Customer Service"
         },
         "sameAs": [
@@ -37,7 +37,7 @@ export default function StructuredData() {
         "description": "Organic microgreens and wheatgrass farm specializing in premium fresh greens for restaurants and food service.",
         "url": "https://mendograss.com",
         "telephone": "(707) 555-0123",
-        "email": "hello@mendograss.com",
+  "email": "adam@mendograss.com",
         "address": {
           "@type": "PostalAddress",
           "addressLocality": "Mendocino County",
