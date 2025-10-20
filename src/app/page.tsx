@@ -6,11 +6,44 @@ import Link from "next/link";
 
 export default function Home() {
   const [formStatus, setFormStatus] = useState('')
+  const [email, setEmail] = useState('')
+  const [isSubmitting, setIsSubmitting] = useState(false)
 
-  const handleNewsletterSubmit = (e: React.FormEvent) => {
+  const handleNewsletterSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
-    setFormStatus('success')
-    setTimeout(() => setFormStatus(''), 3000)
+    setIsSubmitting(true)
+    
+    try {
+      const response = await fetch('/api/send-email', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          to: 'adam@mendograss.com',
+          subject: 'New Newsletter Subscription',
+          text: `New newsletter subscription from: ${email}`,
+          html: `
+            <h2>New Newsletter Subscription</h2>
+            <p><strong>Email:</strong> ${email}</p>
+            <p>Subscribed from: Homepage Newsletter Form</p>
+          `,
+        }),
+      })
+
+      if (response.ok) {
+        setFormStatus('success')
+        setEmail('')
+      } else {
+        setFormStatus('error')
+      }
+    } catch (error) {
+      console.error('Newsletter subscription error:', error)
+      setFormStatus('error')
+    } finally {
+      setIsSubmitting(false)
+      setTimeout(() => setFormStatus(''), 5000)
+    }
   }
 
   return (
@@ -190,13 +223,17 @@ export default function Home() {
                 type="email"
                 placeholder="Your email"
                 required
-                className="flex-1 px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-transparent"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+                disabled={isSubmitting}
+                className="flex-1 px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-transparent disabled:bg-gray-100 disabled:cursor-not-allowed"
               />
               <button
                 type="submit"
-                className="bg-green-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-green-700 transition-colors"
+                disabled={isSubmitting}
+                className="bg-green-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-green-700 transition-colors disabled:bg-gray-400 disabled:cursor-not-allowed"
               >
-                Subscribe
+                {isSubmitting ? 'Subscribing...' : 'Subscribe'}
               </button>
             </div>
           </form>
@@ -204,12 +241,12 @@ export default function Home() {
           {/* Success/Error Messages */}
           {formStatus === 'success' && (
             <p className="mt-4 text-green-600 font-medium">
-              Thank you! Your submission has been received!
+              ✓ Thank you for subscribing! Check your inbox for updates.
             </p>
           )}
           {formStatus === 'error' && (
             <p className="mt-4 text-red-600 font-medium">
-              Oops! Something went wrong while submitting the form.
+              ✗ Oops! Something went wrong. Please try again.
             </p>
           )}
         </div>
