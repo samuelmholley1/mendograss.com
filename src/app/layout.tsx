@@ -71,9 +71,16 @@ export const metadata: Metadata = {
     canonical: 'https://mendograss.com',
   },
   icons: {
-    icon: '/logo_colored.jpg',
-    shortcut: '/logo_colored.jpg',
-    apple: '/logo_colored.jpg',
+    icon: [
+      { url: '/favicon-16x16.png', sizes: '16x16', type: 'image/png' },
+      { url: '/favicon-32x32.png', sizes: '32x32', type: 'image/png' },
+      { url: '/favicon-48x48.png', sizes: '48x48', type: 'image/png' },
+    ],
+    apple: '/apple-touch-icon.png',
+    other: [
+      { rel: 'android-chrome-192x192', url: '/android-chrome-192x192.png' },
+      { rel: 'android-chrome-512x512', url: '/android-chrome-512x512.png' },
+    ],
   },
 };
 
@@ -88,7 +95,6 @@ export default function RootLayout({
         <StructuredData />
         <meta name="google-site-verification" content={process.env.GOOGLE_SITE_VERIFICATION} />
         <link rel="canonical" href="https://mendograss.com" />
-  <link rel="icon" href="/logo_colored.jpg" sizes="any" />
       </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
