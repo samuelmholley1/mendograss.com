@@ -234,7 +234,7 @@ export default function Subscriptions() {
           
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div className="bg-gray-50 rounded-lg p-6">
-              <div className="text-green-600 text-2xl mb-4">"</div>
+              <div className="text-green-600 text-2xl mb-4">&ldquo;</div>
               <p className="text-gray-700 mb-4 italic">
                 I love opening the boxes every week and seeing what&apos;s in there. The microgreens are so fresh and vibrant – nothing like what you get in the store. Feels like such a treat!
               </p>
@@ -242,7 +242,7 @@ export default function Subscriptions() {
             </div>
             
             <div className="bg-gray-50 rounded-lg p-6">
-              <div className="text-green-600 text-2xl mb-4">"</div>
+              <div className="text-green-600 text-2xl mb-4">&ldquo;</div>
               <p className="text-gray-700 mb-4 italic">
                 Best decision we made this year! Supporting a local farm and getting the most nutritious greens delivered to our door. Our kids actually ask for the microgreens now!
               </p>

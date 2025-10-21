@@ -209,7 +209,7 @@ export default function RestaurantsPage() {
           
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div className="bg-white rounded-lg p-6 shadow-md">
-              <div className="text-green-600 text-2xl mb-4">"</div>
+              <div className="text-green-600 text-2xl mb-4">&ldquo;</div>
               <p className="text-gray-700 mb-4 italic">
                 The quality and freshness of Mendo Grass microgreens are outstanding. They arrive vibrant and full of flavor – exactly what we need to elevate our farm-to-table menu.
               </p>
@@ -217,7 +217,7 @@ export default function RestaurantsPage() {
             </div>
             
             <div className="bg-white rounded-lg p-6 shadow-md">
-              <div className="text-green-600 text-2xl mb-4">"</div>
+              <div className="text-green-600 text-2xl mb-4">&ldquo;</div>
               <p className="text-gray-700 mb-4 italic">
                 Working with Mendo Grass has been fantastic. Reliable weekly deliveries, beautiful greens, and Adam is always responsive. It&apos;s like having a farm partner in your kitchen.
               </p>
