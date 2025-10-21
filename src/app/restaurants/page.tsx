@@ -77,10 +77,68 @@ export default function RestaurantsPage() {
         </div>
       </section>
 
-      {/* Interactive Subscription Form */}
+      {/* Choose Your Path CTA */}
       <section className="py-16 bg-white">
+        <div className="max-w-5xl mx-auto px-4">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-bold text-gray-900 mb-4">Ready to Get Started?</h2>
+            <p className="text-lg text-gray-600">Choose the option that works best for you</p>
+          </div>
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            {/* Option 1: Contact Us First */}
+            <div className="bg-gray-50 rounded-xl p-8 border-2 border-gray-200 hover:border-green-400 transition-all">
+              <div className="text-center mb-6">
+                <div className="text-4xl mb-4">💬</div>
+                <h3 className="text-2xl font-bold text-gray-900 mb-3">Let&apos;s Talk First</h3>
+                <p className="text-gray-600 mb-6">
+                  Have questions? Want a custom quote? We&apos;re here to help plan the perfect subscription for your kitchen.
+                </p>
+              </div>
+              <div className="space-y-4">
+                <a 
+                  href="mailto:adam@mendograss.com" 
+                  className="block w-full bg-green-600 text-white py-3 px-6 rounded-lg text-center font-semibold hover:bg-green-700 transition-colors"
+                >
+                  Email Us
+                </a>
+                <a 
+                  href="tel:7073919659" 
+                  className="block w-full bg-white border-2 border-green-600 text-green-600 py-3 px-6 rounded-lg text-center font-semibold hover:bg-green-50 transition-colors"
+                >
+                  Call (707) 391-9659
+                </a>
+                <p className="text-sm text-gray-500 text-center">We typically respond within 1-2 business days</p>
+              </div>
+            </div>
+
+            {/* Option 2: Sign Up Now */}
+            <div className="bg-gray-50 rounded-xl p-8 border-2 border-gray-200 hover:border-green-400 transition-all">
+              <div className="text-center mb-6">
+                <div className="text-4xl mb-4">🚀</div>
+                <h3 className="text-2xl font-bold text-gray-900 mb-3">Sign Up Now</h3>
+                <p className="text-gray-600 mb-6">
+                  Know what you need? Start your subscription below and we&apos;ll confirm your first delivery date.
+                </p>
+              </div>
+              <div className="space-y-4">
+                <a 
+                  href="#subscription-form" 
+                  className="block w-full bg-green-600 text-white py-3 px-6 rounded-lg text-center font-semibold hover:bg-green-700 transition-colors"
+                >
+                  Start Subscription
+                </a>
+                <p className="text-sm text-gray-500 text-center">8oz weekly at $22.50<br/>First delivery in ~3 weeks</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Interactive Subscription Form */}
+      <section id="subscription-form" className="py-16 bg-gray-50">
         <div className="max-w-4xl mx-auto px-4">
-          <div className="bg-gray-50 rounded-2xl shadow-lg p-8">
+          <div className="bg-white rounded-2xl shadow-lg p-8">
             <div className="text-center mb-8">
               <h2 className="text-3xl font-bold text-gray-900 mb-4">Start Your Restaurant Subscription</h2>
               <p className="text-lg text-gray-600">Professional-grade microgreens for your kitchen</p>
