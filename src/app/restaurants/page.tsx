@@ -187,7 +187,7 @@ export default function RestaurantsPage() {
               <div className="text-4xl mb-4">📖</div>
               <h3 className="text-lg font-bold text-gray-900 mb-3">Local Story</h3>
               <p className="text-gray-700 text-sm">
-                Feature "Mendo Grass" on your menu. Diners love knowing their food supports Mendocino County farmers.
+                Feature &ldquo;Mendo Grass&rdquo; on your menu. Diners love knowing their food supports Mendocino County farmers.
               </p>
             </div>
             
