@@ -109,10 +109,10 @@ export default function Subscriptions() {
       <section className="text-center mb-16">
         <div className="max-w-4xl mx-auto px-4">
           <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-8">
-            Subscribe to access weekly, grown-to-order microgreens & wheatgrass
+            Subscribe to Access Weekly, Grown-to-Order Microgreens & Wheatgrass
           </h1>
           <p className="text-lg text-gray-600 mb-8">
-            Join our CSA and get fresh, locally-grown microgreens delivered weekly
+            Join Our CSA and Get Fresh, Locally-Grown Microgreens Delivered Weekly
           </p>
         </div>
       </section>
@@ -122,7 +122,7 @@ export default function Subscriptions() {
         <div className="max-w-4xl mx-auto px-4">
           <div className="bg-white rounded-2xl shadow-lg p-8">
             <div className="text-center mb-8">
-              <h2 className="text-3xl font-bold text-gray-900 mb-4">Personalize your farm membership</h2>
+              <h2 className="text-3xl font-bold text-gray-900 mb-4">Personalize Your Farm Membership</h2>
               <p className="text-lg text-gray-600">Mendo Grass Subscription Plans</p>
             </div>
 

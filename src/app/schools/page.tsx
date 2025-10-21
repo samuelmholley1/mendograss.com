@@ -39,7 +39,7 @@ export default function SchoolsPage() {
             K-12 School District Subscriptions
           </h1>
           <p className="text-lg text-gray-600 mb-8">
-            Fresh, nutritious microgreens for school cafeterias and nutrition programs
+            Fresh, Nutritious Microgreens for School Cafeterias and Nutrition Programs
           </p>
         </div>
       </section>
@@ -200,7 +200,7 @@ export default function SchoolsPage() {
       {/* Final Call-to-Action */}
       <section className="py-16 bg-green-600">
         <div className="max-w-4xl mx-auto text-center px-4">
-          <h2 className="text-3xl font-bold text-white mb-4">Ready to bring fresh greens to your school?</h2>
+          <h2 className="text-3xl font-bold text-white mb-4">Ready to Bring Fresh Greens to Your School?</h2>
           <p className="text-xl text-green-100 mb-8">
             Join school districts throughout Mendocino County
           </p>
@@ -220,7 +220,6 @@ export default function SchoolsPage() {
 function SchoolSubscriptionForm() {
   const [frequency, setFrequency] = useState('weekly');
   const [paymentPlan, setPaymentPlan] = useState('monthly');
-  const [deliveryMethod, setDeliveryMethod] = useState('delivery');
 
   const basePrice = 22.50; // 8oz only
 

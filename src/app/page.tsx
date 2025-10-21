@@ -86,7 +86,7 @@ export default function Home() {
       <section className="py-16 bg-white">
         <div className="max-w-4xl mx-auto text-center px-4">
           <h2 className="text-4xl md:text-5xl font-bold text-green-600 mb-6">
-            9x the nutrients
+            9x the Nutrients
           </h2>
           <p className="text-xl text-gray-700 leading-relaxed">
             Up to nine times the nutrients and potent health benefits compared to mature greens.
@@ -98,7 +98,7 @@ export default function Home() {
       <section className="py-12 bg-green-50">
         <div className="max-w-4xl mx-auto text-center px-4">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-            Sun-grown-to-order microgreens & wheatgrass
+            Sun-Grown-to-Order Microgreens & Wheatgrass
           </h2>
           <p className="text-lg text-gray-700 italic">
             Delivering weekly to homes, workplaces, juice bars, health food stores, restaurants, and fitness centers.
@@ -168,7 +168,7 @@ export default function Home() {
       <section className="py-16 bg-green-600">
         <div className="max-w-4xl mx-auto text-center px-4">
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
-            Certified organic, from seed to soil
+            Certified Organic, From Seed to Soil
           </h2>
           <p className="text-xl text-green-100">
             Rain-watered and sustainably grown year-round.
@@ -220,7 +220,7 @@ export default function Home() {
       <section id="newsletter" className="py-16 bg-gray-50">
         <div className="max-w-4xl mx-auto text-center px-4">
           <h2 className="text-3xl font-bold text-gray-900 mb-4">
-            Get recipes and updates every month
+            Get Recipes and Updates Every Month
           </h2>
           
           <form onSubmit={handleNewsletterSubmit} className="max-w-md mx-auto">

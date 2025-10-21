@@ -39,7 +39,7 @@ export default function RestaurantsPage() {
             Restaurant & Food Service Subscriptions
           </h1>
           <p className="text-lg text-gray-600 mb-8">
-            Premium microgreens grown-to-order for chefs and culinary professionals
+            Premium Microgreens Grown-to-Order for Chefs and Culinary Professionals
           </p>
         </div>
       </section>
@@ -113,7 +113,7 @@ export default function RestaurantsPage() {
               </div>
               <h3 className="text-xl font-bold text-gray-900 mb-4">Order via text</h3>
               <p className="text-gray-700">
-                We text you weekly before we grow. Confirm your order or skip - it's that easy.
+                We text you weekly before we grow. Confirm your order or skip - it&apos;s that easy.
               </p>
             </div>
 
@@ -184,7 +184,7 @@ export default function RestaurantsPage() {
       {/* Final Call-to-Action */}
       <section className="py-16 bg-green-600">
         <div className="max-w-4xl mx-auto text-center px-4">
-          <h2 className="text-3xl font-bold text-white mb-4">Ready to elevate your menu?</h2>
+          <h2 className="text-3xl font-bold text-white mb-4">Ready to Elevate Your Menu?</h2>
           <p className="text-xl text-green-100 mb-8">
             Join leading restaurants in Mendocino and Sonoma counties
           </p>
