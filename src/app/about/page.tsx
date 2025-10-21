@@ -171,7 +171,7 @@ export default function AboutPage() {
 
         {/* Mission & Values */}
         <div className="mt-20">
-          <h2 className="text-3xl font-bold text-gray-900 text-center mb-12">Our Mission & Values</h2>
+          <h2 className="text-3xl font-bold text-gray-900 text-center mb-12">Our Mission and Values</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="text-center">
               <div className="bg-green-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">

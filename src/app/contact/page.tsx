@@ -32,7 +32,7 @@ export default function ContactPage() {
           {/* Contact Details */}
           <div className="space-y-8">
             <div>
-              <h2 className="text-3xl font-bold text-gray-900 mb-8">Get In Touch</h2>
+              <h2 className="text-3xl font-bold text-gray-900 mb-8">Get in Touch</h2>
               
               {/* Address */}
               <div className="flex items-start space-x-4 mb-6">
@@ -122,7 +122,7 @@ export default function ContactPage() {
 
           {/* Contact Form */}
           <div className="bg-gray-50 rounded-2xl p-8">
-            <h2 className="text-2xl font-bold text-gray-900 mb-6">Send us a Message</h2>
+            <h2 className="text-2xl font-bold text-gray-900 mb-6">Send Us a Message</h2>
             <form className="space-y-6">
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <div>
@@ -220,25 +220,25 @@ export default function ContactPage() {
           <h2 className="text-3xl font-bold text-gray-900 text-center mb-12">Frequently Asked Questions</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div>
-              <h3 className="text-lg font-semibold text-gray-900 mb-2">How fresh are your microgreens?</h3>
+              <h3 className="text-lg font-semibold text-gray-900 mb-2">How Fresh Are Your Microgreens?</h3>
               <p className="text-gray-600">
                 Our microgreens are harvested the same day as delivery or pickup, ensuring maximum freshness and nutrition.
               </p>
             </div>
             <div>
-              <h3 className="text-lg font-semibold text-gray-900 mb-2">Do you offer bulk pricing?</h3>
+              <h3 className="text-lg font-semibold text-gray-900 mb-2">Do You Offer Bulk Pricing?</h3>
               <p className="text-gray-600">
                 Yes! We offer wholesale pricing for restaurants, stores, and large orders. Contact us for custom pricing.
               </p>
             </div>
             <div>
-              <h3 className="text-lg font-semibold text-gray-900 mb-2">What&apos;s your delivery area?</h3>
+              <h3 className="text-lg font-semibold text-gray-900 mb-2">What&apos;s Your Delivery Area?</h3>
               <p className="text-gray-600">
                 We deliver throughout Mendocino County and surrounding areas. Contact us to confirm delivery to your location.
               </p>
             </div>
             <div>
-              <h3 className="text-lg font-semibold text-gray-900 mb-2">Can I visit the farm?</h3>
+              <h3 className="text-lg font-semibold text-gray-900 mb-2">Can I Visit the Farm?</h3>
               <p className="text-gray-600">
                 We love visitors! Please contact us to schedule a farm tour and learn about our growing process.
               </p>

@@ -67,7 +67,7 @@ export default function LaunchPage() {
               <div className="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-4">
                 <span className="text-2xl">👨‍🍳</span>
               </div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-3">Executive Chefs & Restaurateurs</h3>
+              <h3 className="text-xl font-semibold text-gray-900 mb-3">Executive Chefs and Restaurateurs</h3>
               <p className="text-gray-600 mb-4">
                 Restaurant owners, head chefs, and culinary directors seeking premium microgreens for elevated dishes.
               </p>
@@ -93,7 +93,7 @@ export default function LaunchPage() {
               <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
                 <span className="text-2xl">🏪</span>
               </div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-3">Food Distributors & Retailers</h3>
+              <h3 className="text-xl font-semibold text-gray-900 mb-3">Food Distributors and Retailers</h3>
               <p className="text-gray-600 mb-4">
                 Wholesale buyers, grocery chains, and specialty food distributors looking for premium local products.
               </p>

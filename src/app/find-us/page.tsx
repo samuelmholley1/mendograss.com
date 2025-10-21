@@ -18,7 +18,7 @@ export default function FindUsPage() {
       {/* Farmers Markets */}
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         <div className="mb-16">
-          <h2 className="text-3xl font-bold text-gray-900 text-center mb-12">Farmers Markets</h2>
+          <h2 className="text-3xl font-bold text-gray-900 text-center mb-12">Farmers&apos; Markets</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div className="bg-white border border-gray-200 rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow">
               <div className="flex items-start space-x-4">
@@ -62,7 +62,7 @@ export default function FindUsPage() {
 
         {/* Stores */}
         <div className="mb-16">
-          <h2 className="text-3xl font-bold text-gray-900 text-center mb-12">Stores & Grocers</h2>
+          <h2 className="text-3xl font-bold text-gray-900 text-center mb-12">Stores and Grocers</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             <div className="bg-white border border-gray-200 rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow">
               <div className="text-center">
@@ -158,7 +158,7 @@ export default function FindUsPage() {
 
         {/* Restaurants */}
         <div className="mb-16">
-          <h2 className="text-3xl font-bold text-gray-900 text-center mb-12">Restaurants & Cafes</h2>
+          <h2 className="text-3xl font-bold text-gray-900 text-center mb-12">Restaurants and Cafes</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div className="bg-white border border-gray-200 rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow">
               <div className="flex items-start space-x-4">
@@ -271,7 +271,7 @@ export default function FindUsPage() {
 
         {/* Contact for New Locations */}
         <div className="text-center">
-          <h2 className="text-3xl font-bold text-gray-900 mb-6">Want us at your location?</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-6">Want Us at Your Location?</h2>
           <p className="text-lg text-gray-600 mb-8 max-w-2xl mx-auto">
             Are you a store owner or restaurant chef interested in carrying our fresh microgreens? 
             We&apos;d love to partner with you to bring premium local produce to your customers.
