@@ -98,13 +98,13 @@ export default function RestaurantsPage() {
               <div className="space-y-4">
                 <a 
                   href="mailto:adam@mendograss.com" 
-                  className="block w-full bg-green-600 text-white py-3 px-6 rounded-lg text-center font-semibold hover:bg-green-700 transition-colors"
+                  className="block w-full bg-green-600 text-white py-2 px-4 rounded-lg text-center font-semibold hover:bg-green-700 transition-colors"
                 >
                   Email Us
                 </a>
                 <a 
                   href="tel:7073919659" 
-                  className="block w-full bg-white border-2 border-green-600 text-green-600 py-3 px-6 rounded-lg text-center font-semibold hover:bg-green-50 transition-colors"
+                  className="block w-full bg-white border-2 border-green-600 text-green-600 py-2 px-4 rounded-lg text-center font-semibold hover:bg-green-50 transition-colors"
                 >
                   Call (707) 391-9659
                 </a>
@@ -124,7 +124,7 @@ export default function RestaurantsPage() {
               <div className="space-y-4">
                 <a 
                   href="#subscription-form" 
-                  className="block w-full bg-green-600 text-white py-3 px-6 rounded-lg text-center font-semibold hover:bg-green-700 transition-colors"
+                  className="block w-full bg-green-600 text-white py-2 px-4 rounded-lg text-center font-semibold hover:bg-green-700 transition-colors"
                 >
                   Start Subscription
                 </a>
