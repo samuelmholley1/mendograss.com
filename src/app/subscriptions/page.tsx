@@ -151,7 +151,7 @@ export default function Subscriptions() {
                   className="mx-auto rounded-full object-cover"
                 />
               </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-4">Select a size</h3>
+              <h3 className="text-xl font-bold text-gray-900 mb-4">Select a Size</h3>
               <p className="text-gray-700">
                 Choose from two sizes of microgreens (perfect for 2 - 4 people) or a flat tray of wheatgrass for your weekly juicing.
               </p>
@@ -170,7 +170,7 @@ export default function Subscriptions() {
               </div>
               <h3 className="text-xl font-bold text-gray-900 mb-4">Subscribe</h3>
               <p className="text-gray-700">
-                Select your pickup or delivery address and enter payment once. We&apos;ll store it securely so you can order easily via SMS each week.
+                Select your pickup or delivery address and enter payment once. Your first delivery arrives within 1-2 weeks, then weekly after that.
               </p>
             </div>
 
@@ -185,10 +185,68 @@ export default function Subscriptions() {
                   className="mx-auto rounded-full object-cover"
                 />
               </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-4">Skip when needed</h3>
+              <h3 className="text-xl font-bold text-gray-900 mb-4">Skip When Needed</h3>
               <p className="text-gray-700">
                 We&apos;ll send you a text weekly before we grow – add on items or skip any week, for any reason, at no charge.
               </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Why Choose Us - Benefits */}
+      <section className="py-16 bg-green-50">
+        <div className="max-w-7xl mx-auto px-4">
+          <h2 className="text-3xl font-bold text-center text-gray-900 mb-12">Why Families Love Mendo Grass</h2>
+          
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div className="text-center">
+              <div className="text-4xl mb-4">🌱</div>
+              <h3 className="text-xl font-bold text-gray-900 mb-4">Farm-to-Table Freshness</h3>
+              <p className="text-gray-700">
+                Harvested just 1-2 days before delivery for maximum flavor and nutrition. You can taste the difference that sun-grown, locally-grown makes.
+              </p>
+            </div>
+            
+            <div className="text-center">
+              <div className="text-4xl mb-4">💚</div>
+              <h3 className="text-xl font-bold text-gray-900 mb-4">Supporting Local</h3>
+              <p className="text-gray-700">
+                Your dollars stay in Mendocino County, supporting sustainable agriculture and our farm family. Feel good about where your food comes from.
+              </p>
+            </div>
+            
+            <div className="text-center">
+              <div className="text-4xl mb-4">✨</div>
+              <h3 className="text-xl font-bold text-gray-900 mb-4">No Commitment Needed</h3>
+              <p className="text-gray-700">
+                Skip any week, swap items you don&apos;t want, or pause your subscription anytime. We make it easy and flexible for your family&apos;s needs.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Customer Testimonials */}
+      <section className="py-16 bg-white">
+        <div className="max-w-4xl mx-auto px-4">
+          <h2 className="text-3xl font-bold text-center text-gray-900 mb-12">What Our Community Says</h2>
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div className="bg-gray-50 rounded-lg p-6">
+              <div className="text-green-600 text-2xl mb-4">"</div>
+              <p className="text-gray-700 mb-4 italic">
+                I love opening the boxes every week and seeing what&apos;s in there. The microgreens are so fresh and vibrant – nothing like what you get in the store. Feels like such a treat!
+              </p>
+              <p className="text-gray-900 font-semibold">— Sarah M., Ukiah</p>
+            </div>
+            
+            <div className="bg-gray-50 rounded-lg p-6">
+              <div className="text-green-600 text-2xl mb-4">"</div>
+              <p className="text-gray-700 mb-4 italic">
+                Best decision we made this year! Supporting a local farm and getting the most nutritious greens delivered to our door. Our kids actually ask for the microgreens now!
+              </p>
+              <p className="text-gray-900 font-semibold">— James & Lisa T., Healdsburg</p>
             </div>
           </div>
         </div>

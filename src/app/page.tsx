@@ -55,32 +55,42 @@ export default function Home() {
           backgroundImage: "linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/wheatgrass_background.jpg')"
         }}
       >
-        <div className="relative z-10 text-center max-w-4xl mx-auto px-4">
-          <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 leading-tight">
-            Growing organic green goodness under the California sun
-          </h1>
-          <p className="text-xl md:text-2xl text-green-100 mb-8 max-w-3xl mx-auto">
-            Sun-grown microgreens and wheatgrass, harvested fresh and bursting with flavor—straight from our Mendocino County farm to your table.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link 
-              href="/subscriptions"
-              className="inline-block bg-green-600 text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-green-700 transition-colors shadow-lg"
-            >
-              Home Delivery
-            </Link>
-            <Link 
-              href="/restaurants"
-              className="inline-block border-2 border-white text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-white hover:text-gray-900 transition-colors"
-            >
-              Restaurants
-            </Link>
-            <Link 
-              href="/schools"
-              className="inline-block border-2 border-white text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-white hover:text-gray-900 transition-colors"
-            >
-              Schools
-            </Link>
+        <div className="relative z-10 max-w-7xl mx-auto px-4 w-full">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+            {/* Left side - Headline, Subheadline, and Tagline */}
+            <div className="text-white">
+              <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
+                Growing Organic Green Goodness Under the California Sun
+              </h1>
+              <h2 className="text-2xl md:text-3xl font-semibold text-green-300 mb-4">
+                Our Products
+              </h2>
+              <p className="text-lg md:text-xl text-green-100 leading-relaxed">
+                Sun-grown microgreens and wheatgrass, harvested fresh and bursting with flavor—straight from our Mendocino County farm to your table.
+              </p>
+            </div>
+            
+            {/* Right side - Buttons */}
+            <div className="flex flex-col gap-4">
+              <Link 
+                href="/subscriptions"
+                className="bg-green-600 text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-green-700 transition-colors shadow-lg text-center"
+              >
+                Home Delivery
+              </Link>
+              <Link 
+                href="/restaurants"
+                className="bg-green-600 text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-green-700 transition-colors shadow-lg text-center"
+              >
+                Restaurants
+              </Link>
+              <Link 
+                href="/schools"
+                className="bg-green-600 text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-green-700 transition-colors shadow-lg text-center"
+              >
+                Schools
+              </Link>
+            </div>
           </div>
         </div>
       </section>

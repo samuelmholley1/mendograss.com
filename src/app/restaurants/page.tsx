@@ -94,10 +94,17 @@ export default function RestaurantsPage() {
       {/* How It Works Section */}
       <section id="howitworks" className="py-16 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4">
-          <h2 className="text-3xl font-bold text-center text-gray-900 mb-4">How It Works</h2>
-          <p className="text-center text-lg text-gray-700 mb-12">
+          <h2 className="text-3xl font-bold text-center text-gray-900 mb-4">How It Works for Chefs</h2>
+          <p className="text-center text-lg text-gray-700 mb-8">
             Simple ordering for busy kitchens
           </p>
+          
+          <div className="bg-orange-50 border-l-4 border-orange-600 p-6 mb-12 max-w-3xl mx-auto">
+            <p className="text-orange-900">
+              <strong>New Partnerships:</strong> We typically plan new restaurant accounts about 3 weeks in advance to ensure perfect harvest timing. 
+              Contact us now to secure your spot for upcoming weekly deliveries!
+            </p>
+          </div>
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
             {/* Step 1 */}
@@ -111,9 +118,9 @@ export default function RestaurantsPage() {
                   className="mx-auto rounded-full object-cover"
                 />
               </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-4">Order via text</h3>
+              <h3 className="text-xl font-bold text-gray-900 mb-4">Order via Text</h3>
               <p className="text-gray-700">
-                We text you weekly before we grow. Confirm your order or skip - it&apos;s that easy.
+                We text you weekly before we grow. Confirm your order, adjust quantities, or skip – it&apos;s that easy. Direct line to our farm.
               </p>
             </div>
 
@@ -128,9 +135,9 @@ export default function RestaurantsPage() {
                   className="mx-auto rounded-full object-cover"
                 />
               </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-4">We grow fresh</h3>
+              <h3 className="text-xl font-bold text-gray-900 mb-4">We Grow Fresh</h3>
               <p className="text-gray-700">
-                Your greens are grown to order under the California sun, ensuring peak freshness.
+                Your greens are grown to order under the California sun. Harvested the morning of delivery for unbeatable peak freshness.
               </p>
             </div>
 
@@ -145,10 +152,76 @@ export default function RestaurantsPage() {
                   className="mx-auto rounded-full object-cover"
                 />
               </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-4">Delivered weekly</h3>
+              <h3 className="text-xl font-bold text-gray-900 mb-4">Delivered Weekly</h3>
               <p className="text-gray-700">
-                Choose delivery to your restaurant or pickup at one of our local farmers markets.
+                Choose delivery to your restaurant or pickup at one of our local farmers markets. Consistent timing you can count on.
               </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Why Chefs Choose Us */}
+      <section className="py-16 bg-white">
+        <div className="max-w-7xl mx-auto px-4">
+          <h2 className="text-3xl font-bold text-center text-gray-900 mb-12">Why Chefs Partner with Mendo Grass</h2>
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div className="text-center">
+              <div className="text-4xl mb-4">✨</div>
+              <h3 className="text-lg font-bold text-gray-900 mb-3">Peak Flavor</h3>
+              <p className="text-gray-700 text-sm">
+                Harvested same-day for delivery. The vibrant flavor and texture far surpass distributor options – your diners will notice.
+              </p>
+            </div>
+            
+            <div className="text-center">
+              <div className="text-4xl mb-4">🌿</div>
+              <h3 className="text-lg font-bold text-gray-900 mb-3">Specialty Varieties</h3>
+              <p className="text-gray-700 text-sm">
+                We grow heirloom and specialty microgreens you can&apos;t find elsewhere. Unique ingredients for distinguished menus.
+              </p>
+            </div>
+            
+            <div className="text-center">
+              <div className="text-4xl mb-4">📖</div>
+              <h3 className="text-lg font-bold text-gray-900 mb-3">Local Story</h3>
+              <p className="text-gray-700 text-sm">
+                Feature "Mendo Grass" on your menu. Diners love knowing their food supports Mendocino County farmers.
+              </p>
+            </div>
+            
+            <div className="text-center">
+              <div className="text-4xl mb-4">🤝</div>
+              <h3 className="text-lg font-bold text-gray-900 mb-3">Personal Support</h3>
+              <p className="text-gray-700 text-sm">
+                Direct communication with our farm team. Special requests? Custom growing? Let&apos;s collaborate on your seasonal menu.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Chef Testimonials */}
+      <section className="py-16 bg-gray-50">
+        <div className="max-w-4xl mx-auto px-4">
+          <h2 className="text-3xl font-bold text-center text-gray-900 mb-12">What Chefs Are Saying</h2>
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div className="bg-white rounded-lg p-6 shadow-md">
+              <div className="text-green-600 text-2xl mb-4">"</div>
+              <p className="text-gray-700 mb-4 italic">
+                The quality and freshness of Mendo Grass microgreens are outstanding. They arrive vibrant and full of flavor – exactly what we need to elevate our farm-to-table menu.
+              </p>
+              <p className="text-gray-900 font-semibold">— Executive Chef, Healdsburg Bistro</p>
+            </div>
+            
+            <div className="bg-white rounded-lg p-6 shadow-md">
+              <div className="text-green-600 text-2xl mb-4">"</div>
+              <p className="text-gray-700 mb-4 italic">
+                Working with Mendo Grass has been fantastic. Reliable weekly deliveries, beautiful greens, and Adam is always responsive. It&apos;s like having a farm partner in your kitchen.
+              </p>
+              <p className="text-gray-900 font-semibold">— Chef/Owner, Sonoma County Restaurant</p>
             </div>
           </div>
         </div>

@@ -94,10 +94,17 @@ export default function SchoolsPage() {
       {/* How It Works Section */}
       <section id="howitworks" className="py-16 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4">
-          <h2 className="text-3xl font-bold text-center text-gray-900 mb-4">How It Works</h2>
-          <p className="text-center text-lg text-gray-700 mb-12">
+          <h2 className="text-3xl font-bold text-center text-gray-900 mb-4">How It Works for Schools</h2>
+          <p className="text-center text-lg text-gray-700 mb-8">
             Simple ordering designed for school schedules
           </p>
+          
+          <div className="bg-blue-50 border-l-4 border-blue-600 p-6 mb-12 max-w-3xl mx-auto">
+            <p className="text-blue-900">
+              <strong>Getting Started:</strong> We typically plan new school partnerships about 3 weeks in advance to coordinate crop harvests. 
+              Reach out now to secure your start date for upcoming deliveries!
+            </p>
+          </div>
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
             {/* Step 1 */}
@@ -111,9 +118,9 @@ export default function SchoolsPage() {
                   className="mx-auto rounded-full object-cover"
                 />
               </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-4">Weekly confirmation</h3>
+              <h3 className="text-xl font-bold text-gray-900 mb-4">Weekly Confirmation</h3>
               <p className="text-gray-700">
-                We text your food service director weekly. Confirm quantities or skip during breaks.
+                We text your food service director weekly. Confirm quantities or skip during breaks – completely flexible.
               </p>
             </div>
 
@@ -128,9 +135,9 @@ export default function SchoolsPage() {
                   className="mx-auto rounded-full object-cover"
                 />
               </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-4">Grown fresh</h3>
+              <h3 className="text-xl font-bold text-gray-900 mb-4">Grown Fresh</h3>
               <p className="text-gray-700">
-                Your microgreens are grown to order, ensuring maximum freshness and nutritional value.
+                Your microgreens are grown to order, ensuring maximum freshness, nutritional value, and food safety.
               </p>
             </div>
 
@@ -145,9 +152,46 @@ export default function SchoolsPage() {
                   className="mx-auto rounded-full object-cover"
                 />
               </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-4">Delivered on time</h3>
+              <h3 className="text-xl font-bold text-gray-900 mb-4">Delivered on Time</h3>
               <p className="text-gray-700">
-                Reliable delivery to your school or district office, scheduled around your needs.
+                Reliable delivery to your school or district office, scheduled around your receiving hours and meal prep needs.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Quality & Compliance */}
+      <section className="py-16 bg-white">
+        <div className="max-w-4xl mx-auto px-4">
+          <h2 className="text-3xl font-bold text-center text-gray-900 mb-8">Quality You Can Trust</h2>
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div className="bg-green-50 rounded-lg p-6">
+              <h3 className="text-xl font-semibold text-gray-900 mb-3">🌱 Certified Organic</h3>
+              <p className="text-gray-700">
+                All our produce is organically grown without synthetic pesticides or fertilizers. USDA Certified Organic – certificates available upon request.
+              </p>
+            </div>
+            
+            <div className="bg-green-50 rounded-lg p-6">
+              <h3 className="text-xl font-semibold text-gray-900 mb-3">🥗 Food Safety</h3>
+              <p className="text-gray-700">
+                Harvested by hand, washed, and packed in our clean facility. Kept at proper cold temperatures from harvest to delivery.
+              </p>
+            </div>
+            
+            <div className="bg-green-50 rounded-lg p-6">
+              <h3 className="text-xl font-semibold text-gray-900 mb-3">🚚 Consistent Supply</h3>
+              <p className="text-gray-700">
+                We plan our growing schedule to meet your school&apos;s needs reliably, with backup plans to ensure you&apos;re never left short.
+              </p>
+            </div>
+            
+            <div className="bg-green-50 rounded-lg p-6">
+              <h3 className="text-xl font-semibold text-gray-900 mb-3">💼 Easy Procurement</h3>
+              <p className="text-gray-700">
+                Net 15 payment terms available. We work within your district&apos;s procurement process and can provide any necessary paperwork.
               </p>
             </div>
           </div>
@@ -332,11 +376,12 @@ function SchoolSubscriptionForm() {
         </div>
         
         <button className="w-full bg-green-600 text-white py-4 rounded-lg text-lg font-semibold hover:bg-green-700 transition-colors">
-          Request Information
+          Contact Us to Get Started
         </button>
         
         <p className="text-center text-sm text-gray-500 mt-4">
-          Questions? Contact us at adam@mendograss.com or call (707) 391-9659
+          <strong>Let&apos;s talk!</strong> Contact us at <a href="mailto:adam@mendograss.com" className="text-green-600 hover:underline">adam@mendograss.com</a> or call <a href="tel:7073919659" className="text-green-600 hover:underline">(707) 391-9659</a>.<br/>
+          We&apos;ll respond within 1-2 business days to discuss your school&apos;s needs.
         </p>
       </div>
     </div>
