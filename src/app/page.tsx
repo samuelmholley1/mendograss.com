@@ -56,12 +56,17 @@ export default function Home() {
         }}
       >
         <div className="relative z-10 max-w-7xl mx-auto px-4 w-full">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
-            {/* Left side - Headline, Subheadline, and Tagline */}
+          {/* Centered Headline at Top */}
+          <div className="text-center mb-12">
+            <h1 className="text-5xl md:text-7xl font-bold text-white leading-tight">
+              Growing Organic Green Goodness Under the California Sun
+            </h1>
+          </div>
+          
+          {/* Two Column Layout Below */}
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start">
+            {/* Left side - Subheadline and Tagline */}
             <div className="text-white">
-              <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
-                Growing Organic Green Goodness Under the California Sun
-              </h1>
               <h2 className="text-2xl md:text-3xl font-semibold text-green-300 mb-4">
                 Our Products
               </h2>
@@ -70,23 +75,23 @@ export default function Home() {
               </p>
             </div>
             
-            {/* Right side - Buttons */}
-            <div className="flex flex-col gap-4">
+            {/* Right side - Buttons (smaller) */}
+            <div className="flex flex-col gap-3">
               <Link 
                 href="/subscriptions"
-                className="bg-green-600 text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-green-700 transition-colors shadow-lg text-center"
+                className="bg-green-600 text-white px-6 py-3 rounded-full text-base font-semibold hover:bg-green-700 transition-colors shadow-lg text-center"
               >
                 Home Delivery
               </Link>
               <Link 
                 href="/restaurants"
-                className="bg-green-600 text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-green-700 transition-colors shadow-lg text-center"
+                className="bg-green-600 text-white px-6 py-3 rounded-full text-base font-semibold hover:bg-green-700 transition-colors shadow-lg text-center"
               >
                 Restaurants
               </Link>
               <Link 
                 href="/schools"
-                className="bg-green-600 text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-green-700 transition-colors shadow-lg text-center"
+                className="bg-green-600 text-white px-6 py-3 rounded-full text-base font-semibold hover:bg-green-700 transition-colors shadow-lg text-center"
               >
                 Schools
               </Link>
