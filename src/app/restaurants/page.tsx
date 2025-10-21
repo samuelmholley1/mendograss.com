@@ -126,9 +126,9 @@ export default function RestaurantsPage() {
                   href="#subscription-form" 
                   className="block w-full bg-green-600 text-white py-2 px-4 rounded-lg text-center font-semibold hover:bg-green-700 transition-colors"
                 >
-                  Start Subscription
+                  View Product Menu
                 </a>
-                <p className="text-sm text-gray-500 text-center">8oz weekly at $22.50<br/>First delivery in ~3 weeks</p>
+                <p className="text-sm text-gray-500 text-center">$30 per tray<br/>First delivery in ~3 weeks</p>
               </div>
             </div>
           </div>
@@ -137,14 +137,117 @@ export default function RestaurantsPage() {
 
       {/* Interactive Subscription Form */}
       <section id="subscription-form" className="py-16 bg-gray-50">
-        <div className="max-w-4xl mx-auto px-4">
+        <div className="max-w-6xl mx-auto px-4">
           <div className="bg-white rounded-2xl shadow-lg p-8">
             <div className="text-center mb-8">
-              <h2 className="text-3xl font-bold text-gray-900 mb-4">Start Your Restaurant Subscription</h2>
-              <p className="text-lg text-gray-600">Professional-grade microgreens for your kitchen</p>
+              <h2 className="text-3xl font-bold text-gray-900 mb-4">Our Fall Menu</h2>
+              <p className="text-lg text-gray-600 mb-2">
+                We deliver our certified-organic, grown-to-order microgreens to your restaurant weekly!
+              </p>
+              <p className="text-gray-600 mb-6">
+                Our greens are harvested within 24 hours of delivery to guarantee peak freshness.
+              </p>
+              <div className="inline-block bg-green-50 border-2 border-green-600 rounded-lg px-6 py-3">
+                <p className="text-2xl font-bold text-green-700">$30 per tray</p>
+                <p className="text-sm text-gray-600">Sold by the tray • Product variability accepted</p>
+              </div>
             </div>
 
-            <RestaurantSubscriptionForm />
+            {/* Product Table */}
+            <div className="overflow-x-auto mb-8">
+              <table className="w-full border-collapse">
+                <thead>
+                  <tr className="bg-gray-100">
+                    <th className="border border-gray-300 px-4 py-3 text-left font-semibold text-gray-900">Crop</th>
+                    <th className="border border-gray-300 px-4 py-3 text-left font-semibold text-gray-900"># of Clamshells</th>
+                    <th className="border border-gray-300 px-4 py-3 text-left font-semibold text-gray-900">Weight/Clamshell</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr className="hover:bg-gray-50">
+                    <td className="border border-gray-300 px-4 py-3 font-medium text-gray-900">Pea Shoots</td>
+                    <td className="border border-gray-300 px-4 py-3 text-gray-700">4</td>
+                    <td className="border border-gray-300 px-4 py-3 text-gray-700">3 oz</td>
+                  </tr>
+                  <tr className="hover:bg-gray-50">
+                    <td className="border border-gray-300 px-4 py-3 font-medium text-gray-900">Sunflower</td>
+                    <td className="border border-gray-300 px-4 py-3 text-gray-700">4</td>
+                    <td className="border border-gray-300 px-4 py-3 text-gray-700">3 oz</td>
+                  </tr>
+                  <tr className="hover:bg-gray-50">
+                    <td className="border border-gray-300 px-4 py-3 font-medium text-gray-900">Emerald Fire Mix</td>
+                    <td className="border border-gray-300 px-4 py-3 text-gray-700">4</td>
+                    <td className="border border-gray-300 px-4 py-3 text-gray-700">3 oz</td>
+                  </tr>
+                  <tr className="hover:bg-gray-50">
+                    <td className="border border-gray-300 px-4 py-3 font-medium text-gray-900">Chef&apos;s Blend</td>
+                    <td className="border border-gray-300 px-4 py-3 text-gray-700">3</td>
+                    <td className="border border-gray-300 px-4 py-3 text-gray-700">2.5 oz</td>
+                  </tr>
+                  <tr className="hover:bg-gray-50">
+                    <td className="border border-gray-300 px-4 py-3 font-medium text-gray-900">Radish</td>
+                    <td className="border border-gray-300 px-4 py-3 text-gray-700">3</td>
+                    <td className="border border-gray-300 px-4 py-3 text-gray-700">2.5 oz</td>
+                  </tr>
+                  <tr className="hover:bg-gray-50">
+                    <td className="border border-gray-300 px-4 py-3 font-medium text-gray-900">Buckwheat</td>
+                    <td className="border border-gray-300 px-4 py-3 text-gray-700">3</td>
+                    <td className="border border-gray-300 px-4 py-3 text-gray-700">3 oz</td>
+                  </tr>
+                  <tr className="hover:bg-gray-50">
+                    <td className="border border-gray-300 px-4 py-3 font-medium text-gray-900">Leek</td>
+                    <td className="border border-gray-300 px-4 py-3 text-gray-700">2</td>
+                    <td className="border border-gray-300 px-4 py-3 text-gray-700">1.5 oz</td>
+                  </tr>
+                  <tr className="hover:bg-gray-50">
+                    <td className="border border-gray-300 px-4 py-3 font-medium text-gray-900">Cilantro</td>
+                    <td className="border border-gray-300 px-4 py-3 text-gray-700">2</td>
+                    <td className="border border-gray-300 px-4 py-3 text-gray-700">1.5 oz</td>
+                  </tr>
+                  <tr className="hover:bg-gray-50">
+                    <td className="border border-gray-300 px-4 py-3 font-medium text-gray-900">Nasturtium</td>
+                    <td className="border border-gray-300 px-4 py-3 text-gray-700">2</td>
+                    <td className="border border-gray-300 px-4 py-3 text-gray-700">1.5 oz</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            {/* Custom Mix Builder */}
+            <div className="bg-green-50 border-2 border-green-200 rounded-xl p-6 mb-6">
+              <div className="text-center mb-4">
+                <h3 className="text-xl font-bold text-gray-900 mb-2">🎨 Create Your Custom Mix</h3>
+                <p className="text-gray-700">
+                  Want a custom blend tailored to your menu? We can create a signature mix just for your restaurant.
+                </p>
+              </div>
+              <div className="text-center">
+                <a 
+                  href="mailto:adam@mendograss.com?subject=Custom%20Mix%20Request" 
+                  className="inline-block bg-green-600 text-white py-2 px-6 rounded-lg font-semibold hover:bg-green-700 transition-colors"
+                >
+                  Request Custom Mix
+                </a>
+              </div>
+            </div>
+
+            {/* Bulk Pricing */}
+            <div className="bg-blue-50 border-2 border-blue-200 rounded-xl p-6 text-center">
+              <h3 className="text-lg font-bold text-gray-900 mb-2">💼 Interested in Buying in Bulk?</h3>
+              <p className="text-gray-700 mb-4">
+                Let us know and we&apos;ll work out a custom quote for higher volume orders.
+              </p>
+              <a 
+                href="mailto:adam@mendograss.com?subject=Bulk%20Pricing%20Inquiry" 
+                className="inline-block bg-blue-600 text-white py-2 px-6 rounded-lg font-semibold hover:bg-blue-700 transition-colors"
+              >
+                Contact Us for Bulk Pricing
+              </a>
+            </div>
+
+            <p className="text-center text-sm text-gray-500 mt-6">
+              Note: Different products provide different yields per tray. When you buy by the tray, you accept product variability.
+            </p>
           </div>
         </div>
       </section>
