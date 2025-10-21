@@ -56,15 +56,18 @@ export default function Home() {
         }}
       >
         <div className="relative z-10 text-center max-w-4xl mx-auto px-4">
-          <h1 className="text-5xl md:text-7xl font-bold text-white mb-8 leading-tight">
+          <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 leading-tight">
             Growing organic green goodness under the California sun
           </h1>
+          <p className="text-xl md:text-2xl text-green-100 mb-8 max-w-3xl mx-auto">
+            Sun-grown microgreens and wheatgrass, harvested fresh and bursting with flavor—straight from our Mendocino County farm to your table.
+          </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link 
               href="/subscriptions"
               className="inline-block bg-green-600 text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-green-700 transition-colors shadow-lg"
             >
-              Shop
+              Home Delivery
             </Link>
             <Link 
               href="/restaurants"
