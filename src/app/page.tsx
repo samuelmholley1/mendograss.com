@@ -85,6 +85,17 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Premier Description */}
+      <section className="py-16 bg-white">
+        <div className="max-w-5xl mx-auto text-center px-4">
+          <p className="text-2xl md:text-3xl text-gray-800 leading-relaxed font-light">
+            Mendo Grass is Northern California&apos;s premier organic microgreen and wheatgrass farm, 
+            distributing to specialty food stores, restaurants, and school districts throughout Mendocino and Sonoma counties—plus 
+            direct home delivery subscriptions and farmers&apos; markets.
+          </p>
+        </div>
+      </section>
+
       {/* 9x Nutrients Section */}
       <section className="py-16 bg-white">
         <div className="max-w-4xl mx-auto text-center px-4">
@@ -176,6 +187,81 @@ export default function Home() {
           <p className="text-xl text-green-100">
             Rain-watered and sustainably grown year-round.
           </p>
+        </div>
+      </section>
+
+      {/* Why Mendo Grass - Four Pillars */}
+      <section className="py-16 bg-white">
+        <div className="max-w-7xl mx-auto px-4">
+          <h2 className="text-4xl font-bold text-gray-900 text-center mb-12">Why Mendo Grass?</h2>
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            {/* Truly Local */}
+            <div className="bg-green-50 rounded-xl p-8 border-l-4 border-green-600">
+              <div className="flex items-start space-x-4">
+                <div className="bg-green-600 rounded-full w-12 h-12 flex items-center justify-center flex-shrink-0">
+                  <span className="text-white text-2xl">🌲</span>
+                </div>
+                <div>
+                  <h3 className="text-2xl font-bold text-gray-900 mb-3">Truly Local!</h3>
+                  <p className="text-gray-700 leading-relaxed">
+                    Our farm is located right here in Redwood Valley, just minutes from Ukiah. We&apos;re rooted in Mendocino County soil, 
+                    growing food for our neighbors and community. All our greens are grown, harvested, and packed on-site.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            {/* Super Fresh */}
+            <div className="bg-blue-50 rounded-xl p-8 border-l-4 border-blue-600">
+              <div className="flex items-start space-x-4">
+                <div className="bg-blue-600 rounded-full w-12 h-12 flex items-center justify-center flex-shrink-0">
+                  <span className="text-white text-2xl">⚡</span>
+                </div>
+                <div>
+                  <h3 className="text-2xl font-bold text-gray-900 mb-3">Super Fresh!</h3>
+                  <p className="text-gray-700 leading-relaxed">
+                    Our microgreens are harvested-to-order and in your hands right away. We believe freshness is key—for taste and for health. 
+                    Email us at <a href="mailto:adam@mendograss.com" className="text-blue-600 hover:underline">adam@mendograss.com</a> to 
+                    start a procurement relationship!
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            {/* Educational Programming */}
+            <div className="bg-yellow-50 rounded-xl p-8 border-l-4 border-yellow-600">
+              <div className="flex items-start space-x-4">
+                <div className="bg-yellow-600 rounded-full w-12 h-12 flex items-center justify-center flex-shrink-0">
+                  <span className="text-white text-2xl">📚</span>
+                </div>
+                <div>
+                  <h3 className="text-2xl font-bold text-gray-900 mb-3">Educational Opportunities!</h3>
+                  <p className="text-gray-700 leading-relaxed">
+                    We&apos;re planning to host school classes for hands-on ag-ed projects and farm field trips. 
+                    Let kids know who grows their food! Contact us to learn more about future educational programming 
+                    and partnership opportunities with local schools.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            {/* Special Events */}
+            <div className="bg-purple-50 rounded-xl p-8 border-l-4 border-purple-600">
+              <div className="flex items-start space-x-4">
+                <div className="bg-purple-600 rounded-full w-12 h-12 flex items-center justify-center flex-shrink-0">
+                  <span className="text-white text-2xl">🎉</span>
+                </div>
+                <div>
+                  <h3 className="text-2xl font-bold text-gray-900 mb-3">Special Events!</h3>
+                  <p className="text-gray-700 leading-relaxed">
+                    While our farm isn&apos;t open to the general public for daily visits, we host special events throughout the year. 
+                    Sign up for our newsletter below to stay updated on farm tours, harvest events, and community gatherings!
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
