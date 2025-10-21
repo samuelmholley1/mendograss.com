@@ -61,7 +61,21 @@ export default function Navbar() {
                 className="text-gray-700 hover:text-green-600 px-3 py-2 text-sm font-medium transition-colors"
                 onClick={closeMenu}
               >
-                Subscriptions
+                Shop
+              </Link>
+              <Link
+                href="/restaurants"
+                className="text-gray-700 hover:text-green-600 px-3 py-2 text-sm font-medium transition-colors"
+                onClick={closeMenu}
+              >
+                Restaurants
+              </Link>
+              <Link
+                href="/schools"
+                className="text-gray-700 hover:text-green-600 px-3 py-2 text-sm font-medium transition-colors"
+                onClick={closeMenu}
+              >
+                Schools
               </Link>
               <div className="relative group">
                 <button className="text-gray-700 hover:text-green-600 px-3 py-2 text-sm font-medium transition-colors flex items-center">
@@ -166,7 +180,21 @@ export default function Navbar() {
                 className="text-gray-700 hover:text-green-600 block px-3 py-2 text-base font-medium transition-colors"
                 onClick={closeMenu}
               >
-                Subscriptions
+                Shop
+              </Link>
+              <Link
+                href="/restaurants"
+                className="text-gray-700 hover:text-green-600 block px-3 py-2 text-base font-medium transition-colors"
+                onClick={closeMenu}
+              >
+                Restaurants
+              </Link>
+              <Link
+                href="/schools"
+                className="text-gray-700 hover:text-green-600 block px-3 py-2 text-base font-medium transition-colors"
+                onClick={closeMenu}
+              >
+                Schools
               </Link>
               <div className="px-3">
                 <div className="text-gray-700 py-2 text-base font-medium">Newsletter</div>

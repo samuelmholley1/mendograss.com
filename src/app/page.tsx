@@ -67,10 +67,16 @@ export default function Home() {
               Shop
             </Link>
             <Link 
-              href="/wholesale"
+              href="/restaurants"
               className="inline-block border-2 border-white text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-white hover:text-gray-900 transition-colors"
             >
-              Wholesale Orders
+              Restaurants
+            </Link>
+            <Link 
+              href="/schools"
+              className="inline-block border-2 border-white text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-white hover:text-gray-900 transition-colors"
+            >
+              Schools
             </Link>
           </div>
         </div>
