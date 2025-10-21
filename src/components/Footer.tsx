@@ -56,7 +56,6 @@ export default function Footer() {
                 <h4 className="font-medium text-white">Saturdays</h4>
                 <p className="text-gray-300 text-sm">
                   Healdsburg Farmers Market<br />
-                  Santa Rosa Farmers Market<br />
                   Ukiah Farmers Market
                 </p>
               </div>
@@ -69,9 +68,9 @@ export default function Footer() {
             </div>
           </div>
 
-          {/* Stores & Restaurants Section */}
+          {/* Current Clients Section */}
           <div>
-            <h3 className="text-lg font-semibold mb-4 text-green-400">Stores & Restaurants</h3>
+            <h3 className="text-lg font-semibold mb-4 text-green-400">Current Clients</h3>
             <div className="space-y-3">
               <div>
                 <h4 className="font-medium text-white">Grocers</h4>
@@ -83,11 +82,25 @@ export default function Footer() {
               <div>
                 <h4 className="font-medium text-white">Restaurants</h4>
                 <p className="text-gray-300 text-sm">
-                  Asahi Sushi & Kitchen<br />
+                  Acorn Cafe<br />
+                  Aroma de Cafe<br />
                   Black Oak Coffee Roasters<br />
+                  Brew<br />
+                  Cousteaux<br />
+                  Dry Creek Kitchen<br />
+                  Goldfinch<br />
                   Mama&apos;s Cafe<br />
+                  Namaste Cafe<br />
                   Pizzando<br />
-                  Troubadour
+                  Troubadour<br />
+                  Ukiah Brewing Company
+                </p>
+              </div>
+              <div>
+                <h4 className="font-medium text-white">School Districts</h4>
+                <p className="text-gray-300 text-sm">
+                  Kelseyville Unified School District<br />
+                  <span className="text-gray-400 italic">And coming to others soon</span>
                 </p>
               </div>
             </div>
