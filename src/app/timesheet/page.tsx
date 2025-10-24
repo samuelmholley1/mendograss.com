@@ -95,6 +95,17 @@ export default function TimesheetPage() {
       amount: 55,
       paid: false,
     },
+    {
+      id: "e6",
+      date: "2025-10-24",
+      start: "10:45 AM",
+      end: "2:30 PM",
+      description: "Farm work",
+      location: "Road B Farm",
+      hours: 3.75,
+      amount: 75,
+      paid: false,
+    },
     // Example paid item (kept for demonstration). If paid items exist they'll appear in the Paid table.
     // {
     //   id: 'p1',
@@ -179,6 +190,7 @@ export default function TimesheetPage() {
         {/* Current Period - Unpaid */}
         <div className="mb-8">
           <h2 className="text-xl font-bold text-gray-900 mb-3">Current Period - Unpaid</h2>
+          <p className="text-sm text-gray-600 mb-2">Scroll right to see description and location →</p>
           <div className="overflow-x-auto border-2 border-gray-900 rounded-md">
             <table
               role="table"
@@ -187,38 +199,39 @@ export default function TimesheetPage() {
             >
               <thead>
                 <tr className="bg-gray-900 text-white">
-                  <th className="border border-gray-900 px-3 py-3 text-left text-sm font-bold w-32">Date</th>
-                  <th className="border border-gray-900 px-3 py-3 text-left text-sm font-bold w-28">Start Time</th>
-                  <th className="border border-gray-900 px-3 py-3 text-left text-sm font-bold w-28">End Time</th>
-                  <th className="border border-gray-900 px-3 py-3 text-left text-sm font-bold">Description</th>
-                  <th className="border border-gray-900 px-3 py-3 text-left text-sm font-bold">Location</th>
-                  <th className="border border-gray-900 px-3 py-3 text-left text-sm font-bold w-24">Hours</th>
-                  <th className="border border-gray-900 px-3 py-3 text-right text-sm font-bold w-28">Amount</th>
-                  <th className="border border-gray-900 px-3 py-3 text-center text-sm font-bold w-32">Paid?</th>
+                  <th className="border border-gray-900 px-2 py-3 text-left text-xs font-bold w-24">Date</th>
+                  <th className="border border-gray-900 px-2 py-3 text-left text-xs font-bold w-20">Start</th>
+                  <th className="border border-gray-900 px-2 py-3 text-left text-xs font-bold w-20">End</th>
+                  <th className="border border-gray-900 px-2 py-3 text-left text-xs font-bold w-16">Hours</th>
+                  <th className="border border-gray-900 px-2 py-3 text-right text-xs font-bold w-20">Amount</th>
+                  <th className="border border-gray-900 px-2 py-3 text-center text-xs font-bold w-20">Paid?</th>
+                  <th className="border border-gray-900 px-3 py-3 text-left text-xs font-bold min-w-[200px]">Description</th>
+                  <th className="border border-gray-900 px-3 py-3 text-left text-xs font-bold min-w-[200px]">Location</th>
                 </tr>
               </thead>
               <tbody>
                 {unpaidEntries.map((row, idx) => (
                   <tr key={row.id} className={idx % 2 === 0 ? "bg-gray-50" : "bg-white"}>
-                    <td className="border border-gray-300 px-3 py-3 text-sm text-gray-900">{row.date}</td>
-                    <td className="border border-gray-300 px-3 py-3 text-sm text-gray-900">{row.start ?? '—'}</td>
-                    <td className="border border-gray-300 px-3 py-3 text-sm text-gray-900">{row.end ?? '—'}</td>
-                    <td className="border border-gray-300 px-3 py-3 text-sm text-gray-900">{row.description}</td>
-                    <td className="border border-gray-300 px-3 py-3 text-sm text-gray-900">{row.location}</td>
-                    <td className="border border-gray-300 px-3 py-3 text-sm text-gray-900">{row.hours.toFixed(2)}</td>
-                    <td className="border border-gray-300 px-3 py-3 text-sm text-gray-900 text-right">${row.amount.toFixed(2)}</td>
-                    <td className="border border-gray-300 px-3 py-3 text-sm text-gray-600 text-center">{row.paid ? 'Yes' : 'Not yet'}</td>
+                    <td className="border border-gray-300 px-2 py-2 text-xs text-gray-900 whitespace-nowrap">{row.date}</td>
+                    <td className="border border-gray-300 px-2 py-2 text-xs text-gray-900 whitespace-nowrap">{row.start ?? '—'}</td>
+                    <td className="border border-gray-300 px-2 py-2 text-xs text-gray-900 whitespace-nowrap">{row.end ?? '—'}</td>
+                    <td className="border border-gray-300 px-2 py-2 text-xs text-gray-900">{row.hours.toFixed(2)}</td>
+                    <td className="border border-gray-300 px-2 py-2 text-xs text-gray-900 text-right whitespace-nowrap">${row.amount.toFixed(2)}</td>
+                    <td className="border border-gray-300 px-2 py-2 text-xs text-gray-600 text-center whitespace-nowrap">{row.paid ? 'Yes' : 'Not yet'}</td>
+                    <td className="border border-gray-300 px-3 py-2 text-xs text-gray-900">{row.description}</td>
+                    <td className="border border-gray-300 px-3 py-2 text-xs text-gray-900">{row.location}</td>
                   </tr>
                 ))}
 
                 {/* TOTAL */}
                 <tr className="bg-gray-900 text-white font-bold">
-                  <td className="border border-gray-900 px-3 py-3 text-sm" colSpan={5}>
-                    TOTAL HOURS & PAY
+                  <td className="border border-gray-900 px-2 py-3 text-xs" colSpan={3}>
+                    TOTAL
                   </td>
-                  <td className="border border-gray-900 px-3 py-3 text-sm">{totalHours.toFixed(2)}</td>
-                  <td className="border border-gray-900 px-3 py-3 text-sm text-right">${totalAmount.toFixed(2)}</td>
-                  <td className="border border-gray-900 px-3 py-3 text-sm text-center">—</td>
+                  <td className="border border-gray-900 px-2 py-3 text-xs">{totalHours.toFixed(2)}</td>
+                  <td className="border border-gray-900 px-2 py-3 text-xs text-right">${totalAmount.toFixed(2)}</td>
+                  <td className="border border-gray-900 px-2 py-3 text-xs text-center">—</td>
+                  <td className="border border-gray-900 px-3 py-3 text-xs" colSpan={2}></td>
                 </tr>
               </tbody>
             </table>
@@ -228,18 +241,19 @@ export default function TimesheetPage() {
         {/* Payment History - Paid Items (reverse-chronological by paidDate) */}
         <div className="mb-8">
           <h2 className="text-xl font-bold text-gray-900 mb-3">Payment History (Paid)</h2>
+          <p className="text-sm text-gray-600 mb-2">Scroll right to see description and location →</p>
           <div className="overflow-x-auto border-2 border-gray-900 rounded-md">
             <table role="table" aria-label="Paid entries" className="min-w-[900px] w-full border-collapse bg-white">
               <thead>
                 <tr className="bg-gray-900 text-white">
-                  <th className="border border-gray-900 px-3 py-3 text-left text-sm font-bold w-32">Date Worked</th>
-                  <th className="border border-gray-900 px-3 py-3 text-left text-sm font-bold w-28">Start Time</th>
-                  <th className="border border-gray-900 px-3 py-3 text-left text-sm font-bold w-28">End Time</th>
-                  <th className="border border-gray-900 px-3 py-3 text-left text-sm font-bold">Description</th>
-                  <th className="border border-gray-900 px-3 py-3 text-left text-sm font-bold">Location</th>
-                  <th className="border border-gray-900 px-3 py-3 text-left text-sm font-bold w-24">Hours</th>
-                  <th className="border border-gray-900 px-3 py-3 text-right text-sm font-bold w-28">Amount</th>
-                  <th className="border border-gray-900 px-3 py-3 text-center text-sm font-bold w-32">Paid Date</th>
+                  <th className="border border-gray-900 px-2 py-3 text-left text-xs font-bold w-24">Date</th>
+                  <th className="border border-gray-900 px-2 py-3 text-left text-xs font-bold w-20">Start</th>
+                  <th className="border border-gray-900 px-2 py-3 text-left text-xs font-bold w-20">End</th>
+                  <th className="border border-gray-900 px-2 py-3 text-left text-xs font-bold w-16">Hours</th>
+                  <th className="border border-gray-900 px-2 py-3 text-right text-xs font-bold w-20">Amount</th>
+                  <th className="border border-gray-900 px-2 py-3 text-center text-xs font-bold w-24">Paid Date</th>
+                  <th className="border border-gray-900 px-3 py-3 text-left text-xs font-bold min-w-[200px]">Description</th>
+                  <th className="border border-gray-900 px-3 py-3 text-left text-xs font-bold min-w-[200px]">Location</th>
                 </tr>
               </thead>
               <tbody>
@@ -252,14 +266,14 @@ export default function TimesheetPage() {
                 ) : (
                   paidEntries.map((row, idx) => (
                     <tr key={row.id} className={idx % 2 === 0 ? "bg-gray-50" : "bg-white"}>
-                      <td className="border border-gray-300 px-3 py-3 text-sm text-gray-900">{row.date}</td>
-                      <td className="border border-gray-300 px-3 py-3 text-sm text-gray-900">{row.start ?? '—'}</td>
-                      <td className="border border-gray-300 px-3 py-3 text-sm text-gray-900">{row.end ?? '—'}</td>
-                      <td className="border border-gray-300 px-3 py-3 text-sm text-gray-900">{row.description}</td>
-                      <td className="border border-gray-300 px-3 py-3 text-sm text-gray-900">{row.location}</td>
-                      <td className="border border-gray-300 px-3 py-3 text-sm text-gray-900">{row.hours.toFixed(2)}</td>
-                      <td className="border border-gray-300 px-3 py-3 text-sm text-gray-900 text-right">${row.amount.toFixed(2)}</td>
-                      <td className="border border-gray-300 px-3 py-3 text-sm text-center">{row.paidDate ?? '—'}</td>
+                      <td className="border border-gray-300 px-2 py-2 text-xs text-gray-900 whitespace-nowrap">{row.date}</td>
+                      <td className="border border-gray-300 px-2 py-2 text-xs text-gray-900 whitespace-nowrap">{row.start ?? '—'}</td>
+                      <td className="border border-gray-300 px-2 py-2 text-xs text-gray-900 whitespace-nowrap">{row.end ?? '—'}</td>
+                      <td className="border border-gray-300 px-2 py-2 text-xs text-gray-900">{row.hours.toFixed(2)}</td>
+                      <td className="border border-gray-300 px-2 py-2 text-xs text-gray-900 text-right whitespace-nowrap">${row.amount.toFixed(2)}</td>
+                      <td className="border border-gray-300 px-2 py-2 text-xs text-center whitespace-nowrap">{row.paidDate ?? '—'}</td>
+                      <td className="border border-gray-300 px-3 py-2 text-xs text-gray-900">{row.description}</td>
+                      <td className="border border-gray-300 px-3 py-2 text-xs text-gray-900">{row.location}</td>
                     </tr>
                   ))
                 )}
