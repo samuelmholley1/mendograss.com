@@ -66,7 +66,7 @@ export default function TimesheetPage() {
             </div>
             <div>
               <p className="text-gray-600">Status:</p>
-              <p className="font-semibold text-orange-600">Pending Payment</p>
+              <p className="font-semibold text-gray-900">Payment Pending</p>
             </div>
           </div>
         </div>
@@ -94,7 +94,7 @@ export default function TimesheetPage() {
                 <td className="border border-gray-300 px-3 py-2 text-sm text-gray-900">Remote</td>
                 <td className="border border-gray-300 px-3 py-2 text-sm text-gray-900">3.00</td>
                 <td className="border border-gray-300 px-3 py-2 text-sm text-gray-900 text-right">$60.00</td>
-                <td className="border border-gray-300 px-3 py-2 text-sm text-orange-600 text-center font-medium">Pending</td>
+                <td className="border border-gray-300 px-3 py-2 text-sm text-gray-600 text-center">Not yet</td>
               </tr>
               
               {/* Tuesday AM */}
@@ -105,7 +105,7 @@ export default function TimesheetPage() {
                 <td className="border border-gray-300 px-3 py-2 text-sm text-gray-900">Adam&apos;s House</td>
                 <td className="border border-gray-300 px-3 py-2 text-sm text-gray-900">1.75</td>
                 <td className="border border-gray-300 px-3 py-2 text-sm text-gray-900 text-right">$35.00</td>
-                <td className="border border-gray-300 px-3 py-2 text-sm text-orange-600 text-center font-medium">Pending</td>
+                <td className="border border-gray-300 px-3 py-2 text-sm text-gray-600 text-center">Not yet</td>
               </tr>
               
               {/* Tuesday PM */}
@@ -116,7 +116,7 @@ export default function TimesheetPage() {
                 <td className="border border-gray-300 px-3 py-2 text-sm text-gray-900">Adam&apos;s House</td>
                 <td className="border border-gray-300 px-3 py-2 text-sm text-gray-900">2.75</td>
                 <td className="border border-gray-300 px-3 py-2 text-sm text-gray-900 text-right">$55.00</td>
-                <td className="border border-gray-300 px-3 py-2 text-sm text-orange-600 text-center font-medium">Pending</td>
+                <td className="border border-gray-300 px-3 py-2 text-sm text-gray-600 text-center">Not yet</td>
               </tr>
               
               {/* Wednesday AM */}
@@ -127,7 +127,7 @@ export default function TimesheetPage() {
                 <td className="border border-gray-300 px-3 py-2 text-sm text-gray-900">Deliveries / Adam&apos;s Dad&apos;s House</td>
                 <td className="border border-gray-300 px-3 py-2 text-sm text-gray-900">1.50</td>
                 <td className="border border-gray-300 px-3 py-2 text-sm text-gray-900 text-right">$30.00</td>
-                <td className="border border-gray-300 px-3 py-2 text-sm text-orange-600 text-center font-medium">Pending</td>
+                <td className="border border-gray-300 px-3 py-2 text-sm text-gray-600 text-center">Not yet</td>
               </tr>
               
               {/* Wednesday PM */}
@@ -138,7 +138,7 @@ export default function TimesheetPage() {
                 <td className="border border-gray-300 px-3 py-2 text-sm text-gray-900">Adam&apos;s House → Mendo Lake Food Bank → Road B Farm</td>
                 <td className="border border-gray-300 px-3 py-2 text-sm text-gray-900">2.00</td>
                 <td className="border border-gray-300 px-3 py-2 text-sm text-gray-900 text-right">$40.00</td>
-                <td className="border border-gray-300 px-3 py-2 text-sm text-orange-600 text-center font-medium">Pending</td>
+                <td className="border border-gray-300 px-3 py-2 text-sm text-gray-600 text-center">Not yet</td>
               </tr>
               
               {/* Thursday */}
@@ -149,7 +149,7 @@ export default function TimesheetPage() {
                 <td className="border border-gray-300 px-3 py-2 text-sm text-gray-900">Road B Farm</td>
                 <td className="border border-gray-300 px-3 py-2 text-sm text-gray-900">2.75</td>
                 <td className="border border-gray-300 px-3 py-2 text-sm text-gray-900 text-right">$55.00</td>
-                <td className="border border-gray-300 px-3 py-2 text-sm text-orange-600 text-center font-medium">Pending</td>
+                <td className="border border-gray-300 px-3 py-2 text-sm text-gray-600 text-center">Not yet</td>
               </tr>
               
               {/* TOTAL */}
@@ -173,9 +173,9 @@ export default function TimesheetPage() {
             <p className="text-xs text-gray-600 uppercase font-semibold mb-1">Total Amount Due</p>
             <p className="text-3xl font-bold text-gray-900">$275.00</p>
           </div>
-          <div className="p-4 bg-orange-50 border border-orange-300">
-            <p className="text-xs text-orange-700 uppercase font-semibold mb-1">Payment Status</p>
-            <p className="text-3xl font-bold text-orange-600">Pending</p>
+          <div className="p-4 bg-gray-100 border border-gray-300">
+            <p className="text-xs text-gray-600 uppercase font-semibold mb-1">Payment Status</p>
+            <p className="text-3xl font-bold text-gray-900">Pending</p>
           </div>
         </div>
       </div>
