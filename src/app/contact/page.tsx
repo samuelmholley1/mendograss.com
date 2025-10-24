@@ -153,12 +153,14 @@ export default function ContactPage() {
 
               <div>
                 <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-1">
-                  Email Address
+                  Email Address <span className="text-red-600" aria-label="required">*</span>
                 </label>
                 <input
                   type="email"
                   id="email"
                   name="email"
+                  required
+                  aria-required="true"
                   className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-green-500"
                   placeholder="your@email.com"
                 />
@@ -184,15 +186,34 @@ export default function ContactPage() {
 
               <div>
                 <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-1">
-                  Message
+                  Message <span className="text-red-600" aria-label="required">*</span>
                 </label>
                 <textarea
                   id="message"
                   name="message"
                   rows={5}
+                  required
+                  aria-required="true"
                   className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-green-500"
                   placeholder="Tell us how we can help you..."
                 ></textarea>
+              </div>
+
+              <div className="flex items-start">
+                <input
+                  type="checkbox"
+                  id="marketingConsent"
+                  name="marketingConsent"
+                  className="mt-1 h-4 w-4 text-green-600 border-gray-300 rounded focus:ring-green-500"
+                />
+                <label htmlFor="marketingConsent" className="ml-3 text-sm text-gray-600">
+                  I agree to receive marketing emails from Mendo Grass. You can unsubscribe at any time. 
+                  See our{' '}
+                  <a href="/privacy" className="text-green-600 hover:text-green-700 underline">
+                    Privacy Policy
+                  </a>
+                  {' '}for details.
+                </label>
               </div>
 
               <button
