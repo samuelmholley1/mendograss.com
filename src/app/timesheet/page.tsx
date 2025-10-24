@@ -1,185 +1,163 @@
 export default function TimesheetPage() {
   return (
-    <div className="min-h-screen py-16 bg-gray-50">
-      <div className="max-w-6xl mx-auto px-4">
+    <div className="min-h-screen py-8 bg-white">
+      <div className="max-w-7xl mx-auto px-4">
         {/* Header */}
-        <div className="bg-white rounded-lg shadow-lg p-8 mb-8">
-          <h1 className="text-4xl font-bold text-gray-900 mb-2">🧾 MendoGrass Work Log</h1>
-          <p className="text-xl text-gray-600">Samuel&apos;s Timesheet — Chronological</p>
+        <div className="mb-6">
+          <h1 className="text-3xl font-bold text-gray-900 mb-1">MendoGrass Timesheet</h1>
+          <p className="text-lg text-gray-600">Employee: Samuel Holley</p>
+          <p className="text-sm text-gray-500">Pay Rate: $20.00/hour</p>
         </div>
 
-        {/* Timesheet Entries */}
-        <div className="space-y-6">
-          {/* Website Work (Pre-week) */}
-          <div className="bg-white rounded-lg shadow-md p-6">
-            <div className="flex justify-between items-start mb-4">
-              <div>
-                <h2 className="text-2xl font-bold text-gray-900">🌐 Website Work (prior to this week)</h2>
-                <p className="text-gray-600 mt-1">Location: <span className="font-semibold">Remote</span></p>
-              </div>
-              <div className="text-right">
-                <p className="text-lg font-semibold text-green-600">3 hr 00 min</p>
-                <p className="text-gray-600">$60.00</p>
-              </div>
-            </div>
-            <div className="text-gray-500 text-sm italic">
-              No specific start/stop times logged
-            </div>
-          </div>
-
-          {/* Tuesday, October 21 */}
-          <div className="bg-white rounded-lg shadow-md p-6">
-            <div className="flex justify-between items-start mb-4">
-              <div>
-                <h2 className="text-2xl font-bold text-gray-900">📅 Tuesday, October 21, 2025</h2>
-                <p className="text-gray-600 mt-1">Location: <span className="font-semibold">Adam&apos;s House</span></p>
-              </div>
-              <div className="text-right">
-                <p className="text-lg font-semibold text-green-600">4 hr 30 min</p>
-                <p className="text-gray-600">$90.00</p>
-              </div>
-            </div>
-            <div className="space-y-2">
-              <div className="flex justify-between items-center py-2 border-b border-gray-200">
-                <span className="text-gray-700">Morning Shift</span>
-                <span className="font-mono text-gray-900">9:15 AM → 11:00 AM</span>
-                <span className="text-gray-600">1 hr 45 min</span>
-              </div>
-              <div className="flex justify-between items-center py-2">
-                <span className="text-gray-700">Afternoon Shift</span>
-                <span className="font-mono text-gray-900">12:45 PM → 3:30 PM</span>
-                <span className="text-gray-600">2 hr 45 min</span>
-              </div>
-            </div>
-          </div>
-
-          {/* Wednesday, October 22 */}
-          <div className="bg-white rounded-lg shadow-md p-6">
-            <div className="flex justify-between items-start mb-4">
-              <div>
-                <h2 className="text-2xl font-bold text-gray-900">📅 Wednesday, October 22, 2025</h2>
-              </div>
-              <div className="text-right">
-                <p className="text-lg font-semibold text-green-600">3 hr 30 min</p>
-                <p className="text-gray-600">$70.00</p>
-              </div>
-            </div>
-            <div className="space-y-2">
-              <div className="flex justify-between items-center py-2 border-b border-gray-200">
-                <div>
-                  <span className="text-gray-700">Morning Shift</span>
-                  <p className="text-sm text-gray-500">Deliveries / Adam&apos;s Dad&apos;s House</p>
-                </div>
-                <span className="font-mono text-gray-900">8:15 AM → 9:45 AM</span>
-                <span className="text-gray-600">1 hr 30 min</span>
-              </div>
-              <div className="flex justify-between items-center py-2">
-                <div>
-                  <span className="text-gray-700">Afternoon Shift</span>
-                  <p className="text-sm text-gray-500">Adam&apos;s House → Mendo Lake Food Bank → Road B Farm (Redwood Valley)</p>
-                </div>
-                <span className="font-mono text-gray-900">11:30 AM → 1:30 PM</span>
-                <span className="text-gray-600">2 hr 00 min</span>
-              </div>
-            </div>
-          </div>
-
-          {/* Thursday, October 23 */}
-          <div className="bg-white rounded-lg shadow-md p-6">
-            <div className="flex justify-between items-start mb-4">
-              <div>
-                <h2 className="text-2xl font-bold text-gray-900">📅 Thursday, October 23, 2025</h2>
-                <p className="text-gray-600 mt-1">Location: <span className="font-semibold">Road B Farm</span></p>
-              </div>
-              <div className="text-right">
-                <p className="text-lg font-semibold text-green-600">2 hr 45 min</p>
-                <p className="text-gray-600">$55.00</p>
-              </div>
-            </div>
-            <div className="space-y-2">
-              <div className="flex justify-between items-center py-2">
-                <span className="text-gray-700">Afternoon Shift</span>
-                <span className="font-mono text-gray-900">3:15 PM → 6:00 PM</span>
-                <span className="text-gray-600">2 hr 45 min</span>
-              </div>
-            </div>
-            <p className="text-sm text-gray-500 mt-3 italic">5 min banked for future website work</p>
-          </div>
-
-          {/* Banked Time */}
-          <div className="bg-blue-50 rounded-lg shadow-md p-6 border-2 border-blue-200">
-            <div className="flex justify-between items-center">
-              <div>
-                <h3 className="text-lg font-bold text-gray-900">💰 Banked Time</h3>
-                <p className="text-gray-600 text-sm">Available for future website work</p>
-              </div>
-              <div className="text-right">
-                <p className="text-lg font-semibold text-blue-600">0 hr 05 min</p>
-                <p className="text-gray-600">$1.67</p>
-              </div>
-            </div>
-          </div>
+        {/* Main Timesheet Table */}
+        <div className="overflow-x-auto border border-gray-300">
+          <table className="w-full border-collapse bg-white">
+            <thead>
+              <tr className="bg-gray-100">
+                <th className="border border-gray-300 px-3 py-2 text-left text-sm font-semibold text-gray-900 w-32">Date</th>
+                <th className="border border-gray-300 px-3 py-2 text-left text-sm font-semibold text-gray-900 w-32">Start Time</th>
+                <th className="border border-gray-300 px-3 py-2 text-left text-sm font-semibold text-gray-900 w-32">End Time</th>
+                <th className="border border-gray-300 px-3 py-2 text-left text-sm font-semibold text-gray-900">Location</th>
+                <th className="border border-gray-300 px-3 py-2 text-left text-sm font-semibold text-gray-900 w-28">Hours</th>
+                <th className="border border-gray-300 px-3 py-2 text-right text-sm font-semibold text-gray-900 w-24">Pay</th>
+                <th className="border border-gray-300 px-3 py-2 text-left text-sm font-semibold text-gray-900">Notes</th>
+              </tr>
+            </thead>
+            <tbody>
+              {/* Website Work */}
+              <tr className="hover:bg-gray-50">
+                <td className="border border-gray-300 px-3 py-2 text-sm text-gray-900">Pre-week</td>
+                <td className="border border-gray-300 px-3 py-2 text-sm text-gray-600">—</td>
+                <td className="border border-gray-300 px-3 py-2 text-sm text-gray-600">—</td>
+                <td className="border border-gray-300 px-3 py-2 text-sm text-gray-900">Remote</td>
+                <td className="border border-gray-300 px-3 py-2 text-sm text-gray-900">3.00</td>
+                <td className="border border-gray-300 px-3 py-2 text-sm text-gray-900 text-right">$60.00</td>
+                <td className="border border-gray-300 px-3 py-2 text-sm text-gray-600">Website work</td>
+              </tr>
+              
+              {/* Tuesday AM */}
+              <tr className="hover:bg-gray-50">
+                <td className="border border-gray-300 px-3 py-2 text-sm text-gray-900">10/21/2025</td>
+                <td className="border border-gray-300 px-3 py-2 text-sm text-gray-900">9:15 AM</td>
+                <td className="border border-gray-300 px-3 py-2 text-sm text-gray-900">11:00 AM</td>
+                <td className="border border-gray-300 px-3 py-2 text-sm text-gray-900">Adam&apos;s House</td>
+                <td className="border border-gray-300 px-3 py-2 text-sm text-gray-900">1.75</td>
+                <td className="border border-gray-300 px-3 py-2 text-sm text-gray-900 text-right">$35.00</td>
+                <td className="border border-gray-300 px-3 py-2 text-sm text-gray-600"></td>
+              </tr>
+              
+              {/* Tuesday PM */}
+              <tr className="hover:bg-gray-50">
+                <td className="border border-gray-300 px-3 py-2 text-sm text-gray-900">10/21/2025</td>
+                <td className="border border-gray-300 px-3 py-2 text-sm text-gray-900">12:45 PM</td>
+                <td className="border border-gray-300 px-3 py-2 text-sm text-gray-900">3:30 PM</td>
+                <td className="border border-gray-300 px-3 py-2 text-sm text-gray-900">Adam&apos;s House</td>
+                <td className="border border-gray-300 px-3 py-2 text-sm text-gray-900">2.75</td>
+                <td className="border border-gray-300 px-3 py-2 text-sm text-gray-900 text-right">$55.00</td>
+                <td className="border border-gray-300 px-3 py-2 text-sm text-gray-600"></td>
+              </tr>
+              
+              {/* Tuesday Subtotal */}
+              <tr className="bg-gray-50 font-semibold">
+                <td className="border border-gray-300 px-3 py-2 text-sm text-gray-900" colSpan={4}>Tuesday 10/21 Subtotal</td>
+                <td className="border border-gray-300 px-3 py-2 text-sm text-gray-900">4.50</td>
+                <td className="border border-gray-300 px-3 py-2 text-sm text-gray-900 text-right">$90.00</td>
+                <td className="border border-gray-300 px-3 py-2 text-sm text-gray-600"></td>
+              </tr>
+              
+              {/* Wednesday AM */}
+              <tr className="hover:bg-gray-50">
+                <td className="border border-gray-300 px-3 py-2 text-sm text-gray-900">10/22/2025</td>
+                <td className="border border-gray-300 px-3 py-2 text-sm text-gray-900">8:15 AM</td>
+                <td className="border border-gray-300 px-3 py-2 text-sm text-gray-900">9:45 AM</td>
+                <td className="border border-gray-300 px-3 py-2 text-sm text-gray-900">Deliveries / Adam&apos;s Dad&apos;s House</td>
+                <td className="border border-gray-300 px-3 py-2 text-sm text-gray-900">1.50</td>
+                <td className="border border-gray-300 px-3 py-2 text-sm text-gray-900 text-right">$30.00</td>
+                <td className="border border-gray-300 px-3 py-2 text-sm text-gray-600"></td>
+              </tr>
+              
+              {/* Wednesday PM */}
+              <tr className="hover:bg-gray-50">
+                <td className="border border-gray-300 px-3 py-2 text-sm text-gray-900">10/22/2025</td>
+                <td className="border border-gray-300 px-3 py-2 text-sm text-gray-900">11:30 AM</td>
+                <td className="border border-gray-300 px-3 py-2 text-sm text-gray-900">1:30 PM</td>
+                <td className="border border-gray-300 px-3 py-2 text-sm text-gray-900">Adam&apos;s House → Mendo Lake Food Bank → Road B Farm</td>
+                <td className="border border-gray-300 px-3 py-2 text-sm text-gray-900">2.00</td>
+                <td className="border border-gray-300 px-3 py-2 text-sm text-gray-900 text-right">$40.00</td>
+                <td className="border border-gray-300 px-3 py-2 text-sm text-gray-600"></td>
+              </tr>
+              
+              {/* Wednesday Subtotal */}
+              <tr className="bg-gray-50 font-semibold">
+                <td className="border border-gray-300 px-3 py-2 text-sm text-gray-900" colSpan={4}>Wednesday 10/22 Subtotal</td>
+                <td className="border border-gray-300 px-3 py-2 text-sm text-gray-900">3.50</td>
+                <td className="border border-gray-300 px-3 py-2 text-sm text-gray-900 text-right">$70.00</td>
+                <td className="border border-gray-300 px-3 py-2 text-sm text-gray-600"></td>
+              </tr>
+              
+              {/* Thursday */}
+              <tr className="hover:bg-gray-50">
+                <td className="border border-gray-300 px-3 py-2 text-sm text-gray-900">10/23/2025</td>
+                <td className="border border-gray-300 px-3 py-2 text-sm text-gray-900">3:15 PM</td>
+                <td className="border border-gray-300 px-3 py-2 text-sm text-gray-900">6:00 PM</td>
+                <td className="border border-gray-300 px-3 py-2 text-sm text-gray-900">Road B Farm</td>
+                <td className="border border-gray-300 px-3 py-2 text-sm text-gray-900">2.75</td>
+                <td className="border border-gray-300 px-3 py-2 text-sm text-gray-900 text-right">$55.00</td>
+                <td className="border border-gray-300 px-3 py-2 text-sm text-gray-600">5 min banked</td>
+              </tr>
+              
+              {/* Thursday Subtotal */}
+              <tr className="bg-gray-50 font-semibold">
+                <td className="border border-gray-300 px-3 py-2 text-sm text-gray-900" colSpan={4}>Thursday 10/23 Subtotal</td>
+                <td className="border border-gray-300 px-3 py-2 text-sm text-gray-900">2.75</td>
+                <td className="border border-gray-300 px-3 py-2 text-sm text-gray-900 text-right">$55.00</td>
+                <td className="border border-gray-300 px-3 py-2 text-sm text-gray-600"></td>
+              </tr>
+              
+              {/* Banked Time */}
+              <tr className="bg-blue-50">
+                <td className="border border-gray-300 px-3 py-2 text-sm text-gray-900" colSpan={4}>Banked Time (Future Website Work)</td>
+                <td className="border border-gray-300 px-3 py-2 text-sm text-blue-700 font-semibold">0.08</td>
+                <td className="border border-gray-300 px-3 py-2 text-sm text-blue-700 font-semibold text-right">$1.67</td>
+                <td className="border border-gray-300 px-3 py-2 text-sm text-gray-600"></td>
+              </tr>
+              
+              {/* TOTAL */}
+              <tr className="bg-green-100 font-bold">
+                <td className="border border-gray-300 px-3 py-2 text-sm text-gray-900" colSpan={4}>TOTAL</td>
+                <td className="border border-gray-300 px-3 py-2 text-sm text-green-800">13.75</td>
+                <td className="border border-gray-300 px-3 py-2 text-sm text-green-800 text-right">$275.00</td>
+                <td className="border border-gray-300 px-3 py-2 text-sm text-gray-600"></td>
+              </tr>
+            </tbody>
+          </table>
         </div>
 
-        {/* Summary Table */}
-        <div className="bg-white rounded-lg shadow-lg p-8 mt-8">
-          <h2 className="text-2xl font-bold text-gray-900 mb-6">🧮 Running Totals</h2>
-          <div className="overflow-x-auto">
-            <table className="w-full border-collapse">
-              <thead>
-                <tr className="bg-gray-100">
-                  <th className="border border-gray-300 px-4 py-3 text-left font-semibold text-gray-900">Date / Category</th>
-                  <th className="border border-gray-300 px-4 py-3 text-left font-semibold text-gray-900">Start–Stop Times</th>
-                  <th className="border border-gray-300 px-4 py-3 text-left font-semibold text-gray-900">Hours Worked</th>
-                  <th className="border border-gray-300 px-4 py-3 text-right font-semibold text-gray-900">Pay (@ $20/hr)</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr className="hover:bg-gray-50">
-                  <td className="border border-gray-300 px-4 py-3 text-gray-900">Website (pre-week)</td>
-                  <td className="border border-gray-300 px-4 py-3 text-gray-600 font-mono">—</td>
-                  <td className="border border-gray-300 px-4 py-3 text-gray-900">3 hr 00 min</td>
-                  <td className="border border-gray-300 px-4 py-3 text-right text-gray-900 font-semibold">$60.00</td>
-                </tr>
-                <tr className="hover:bg-gray-50">
-                  <td className="border border-gray-300 px-4 py-3 text-gray-900">Tue 10/21</td>
-                  <td className="border border-gray-300 px-4 py-3 text-gray-600 font-mono">9:15–11:00, 12:45–3:30</td>
-                  <td className="border border-gray-300 px-4 py-3 text-gray-900">4 hr 30 min</td>
-                  <td className="border border-gray-300 px-4 py-3 text-right text-gray-900 font-semibold">$90.00</td>
-                </tr>
-                <tr className="hover:bg-gray-50">
-                  <td className="border border-gray-300 px-4 py-3 text-gray-900">Wed 10/22</td>
-                  <td className="border border-gray-300 px-4 py-3 text-gray-600 font-mono">8:15–9:45, 11:30–1:30</td>
-                  <td className="border border-gray-300 px-4 py-3 text-gray-900">3 hr 30 min</td>
-                  <td className="border border-gray-300 px-4 py-3 text-right text-gray-900 font-semibold">$70.00</td>
-                </tr>
-                <tr className="hover:bg-gray-50">
-                  <td className="border border-gray-300 px-4 py-3 text-gray-900">Thu 10/23</td>
-                  <td className="border border-gray-300 px-4 py-3 text-gray-600 font-mono">3:15–6:00</td>
-                  <td className="border border-gray-300 px-4 py-3 text-gray-900">2 hr 45 min</td>
-                  <td className="border border-gray-300 px-4 py-3 text-right text-gray-900 font-semibold">$55.00</td>
-                </tr>
-                <tr className="hover:bg-gray-50">
-                  <td className="border border-gray-300 px-4 py-3 text-gray-900">Banked</td>
-                  <td className="border border-gray-300 px-4 py-3 text-gray-600 font-mono">—</td>
-                  <td className="border border-gray-300 px-4 py-3 text-gray-900">0 hr 05 min</td>
-                  <td className="border border-gray-300 px-4 py-3 text-right text-gray-900 font-semibold">$1.67</td>
-                </tr>
-                <tr className="bg-green-50 font-bold">
-                  <td className="border border-gray-300 px-4 py-3 text-gray-900">TOTAL</td>
-                  <td className="border border-gray-300 px-4 py-3 text-gray-600">—</td>
-                  <td className="border border-gray-300 px-4 py-3 text-gray-900">13 hr 45 min</td>
-                  <td className="border border-gray-300 px-4 py-3 text-right text-green-700 text-lg">$275.00</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-          <p className="text-sm text-gray-500 mt-4 text-right italic">+ $1.67 banked for future use</p>
+        {/* Export Instructions */}
+        <div className="mt-6 p-4 bg-gray-50 border border-gray-300 rounded">
+          <p className="text-sm text-gray-700">
+            <strong>Export Tip:</strong> To export this timesheet, use your browser&apos;s print function (Cmd/Ctrl + P) and select &quot;Save as PDF&quot;, or copy the table data directly into Excel/Google Sheets.
+          </p>
         </div>
 
-        {/* Footer Note */}
-        <div className="text-center mt-8 text-gray-500 text-sm">
-          <p>Rate: $20.00/hour</p>
+        {/* Summary */}
+        <div className="mt-6 grid grid-cols-2 md:grid-cols-4 gap-4">
+          <div className="p-4 bg-white border border-gray-300">
+            <p className="text-xs text-gray-600 uppercase">Total Hours</p>
+            <p className="text-2xl font-bold text-gray-900">13.75</p>
+          </div>
+          <div className="p-4 bg-white border border-gray-300">
+            <p className="text-xs text-gray-600 uppercase">Pay Rate</p>
+            <p className="text-2xl font-bold text-gray-900">$20.00/hr</p>
+          </div>
+          <div className="p-4 bg-white border border-gray-300">
+            <p className="text-xs text-gray-600 uppercase">Total Pay</p>
+            <p className="text-2xl font-bold text-green-700">$275.00</p>
+          </div>
+          <div className="p-4 bg-blue-50 border border-blue-300">
+            <p className="text-xs text-blue-700 uppercase">Banked</p>
+            <p className="text-2xl font-bold text-blue-700">$1.67</p>
+          </div>
         </div>
       </div>
     </div>
