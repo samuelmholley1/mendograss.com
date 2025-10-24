@@ -56,7 +56,7 @@ export default function TimesheetPage() {
       date: "2025-10-21",
       start: "12:45 PM",
       end: "3:30 PM",
-      description: "Farm work",
+      description: "Website work and farm work",
       location: "Adam's House",
       hours: 2.75,
       amount: 55,
