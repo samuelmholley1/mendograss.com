@@ -107,11 +107,42 @@ export default function Footer() {
           </div>
         </div>
 
-        {/* Copyright */}
-        <div className="border-t border-gray-700 mt-8 pt-8 text-center">
-          <p className="text-gray-400 text-sm">
-            Powered by Farmhand © 2025 Mendo Grass. All rights reserved.
-          </p>
+        {/* Copyright and Legal Links */}
+        <div className="border-t border-gray-700 mt-8 pt-8">
+          <div className="flex flex-col md:flex-row justify-between items-center gap-4">
+            <p className="text-gray-400 text-sm">
+              © 2025 Mendo Grass. All rights reserved.
+            </p>
+            <div className="flex flex-wrap justify-center gap-4 text-sm">
+              <a 
+                href="/privacy" 
+                className="text-gray-400 hover:text-green-400 transition-colors"
+              >
+                Privacy Policy
+              </a>
+              <span className="text-gray-600">•</span>
+              <a 
+                href="/terms" 
+                className="text-gray-400 hover:text-green-400 transition-colors"
+              >
+                Terms of Service
+              </a>
+              <span className="text-gray-600">•</span>
+              <a 
+                href="/accessibility" 
+                className="text-gray-400 hover:text-green-400 transition-colors"
+              >
+                Accessibility
+              </a>
+              <span className="text-gray-600">•</span>
+              <a 
+                href="mailto:adam@mendograss.com?subject=Do%20Not%20Sell%20My%20Information" 
+                className="text-gray-400 hover:text-green-400 transition-colors"
+              >
+                Do Not Sell My Info
+              </a>
+            </div>
+          </div>
         </div>
       </div>
     </footer>
