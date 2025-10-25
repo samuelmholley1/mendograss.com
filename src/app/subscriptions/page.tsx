@@ -219,34 +219,36 @@ export default function Subscriptions() {
                 <strong>Oh so sweet and tender!</strong> Pea shoots are a great source of beta carotene, vitamin C, folate, and fiber. A single serving provides 50% of your daily vitamin C value. They have anti-inflammatory properties and are thought to be anti-carcinogenic.
               </p>
               <p className="text-gray-700 mb-4">
-                Low in fat, packed with high-quality protein and powerful antioxidants. Rich in folate, omega-3, and vitamins A, B, C, and E.
+                Low in fat, packed with high-quality protein and powerful antioxidants. Rich in folate, omega-3, and vitamins A, B, C, and E. Their long shoots are crisp and delicate leaves (similar texture to spinach) that plate beautifully on any dish.
               </p>
               <p className="text-sm"><span className="font-semibold">8oz:</span> $10.00/week</p>
-              <p className="text-xs text-gray-500 mt-2">Delicious sautéed, in salads, smoothies, or even alone</p>
+              <p className="text-xs text-gray-500 mt-2">Chop them up and add to salads, throw on your favorite sandwich, or blend into a delicious pesto!</p>
             </div>
 
             {/* Broccoli */}
             <div className="bg-white rounded-lg shadow-md p-6">
               <h3 className="text-2xl font-bold text-green-600 mb-3">Broccoli</h3>
               <p className="text-gray-700 mb-4">
-                <strong>Full of nutrients!</strong> Broccoli microgreens contain <strong>10 to 100x more sulforaphane</strong> than adult broccoli—a compound thought to fight cancer. Sulforaphane combats inflammation, has powerful rejuvenating properties, supports cardiovascular health, and reduces oxidative stress.
+                <strong>The healthiest microgreens on the block!</strong> These little guys pack a serious punch when it comes to improving your health. Broccoli microgreens contain <strong>10 to 100x more sulforaphane</strong> than adult broccoli—a naturally occurring compound with cancer preventative properties.
               </p>
               <p className="text-gray-700 mb-4">
-                Delicious in sandwiches, wraps, smoothies, or salads. Chefs love using them as garnishes, and they&apos;re a fun way for kids to get their broccoli!
+                Sulforaphane is a powerful antioxidant that combats inflammation, supports cardiovascular health, has rejuvenating properties, and reduces oxidative stress.
               </p>
               <p className="text-sm"><span className="font-semibold">8oz:</span> $15.00/week</p>
+              <p className="text-xs text-gray-500 mt-2">Delicious in sandwiches, wraps, smoothies, or salads. Chefs love using them as garnishes, and they&apos;re a fun way for kids to get their broccoli!</p>
             </div>
 
             {/* Radish */}
             <div className="bg-white rounded-lg shadow-md p-6">
               <h3 className="text-2xl font-bold text-green-600 mb-3">Radish</h3>
               <p className="text-gray-700 mb-4">
-                <strong>Need a quick cleanse?</strong> A dose of radish micros sets you on the right path. Radish microgreens help your liver function more efficiently and are <strong>highest in vitamin E</strong> compared to adult radishes and other microgreens.
+                <strong>Need a quick cleanse?</strong> A dose of radish micros sets you on the right path. Radish microgreens are visually appealing with their beautiful purple leaves and add a nice little peppery spice to any dish.
               </p>
               <p className="text-gray-700 mb-4">
-                They contain lignans, enhancing the activity of macrophages (cells that attack our bodies&apos; foreign invaders). <strong>Spicy like wasabi and horseradish</strong>, this fiery microgreen pairs beautifully with fish and meat dishes.
+                They help your liver function more efficiently and are <strong>highest in vitamin E</strong> compared to adult radishes and other microgreens. Loaded with vitamins and nutrients which promote cardiovascular health, boost the immune system, healthier skin, and aid in weight loss efforts.
               </p>
               <p className="text-sm"><span className="font-semibold">8oz:</span> $15.00/week</p>
+              <p className="text-xs text-gray-500 mt-2"><strong>Spicy like wasabi!</strong> Pairs beautifully with fish and meat dishes</p>
             </div>
           </div>
         </div>

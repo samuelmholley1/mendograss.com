@@ -36,11 +36,124 @@ export default function RestaurantsPage() {
       <section className="text-center mb-16">
         <div className="max-w-4xl mx-auto px-4">
           <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-8">
-            Restaurant & Food Service Subscriptions
+            Restaurant & Food Service Microgreens
           </h1>
-          <p className="text-lg text-gray-600 mb-8">
+          <p className="text-lg text-gray-600 mb-4">
             Premium Microgreens Grown-to-Order for Chefs and Culinary Professionals
           </p>
+          <p className="text-md text-gray-700 max-w-2xl mx-auto">
+            Prices for our fresh microgreens range from <strong>$20 - $35 per pound</strong>. We happily accept orders of <strong>1/4 pound or more per variety</strong>; $20 minimum per order.
+          </p>
+        </div>
+      </section>
+
+      {/* Available Varieties */}
+      <section className="py-16 bg-white">
+        <div className="max-w-7xl mx-auto px-4">
+          <h2 className="text-3xl font-bold text-center text-gray-900 mb-12">Available Varieties</h2>
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
+            {/* Currently Growing - Single Varieties */}
+            <div className="bg-green-50 rounded-lg p-6 border-2 border-green-300">
+              <h3 className="text-xl font-bold text-green-700 mb-3">Currently Growing</h3>
+              <ul className="space-y-2 text-gray-700">
+                <li className="flex items-start">
+                  <span className="text-green-600 mr-2">✓</span>
+                  <span><strong>Pea Shoots</strong> - Sweet, tender, vitamin-packed</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-green-600 mr-2">✓</span>
+                  <span><strong>Sunflower</strong> - Nutty, crunchy, protein-rich</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-green-600 mr-2">✓</span>
+                  <span><strong>Radish</strong> - Spicy, vibrant, liver-supporting</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-green-600 mr-2">✓</span>
+                  <span><strong>Buckwheat</strong> - Mild, fresh, versatile</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-green-600 mr-2">✓</span>
+                  <span><strong>Nasturtium</strong> - Peppery, floral, elegant garnish</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-green-600 mr-2">✓</span>
+                  <span><strong>Leek</strong> - Mild onion flavor, delicate</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-green-600 mr-2">✓</span>
+                  <span><strong>Cilantro</strong> - Fresh, herbaceous, aromatic</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-green-600 mr-2">✓</span>
+                  <span><strong>Wheatgrass</strong> - Live trays for juicing</span>
+                </li>
+              </ul>
+            </div>
+
+            {/* Garden Mix */}
+            <div className="bg-green-50 rounded-lg p-6 border-2 border-green-300">
+              <h3 className="text-xl font-bold text-green-700 mb-3">Chef&apos;s Blend</h3>
+              <div className="space-y-4 text-gray-700">
+                <div>
+                  <p className="font-bold text-gray-900 mb-1">Emerald Fire Mix</p>
+                  <p className="text-sm">Pea Shoots + Radish</p>
+                  <p className="text-xs text-gray-600 mt-1 italic">Sweet meets spicy - a balanced, vibrant blend</p>
+                </div>
+              </div>
+            </div>
+
+            {/* Ordering Info */}
+            <div className="bg-blue-50 rounded-lg p-6 border border-blue-200">
+              <h3 className="text-xl font-bold text-blue-600 mb-3">How to Order</h3>
+              <div className="space-y-3 text-gray-700 text-sm">
+                <p>
+                  <strong>Lead Time:</strong> Please give us 2-3 weeks notice (one harvest cycle) depending on variety.
+                </p>
+                <p>
+                  <strong>Standing Orders:</strong> We strongly encourage chefs to set up standing orders to reduce food waste and ensure consistent supply.
+                </p>
+                <p>
+                  <strong>Minimum:</strong> $20 per order
+                </p>
+                <p>
+                  <strong>Quantity:</strong> 1/4 lb or more per variety
+                </p>
+              </div>
+            </div>
+          </div>
+
+          {/* Available Upon Request */}
+          <div className="bg-yellow-50 border-2 border-yellow-300 rounded-lg p-8 mb-8">
+            <h3 className="text-2xl font-bold text-gray-900 mb-4 text-center">Interested in Other Varieties?</h3>
+            <p className="text-center text-gray-700 mb-4">
+              We&apos;re always happy to grow additional varieties based on your culinary needs. Currently exploring:
+            </p>
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 text-center text-gray-700 mb-6">
+              <div>• Broccoli</div>
+              <div>• Arugula</div>
+              <div>• Kohlrabi</div>
+              <div>• Kale</div>
+              <div>• Purple Goddess Mix</div>
+              <div>• And more!</div>
+            </div>
+            <p className="text-center text-gray-700 font-semibold">
+              Let us know what you need - we&apos;re flexible and love working with creative chefs.
+            </p>
+          </div>
+
+          <div className="text-center">
+            <p className="text-lg text-gray-700 mb-6">
+              Tell us a little bit about how we can best serve you.
+            </p>
+            <a 
+              href="#restaurant-form" 
+              className="inline-block bg-green-600 text-white py-3 px-8 rounded-lg text-lg font-semibold hover:bg-green-700 transition-colors"
+            >
+              Request a Quote
+            </a>
+          </div>
         </div>
       </section>
 
