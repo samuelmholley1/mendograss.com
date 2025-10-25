@@ -79,3 +79,42 @@ Arugula microgreens pack a punch, adding a strong peppery, slightly buttery flav
 
 Arugula microgreens are a good source of vitamin K and calcium, nutrients that contribute to healthy wound healing and overall bone health. The microgreens are also a source of vitamin C to strengthen the immune system.
 
+---
+
+## Signature Microgreen Mixes
+
+We have created a group of fun, colorful organic mixes that are made up of microgreens and shoots in various combinations. Together, they create a series of nutrient-rich, colorful, and flavorful super microgreen mixes that can be eaten as a salad or used liberally in place of any green.
+
+### Emerald Fire Mix
+**Available Now**
+
+**Description**  
+Delicious salad layered with sweetness and spice!
+
+**Ingredients**  
+Pea Shoots, Arugula, Daikon Radish
+
+**Note**: Current version contains Pea Shoots + Radish only (simplified blend)
+
+---
+
+### Purple Goddess Mix
+**Available Upon Request**
+
+**Description**  
+A crisp and tender blend full of color and earthy flavors mixed with sweet and peppery notes.
+
+**Ingredients**  
+Pea Shoots, Kohlrabi, Rambo Radish, Red Cabbage
+
+---
+
+### Outer Space Mix
+**Available Upon Request**
+
+**Description**  
+Super salad rich in antioxidants. Great for cleansing!
+
+**Ingredients**  
+Pea Shoots, Broccoli, Kale
+
