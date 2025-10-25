@@ -138,7 +138,6 @@ export default function Subscriptions() {
           <p className="text-center text-lg text-gray-700 mb-12">
             Sun-grown to order for weekly pickup or delivery
           </p>
-          
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
             {/* Step 1 */}
             <div className="text-center">
@@ -189,6 +188,65 @@ export default function Subscriptions() {
               <p className="text-gray-700">
                 We&apos;ll send you a text weekly before we grow – add on items or skip any week, for any reason, at no charge.
               </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Product Details Section */}
+      <section className="py-16 bg-gray-50">
+        <div className="max-w-7xl mx-auto px-4">
+          <h2 className="text-3xl font-bold text-center text-gray-900 mb-12">Our Weekly Greens</h2>
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {/* Mendo Magic Blends */}
+            <div className="bg-white rounded-lg shadow-md p-6">
+              <h3 className="text-2xl font-bold text-green-600 mb-3">Mendo Magic Mix</h3>
+              <p className="text-gray-700 mb-4">
+                Our signature curated blend of the freshest, most flavorful microgreens. A rotating selection that changes with the seasons, always delivering peak nutrition and taste.
+              </p>
+              <div className="space-y-2 text-sm">
+                <p><span className="font-semibold">Basic (5oz):</span> Feeds 1-2 people | $12.50/week</p>
+                <p><span className="font-semibold">Medium (8oz):</span> Feeds 2-3 people | $20.00/week</p>
+                <p><span className="font-semibold">Family (16oz):</span> Feeds 3-4 people | $30.00/week</p>
+              </div>
+            </div>
+
+            {/* Pea Shoots */}
+            <div className="bg-white rounded-lg shadow-md p-6">
+              <h3 className="text-2xl font-bold text-green-600 mb-3">Pea Shoots</h3>
+              <p className="text-gray-700 mb-4">
+                <strong>Oh so sweet and tender!</strong> Pea shoots are a great source of beta carotene, vitamin C, folate, and fiber. A single serving provides 50% of your daily vitamin C value. They have anti-inflammatory properties and are thought to be anti-carcinogenic.
+              </p>
+              <p className="text-gray-700 mb-4">
+                Low in fat, packed with high-quality protein and powerful antioxidants. Rich in folate, omega-3, and vitamins A, B, C, and E.
+              </p>
+              <p className="text-sm"><span className="font-semibold">8oz:</span> $10.00/week</p>
+              <p className="text-xs text-gray-500 mt-2">Delicious sautéed, in salads, smoothies, or even alone</p>
+            </div>
+
+            {/* Broccoli */}
+            <div className="bg-white rounded-lg shadow-md p-6">
+              <h3 className="text-2xl font-bold text-green-600 mb-3">Broccoli</h3>
+              <p className="text-gray-700 mb-4">
+                <strong>Full of nutrients!</strong> Broccoli microgreens contain <strong>10 to 100x more sulforaphane</strong> than adult broccoli—a compound thought to fight cancer. Sulforaphane combats inflammation, has powerful rejuvenating properties, supports cardiovascular health, and reduces oxidative stress.
+              </p>
+              <p className="text-gray-700 mb-4">
+                Delicious in sandwiches, wraps, smoothies, or salads. Chefs love using them as garnishes, and they&apos;re a fun way for kids to get their broccoli!
+              </p>
+              <p className="text-sm"><span className="font-semibold">8oz:</span> $15.00/week</p>
+            </div>
+
+            {/* Radish */}
+            <div className="bg-white rounded-lg shadow-md p-6">
+              <h3 className="text-2xl font-bold text-green-600 mb-3">Radish</h3>
+              <p className="text-gray-700 mb-4">
+                <strong>Need a quick cleanse?</strong> A dose of radish micros sets you on the right path. Radish microgreens help your liver function more efficiently and are <strong>highest in vitamin E</strong> compared to adult radishes and other microgreens.
+              </p>
+              <p className="text-gray-700 mb-4">
+                They contain lignans, enhancing the activity of macrophages (cells that attack our bodies&apos; foreign invaders). <strong>Spicy like wasabi and horseradish</strong>, this fiery microgreen pairs beautifully with fish and meat dishes.
+              </p>
+              <p className="text-sm"><span className="font-semibold">8oz:</span> $15.00/week</p>
             </div>
           </div>
         </div>
@@ -337,15 +395,18 @@ export default function Subscriptions() {
 
 // Interactive Subscription Form Component
 function SubscriptionForm() {
-  const [selectedPlan, setSelectedPlan] = useState<keyof typeof plans>('microgreens-5oz');
+  const [selectedPlan, setSelectedPlan] = useState<keyof typeof plans>('mendo-magic-basic');
   const [frequency, setFrequency] = useState('weekly');
   const [paymentPlan, setPaymentPlan] = useState('weekly');
   const [deliveryMethod, setDeliveryMethod] = useState('delivery');
 
   const plans = {
-    'microgreens-5oz': { name: 'Microgreens 5oz', price: 17.50 },
-    'microgreens-8oz': { name: 'Microgreens 8oz', price: 22.50 },
-    'wheatgrass-tray': { name: 'Wheatgrass Live Tray', price: 20.00 }
+    'mendo-magic-basic': { name: 'Mendo Magic Basic', price: 12.50, size: '5oz', feeds: '1-2 people', description: 'A curated blend of microgreens' },
+    'mendo-magic-medium': { name: 'Mendo Magic Medium', price: 20.00, size: '8oz', feeds: '2-3 people', description: 'A curated blend of microgreens' },
+    'mendo-magic-family': { name: 'Mendo Magic Family', price: 30.00, size: '16oz', feeds: '3-4 people', description: 'A curated blend of microgreens' },
+    'pea-shoots': { name: 'Pea Shoots', price: 10.00, size: '8oz', feeds: '2-3 people', description: 'Sweet, tender, and packed with antioxidants' },
+    'broccoli': { name: 'Broccoli', price: 15.00, size: '8oz', feeds: '2-3 people', description: '10-100x more sulforaphane than adult broccoli' },
+    'radish': { name: 'Radish', price: 15.00, size: '8oz', feeds: '2-3 people', description: 'Spicy like wasabi, highest in vitamin E' }
   };
 
   const getSubtotal = () => {
@@ -360,8 +421,8 @@ function SubscriptionForm() {
     <div id="subscription-form" className="space-y-8">
       {/* Plan Selection */}
       <div>
-        <label className="block text-lg font-semibold text-gray-900 mb-4">Size:</label>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+        <label className="block text-lg font-semibold text-gray-900 mb-4">Choose Your Weekly Greens:</label>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
           {Object.entries(plans).map(([key, plan]) => (
             <div
               key={key}
@@ -373,8 +434,10 @@ function SubscriptionForm() {
               onClick={() => setSelectedPlan(key as keyof typeof plans)}
             >
               <div className="text-center">
-                <h3 className="font-semibold text-gray-900">{plan.name}</h3>
-                <p className="text-green-600 font-bold">${plan.price}/week</p>
+                <h3 className="font-semibold text-gray-900 mb-1">{plan.name}</h3>
+                <p className="text-green-600 font-bold text-lg mb-1">${plan.price.toFixed(2)}/{plan.size}</p>
+                <p className="text-sm text-gray-600 mb-2">{plan.feeds}</p>
+                <p className="text-xs text-gray-500">{plan.description}</p>
               </div>
             </div>
           ))}
