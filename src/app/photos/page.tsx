@@ -32,17 +32,8 @@ export default function PhotosPage() {
     'wheatgrass_subscription.jpg',
   ];
 
-  // Photos from /public/images
-  const imagesPhotos = [
-    'images/about.jpg',
-    'images/hero.jpg',
-    'images/microgreens.jpg',
-    'images/peasto.jpg',
-    'images/sub1.jpg',
-    'images/sub2.jpg',
-    'images/sub3.jpg',
-    'images/wheatgrass.jpg',
-  ];
+  // Photos from /public/images (empty placeholders removed)
+  const imagesPhotos: string[] = [];
 
   // Favicon images
   const faviconPhotos = [
