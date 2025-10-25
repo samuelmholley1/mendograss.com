@@ -106,6 +106,17 @@ export default function TimesheetPage() {
       amount: 75,
       paid: false,
     },
+    {
+      id: "e7",
+      date: "2025-10-25",
+      start: "9:30 AM",
+      end: "10:00 AM",
+      description: "Work on the website",
+      location: "Remote",
+      hours: 0.5,
+      amount: 10,
+      paid: false,
+    },
     // Example paid item (kept for demonstration). If paid items exist they'll appear in the Paid table.
     // {
     //   id: 'p1',

@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Outfit } from "next/font/google";
 import { GoogleAnalytics, GoogleTagManager } from '@next/third-parties/google'
 import "./globals.css";
 import Navbar from "@/components/Navbar";
@@ -7,14 +7,10 @@ import Footer from "@/components/Footer";
 import StructuredData from "@/components/StructuredData";
 import CookieConsent from "@/components/CookieConsent";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const outfit = Outfit({
+  variable: "--font-outfit",
   subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
+  display: "swap",
 });
 
 export const metadata: Metadata = {
@@ -98,7 +94,7 @@ export default function RootLayout({
         <link rel="canonical" href="https://mendograss.com" />
       </head>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${outfit.variable} antialiased`}
       >
         {/* Skip to main content for accessibility */}
         <a 
