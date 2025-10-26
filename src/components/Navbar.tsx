@@ -37,49 +37,56 @@ export default function Navbar() {
             <div className="ml-10 flex items-baseline space-x-8">
               <Link
                 href="/about"
-                className="text-gray-700 hover:text-green-600 px-3 py-2 text-sm font-medium transition-colors"
+                className="text-green-600 hover:text-green-700 px-3 py-2 text-sm font-medium transition-colors"
+                style={{ fontFamily: 'var(--font-bobby)' }}
                 onClick={closeMenu}
               >
                 About
               </Link>
               <Link
                 href="/find-us"
-                className="text-gray-700 hover:text-green-600 px-3 py-2 text-sm font-medium transition-colors"
+                className="text-green-600 hover:text-green-700 px-3 py-2 text-sm font-medium transition-colors"
+                style={{ fontFamily: 'var(--font-bobby)' }}
                 onClick={closeMenu}
               >
                 Find Us
               </Link>
               <Link
                 href="/contact"
-                className="text-gray-700 hover:text-green-600 px-3 py-2 text-sm font-medium transition-colors"
+                className="text-green-600 hover:text-green-700 px-3 py-2 text-sm font-medium transition-colors"
+                style={{ fontFamily: 'var(--font-bobby)' }}
                 onClick={closeMenu}
               >
                 Contact
               </Link>
               <Link
                 href="/subscriptions"
-                className="text-gray-700 hover:text-green-600 px-3 py-2 text-sm font-medium transition-colors"
+                className="text-green-600 hover:text-green-700 px-3 py-2 text-sm font-medium transition-colors"
+                style={{ fontFamily: 'var(--font-bobby)' }}
                 onClick={closeMenu}
               >
                 Shop
               </Link>
               <Link
                 href="/restaurants"
-                className="text-gray-700 hover:text-green-600 px-3 py-2 text-sm font-medium transition-colors"
+                className="text-green-600 hover:text-green-700 px-3 py-2 text-sm font-medium transition-colors"
+                style={{ fontFamily: 'var(--font-bobby)' }}
                 onClick={closeMenu}
               >
                 Restaurants
               </Link>
               <Link
                 href="/schools"
-                className="text-gray-700 hover:text-green-600 px-3 py-2 text-sm font-medium transition-colors"
+                className="text-green-600 hover:text-green-700 px-3 py-2 text-sm font-medium transition-colors"
+                style={{ fontFamily: 'var(--font-bobby)' }}
                 onClick={closeMenu}
               >
                 Schools
               </Link>
               <div className="relative group">
                 <button 
-                  className="text-gray-700 hover:text-green-600 px-3 py-2 text-sm font-medium transition-colors flex items-center"
+                  className="text-green-600 hover:text-green-700 px-3 py-2 text-sm font-medium transition-colors flex items-center"
+                  style={{ fontFamily: 'var(--font-bobby)' }}
                   aria-haspopup="true"
                   aria-expanded="false"
                   aria-label="Newsletter menu"
@@ -117,7 +124,8 @@ export default function Navbar() {
               </div>
               <Link
                 href="/wholesale"
-                className="text-gray-700 hover:text-green-600 px-3 py-2 text-sm font-medium transition-colors"
+                className="text-green-600 hover:text-green-700 px-3 py-2 text-sm font-medium transition-colors"
+                style={{ fontFamily: 'var(--font-bobby)' }}
                 onClick={closeMenu}
               >
                 Wholesale
@@ -162,48 +170,54 @@ export default function Navbar() {
             <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white border-t border-gray-200">
               <Link
                 href="/about"
-                className="text-gray-700 hover:text-green-600 block px-3 py-2 text-base font-medium transition-colors"
+                className="text-green-600 hover:text-green-700 block px-3 py-2 text-base font-medium transition-colors"
+                style={{ fontFamily: 'var(--font-bobby)' }}
                 onClick={closeMenu}
               >
                 About
               </Link>
               <Link
                 href="/find-us"
-                className="text-gray-700 hover:text-green-600 block px-3 py-2 text-base font-medium transition-colors"
+                className="text-green-600 hover:text-green-700 block px-3 py-2 text-base font-medium transition-colors"
+                style={{ fontFamily: 'var(--font-bobby)' }}
                 onClick={closeMenu}
               >
                 Find Us
               </Link>
               <Link
                 href="/contact"
-                className="text-gray-700 hover:text-green-600 block px-3 py-2 text-base font-medium transition-colors"
+                className="text-green-600 hover:text-green-700 block px-3 py-2 text-base font-medium transition-colors"
+                style={{ fontFamily: 'var(--font-bobby)' }}
                 onClick={closeMenu}
               >
                 Contact
               </Link>
               <Link
                 href="/subscriptions"
-                className="text-gray-700 hover:text-green-600 block px-3 py-2 text-base font-medium transition-colors"
+                className="text-green-600 hover:text-green-700 block px-3 py-2 text-base font-medium transition-colors"
+                style={{ fontFamily: 'var(--font-bobby)' }}
                 onClick={closeMenu}
               >
                 Shop
               </Link>
               <Link
                 href="/restaurants"
-                className="text-gray-700 hover:text-green-600 block px-3 py-2 text-base font-medium transition-colors"
+                className="text-green-600 hover:text-green-700 block px-3 py-2 text-base font-medium transition-colors"
+                style={{ fontFamily: 'var(--font-bobby)' }}
                 onClick={closeMenu}
               >
                 Restaurants
               </Link>
               <Link
                 href="/schools"
-                className="text-gray-700 hover:text-green-600 block px-3 py-2 text-base font-medium transition-colors"
+                className="text-green-600 hover:text-green-700 block px-3 py-2 text-base font-medium transition-colors"
+                style={{ fontFamily: 'var(--font-bobby)' }}
                 onClick={closeMenu}
               >
                 Schools
               </Link>
               <div className="px-3">
-                <div className="text-gray-700 py-2 text-base font-medium">Newsletter</div>
+                <div className="text-green-600 py-2 text-base font-medium" style={{ fontFamily: 'var(--font-bobby)' }}>Newsletter</div>
                 <div className="pl-4 space-y-1">
                   <Link
                     href="/general-newsletter"
@@ -230,7 +244,8 @@ export default function Navbar() {
               </div>
               <Link
                 href="/wholesale"
-                className="text-gray-700 hover:text-green-600 block px-3 py-2 text-base font-medium transition-colors"
+                className="text-green-600 hover:text-green-700 block px-3 py-2 text-base font-medium transition-colors"
+                style={{ fontFamily: 'var(--font-bobby)' }}
                 onClick={closeMenu}
               >
                 Wholesale
