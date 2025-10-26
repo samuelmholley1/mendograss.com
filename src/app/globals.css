@@ -28,7 +28,7 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
-  --font-body: var(--font-patrick-sc);
+  --font-body: var(--font-comic);
   --font-bobby: 'Bobby Jones', Arial, sans-serif;
   --font-bobby-condensed: 'Bobby Jones Condensed', Arial, sans-serif;
 }

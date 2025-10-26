@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Patrick_Hand_SC } from "next/font/google";
+import { Comic_Neue } from "next/font/google";
 import { GoogleAnalytics, GoogleTagManager } from '@next/third-parties/google'
 import "./globals.css";
 import Navbar from "@/components/Navbar";
@@ -7,9 +7,9 @@ import Footer from "@/components/Footer";
 import StructuredData from "@/components/StructuredData";
 import CookieConsent from "@/components/CookieConsent";
 
-const patrickHandSC = Patrick_Hand_SC({
+const comicNeue = Comic_Neue({
   weight: "400",
-  variable: "--font-patrick-sc",
+  variable: "--font-comic",
   subsets: ["latin"],
   display: "swap",
 });
@@ -95,7 +95,7 @@ export default function RootLayout({
         <link rel="canonical" href="https://mendograss.com" />
       </head>
       <body
-        className={`${patrickHandSC.variable} antialiased`}
+        className={`${comicNeue.variable} antialiased`}
       >
         {/* Skip to main content for accessibility */}
         <a 
