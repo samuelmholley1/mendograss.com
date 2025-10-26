@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Karla } from "next/font/google";
+import { Patrick_Hand } from "next/font/google";
 import { GoogleAnalytics, GoogleTagManager } from '@next/third-parties/google'
 import "./globals.css";
 import Navbar from "@/components/Navbar";
@@ -7,8 +7,9 @@ import Footer from "@/components/Footer";
 import StructuredData from "@/components/StructuredData";
 import CookieConsent from "@/components/CookieConsent";
 
-const karla = Karla({
-  variable: "--font-karla",
+const patrickHand = Patrick_Hand({
+  weight: "400",
+  variable: "--font-patrick",
   subsets: ["latin"],
   display: "swap",
 });
@@ -94,7 +95,7 @@ export default function RootLayout({
         <link rel="canonical" href="https://mendograss.com" />
       </head>
       <body
-        className={`${karla.variable} antialiased`}
+        className={`${patrickHand.variable} antialiased`}
       >
         {/* Skip to main content for accessibility */}
         <a 
