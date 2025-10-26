@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Outfit } from "next/font/google";
+import { Karla } from "next/font/google";
 import { GoogleAnalytics, GoogleTagManager } from '@next/third-parties/google'
 import "./globals.css";
 import Navbar from "@/components/Navbar";
@@ -7,8 +7,8 @@ import Footer from "@/components/Footer";
 import StructuredData from "@/components/StructuredData";
 import CookieConsent from "@/components/CookieConsent";
 
-const outfit = Outfit({
-  variable: "--font-outfit",
+const karla = Karla({
+  variable: "--font-karla",
   subsets: ["latin"],
   display: "swap",
 });
@@ -94,7 +94,7 @@ export default function RootLayout({
         <link rel="canonical" href="https://mendograss.com" />
       </head>
       <body
-        className={`${outfit.variable} antialiased`}
+        className={`${karla.variable} antialiased`}
       >
         {/* Skip to main content for accessibility */}
         <a 
