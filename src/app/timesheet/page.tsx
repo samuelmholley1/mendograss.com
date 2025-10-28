@@ -212,7 +212,15 @@ export default function TimesheetPage() {
         {/* Current Period - Unpaid */}
         <div className="mb-8">
           <h2 className="text-xl font-bold text-gray-900 mb-3">Current Period - Unpaid</h2>
-          <p className="text-sm text-gray-600 mb-2">Scroll right to see description and location →</p>
+          
+          {/* Mobile scroll indicator - more prominent */}
+          <div className="mb-3 p-3 bg-blue-50 border-l-4 border-blue-500 rounded">
+            <p className="text-sm font-semibold text-blue-900 flex items-center">
+              <span className="mr-2">👉</span>
+              Swipe left to see description & location
+            </p>
+          </div>
+          
           <div className="overflow-x-auto border-2 border-gray-900 rounded-md">
             <table
               role="table"
@@ -263,7 +271,15 @@ export default function TimesheetPage() {
         {/* Payment History - Paid Items (reverse-chronological by paidDate) */}
         <div className="mb-8">
           <h2 className="text-xl font-bold text-gray-900 mb-3">Payment History (Paid)</h2>
-          <p className="text-sm text-gray-600 mb-2">Scroll right to see description and location →</p>
+          
+          {/* Mobile scroll indicator */}
+          <div className="mb-3 p-3 bg-blue-50 border-l-4 border-blue-500 rounded">
+            <p className="text-sm font-semibold text-blue-900 flex items-center">
+              <span className="mr-2">👉</span>
+              Swipe left to see description & location
+            </p>
+          </div>
+          
           <div className="overflow-x-auto border-2 border-gray-900 rounded-md">
             <table role="table" aria-label="Paid entries" className="min-w-[900px] w-full border-collapse bg-white">
               <thead>
@@ -281,7 +297,7 @@ export default function TimesheetPage() {
               <tbody>
                 {paidEntries.length === 0 ? (
                   <tr className="bg-gray-50">
-                    <td colSpan={8} className="border border-gray-300 px-3 py-8 text-center text-sm text-gray-500 italic">
+                    <td colSpan={8} className="border border-gray-300 px-3 py-8 text-left text-sm text-gray-500 italic">
                       No payments recorded yet. Paid items will appear here.
                     </td>
                   </tr>
