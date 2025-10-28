@@ -117,6 +117,17 @@ export default function TimesheetPage() {
       amount: 20,
       paid: false,
     },
+    {
+      id: "e8",
+      date: "2025-10-27",
+      start: "3:15 PM",
+      end: "5:45 PM",
+      description: "Farm work",
+      location: "Adam's House",
+      hours: 2.5,
+      amount: 50,
+      paid: false,
+    },
     // Example paid item (kept for demonstration). If paid items exist they'll appear in the Paid table.
     // {
     //   id: 'p1',
