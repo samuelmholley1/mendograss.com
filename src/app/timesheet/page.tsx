@@ -111,7 +111,7 @@ export default function TimesheetPage() {
       date: "2025-10-25",
       start: "9:30 AM",
       end: "10:30 AM",
-      description: "Work on the website",
+      description: "work on the website / fleshing out microgreen nutrient info for marketing",
       location: "Remote",
       hours: 1,
       amount: 20,
