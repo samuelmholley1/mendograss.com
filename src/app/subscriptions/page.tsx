@@ -206,7 +206,7 @@ export default function Subscriptions() {
                 Our signature curated blend of the freshest, most flavorful microgreens. A rotating selection that changes with the seasons, always delivering peak nutrition and taste.
               </p>
               <div className="space-y-2 text-sm">
-                <p><span className="font-semibold">Basic (5oz):</span> Feeds 1-2 people | $12.50/week</p>
+                <p><span className="font-semibold">Basic (5oz):</span> Feeds 1-2 people | $17.50/week</p>
                 <p><span className="font-semibold">Medium (8oz):</span> Feeds 2-3 people | $20.00/week</p>
                 <p><span className="font-semibold">Family (16oz):</span> Feeds 3-4 people | $30.00/week</p>
               </div>
@@ -403,7 +403,7 @@ function SubscriptionForm() {
   const [deliveryMethod, setDeliveryMethod] = useState('delivery');
 
   const plans = {
-    'mendo-magic-basic': { name: 'Mendo Magic Basic', price: 12.50, size: '5oz', feeds: '1-2 people', description: 'A curated blend of microgreens' },
+    'mendo-magic-basic': { name: 'Mendo Magic Basic', price: 17.50, size: '5oz', feeds: '1-2 people', description: 'A curated blend of microgreens' },
     'mendo-magic-medium': { name: 'Mendo Magic Medium', price: 20.00, size: '8oz', feeds: '2-3 people', description: 'A curated blend of microgreens' },
     'mendo-magic-family': { name: 'Mendo Magic Family', price: 30.00, size: '16oz', feeds: '3-4 people', description: 'A curated blend of microgreens' },
     'pea-shoots': { name: 'Pea Shoots', price: 10.00, size: '8oz', feeds: '2-3 people', description: 'Sweet, tender, and packed with antioxidants' },
