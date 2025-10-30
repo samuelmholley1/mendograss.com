@@ -403,12 +403,12 @@ function SubscriptionForm() {
   const [deliveryMethod, setDeliveryMethod] = useState('delivery');
 
   const plans = {
-    'mendo-magic-basic': { name: 'Mendo Magic Basic', price: 17.50, size: '5oz', feeds: '1-2 people', description: 'A curated blend of microgreens' },
-    'mendo-magic-medium': { name: 'Mendo Magic Medium', price: 20.00, size: '8oz', feeds: '2-3 people', description: 'A curated blend of microgreens' },
-    'mendo-magic-family': { name: 'Mendo Magic Family', price: 30.00, size: '16oz', feeds: '3-4 people', description: 'A curated blend of microgreens' },
-    'pea-shoots': { name: 'Pea Shoots', price: 10.00, size: '8oz', feeds: '2-3 people', description: 'Sweet, tender, and packed with antioxidants' },
-    'broccoli': { name: 'Broccoli', price: 15.00, size: '8oz', feeds: '2-3 people', description: '10-100x more sulforaphane than adult broccoli' },
-    'radish': { name: 'Radish', price: 15.00, size: '8oz', feeds: '2-3 people', description: 'Spicy like wasabi, highest in vitamin E' }
+    'mendo-magic-basic': { name: 'Mendo Magic Basic', price: 17.50, size: '5oz', feeds: '1-2 people', description: 'A curated blend of microgreens', stripeUrl: 'https://buy.stripe.com/3cI3cu87A9nt91c4e73ks01' },
+    'mendo-magic-medium': { name: 'Mendo Magic Medium', price: 20.00, size: '8oz', feeds: '2-3 people', description: 'A curated blend of microgreens', stripeUrl: undefined },
+    'mendo-magic-family': { name: 'Mendo Magic Family', price: 30.00, size: '16oz', feeds: '3-4 people', description: 'A curated blend of microgreens', stripeUrl: undefined },
+    'pea-shoots': { name: 'Pea Shoots', price: 10.00, size: '8oz', feeds: '2-3 people', description: 'Sweet, tender, and packed with antioxidants', stripeUrl: undefined },
+    'broccoli': { name: 'Broccoli', price: 15.00, size: '8oz', feeds: '2-3 people', description: '10-100x more sulforaphane than adult broccoli', stripeUrl: undefined },
+    'radish': { name: 'Radish', price: 15.00, size: '8oz', feeds: '2-3 people', description: 'Spicy like wasabi, highest in vitamin E', stripeUrl: undefined }
   };
 
   const getSubtotal = () => {
@@ -555,12 +555,22 @@ function SubscriptionForm() {
           </span>
         </div>
         
-        <button className="w-full bg-green-600 text-white py-4 rounded-lg text-lg font-semibold hover:bg-green-700 transition-colors">
+        <button 
+          onClick={() => {
+            const plan = plans[selectedPlan];
+            if (plan.stripeUrl && frequency === 'weekly') {
+              window.location.href = plan.stripeUrl;
+            } else {
+              alert('Checkout coming soon! Please contact us at adam@mendograss.com to set up your subscription.');
+            }
+          }}
+          className="w-full bg-green-600 text-white py-4 rounded-lg text-lg font-semibold hover:bg-green-700 transition-colors"
+        >
           Continue to Checkout
         </button>
         
         <p className="text-center text-sm text-gray-500 mt-4">
-          Secure checkout powered by Farmhand
+          Secure checkout powered by Stripe
         </p>
       </div>
     </div>
