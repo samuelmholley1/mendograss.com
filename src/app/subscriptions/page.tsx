@@ -201,7 +201,7 @@ export default function Subscriptions() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {/* Mendo Magic Blends */}
             <div className="bg-white rounded-lg shadow-md p-6">
-              <h3 className="text-2xl font-bold text-green-600 mb-3">Mendo Magic Mix</h3>
+              <h3 className="text-2xl font-bold text-green-700 mb-3">Mendo Magic Mix</h3>
               <p className="text-gray-700 mb-4">
                 Our signature curated blend of the freshest, most flavorful microgreens. A rotating selection that changes with the seasons, always delivering peak nutrition and taste.
               </p>
@@ -214,7 +214,7 @@ export default function Subscriptions() {
 
             {/* Pea Shoots */}
             <div className="bg-white rounded-lg shadow-md p-6">
-              <h3 className="text-2xl font-bold text-green-600 mb-3">Pea Shoots</h3>
+              <h3 className="text-2xl font-bold text-green-700 mb-3">Pea Shoots</h3>
               <p className="text-gray-700 mb-4">
                 <strong>Oh so sweet and tender!</strong> Pea shoots are a great source of beta carotene, vitamin C, folate, and fiber. A single serving provides 50% of your daily vitamin C value. They have anti-inflammatory properties and are thought to be anti-carcinogenic.
               </p>
@@ -227,7 +227,7 @@ export default function Subscriptions() {
 
             {/* Broccoli */}
             <div className="bg-white rounded-lg shadow-md p-6">
-              <h3 className="text-2xl font-bold text-green-600 mb-3">Broccoli</h3>
+              <h3 className="text-2xl font-bold text-green-700 mb-3">Broccoli</h3>
               <p className="text-gray-700 mb-4">
                 <strong>The healthiest microgreens on the block!</strong> These little guys pack a serious punch when it comes to improving your health. Broccoli microgreens contain <strong>10 to 100x more sulforaphane</strong> than adult broccoli—a naturally occurring compound with cancer preventative properties.
               </p>
@@ -240,7 +240,7 @@ export default function Subscriptions() {
 
             {/* Radish */}
             <div className="bg-white rounded-lg shadow-md p-6">
-              <h3 className="text-2xl font-bold text-green-600 mb-3">Radish</h3>
+              <h3 className="text-2xl font-bold text-green-700 mb-3">Radish</h3>
               <p className="text-gray-700 mb-4">
                 <strong>Need a quick cleanse?</strong> A dose of radish micros sets you on the right path. Radish microgreens are visually appealing with their beautiful purple leaves and add a nice little peppery spice to any dish.
               </p>
