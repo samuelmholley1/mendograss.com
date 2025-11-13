@@ -1,8 +1,31 @@
 import { NextRequest, NextResponse } from 'next/server';
+import { sanitizeText, sanitizeHtml } from '@/lib/security';
 
 export async function POST(request: NextRequest) {
   try {
-    const { newsletterType, content, subject } = await request.json();
+    const body = await request.json();
+    
+    // Sanitize inputs
+    const newsletterType = sanitizeText(body.newsletterType, 50);
+    const subject = sanitizeText(body.subject, 200);
+    const content = sanitizeHtml(body.content || '');
+    
+    // Validate newsletter type
+    const validTypes = ['general', 'schools', 'restaurants'];
+    if (!validTypes.includes(newsletterType)) {
+      return NextResponse.json(
+        { success: false, message: 'Invalid newsletter type' },
+        { status: 400 }
+      );
+    }
+    
+    // Validate required fields
+    if (!subject || !content) {
+      return NextResponse.json(
+        { success: false, message: 'Subject and content are required' },
+        { status: 400 }
+      );
+    }
 
     // Here you would integrate with your email service
     // Options: EmailJS, Resend, SendGrid, etc.

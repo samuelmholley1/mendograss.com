@@ -1,8 +1,30 @@
 import { NextRequest, NextResponse } from 'next/server';
+import { sanitizeText } from '@/lib/security';
 
 export async function POST(request: NextRequest) {
   try {
-    const { message, messageType = 'newsletter' } = await request.json();
+    const body = await request.json();
+    
+    // Sanitize inputs
+    const message = sanitizeText(body.message, 500);
+    const messageType = sanitizeText(body.messageType || 'newsletter', 50);
+    
+    // Validate message type
+    const validTypes = ['newsletter', 'availability', 'special'];
+    if (!validTypes.includes(messageType)) {
+      return NextResponse.json(
+        { success: false, message: 'Invalid message type' },
+        { status: 400 }
+      );
+    }
+    
+    // Validate message content
+    if (!message || message.length < 10) {
+      return NextResponse.json(
+        { success: false, message: 'Message must be at least 10 characters' },
+        { status: 400 }
+      );
+    }
 
     // Here you would integrate with Twilio for SMS
     /*
