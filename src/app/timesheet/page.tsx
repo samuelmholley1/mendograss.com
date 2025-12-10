@@ -38,7 +38,8 @@ export default function TimesheetPage() {
       amount: 60,
       description: "Work on the website",
       location: "Remote",
-      paid: false,
+      paid: true,
+      paidDate: "2025-12-09",
     },
     {
       id: "e1",
@@ -49,7 +50,8 @@ export default function TimesheetPage() {
       location: "Adam's House",
       hours: 1.75,
       amount: 35,
-      paid: false,
+      paid: true,
+      paidDate: "2025-12-09",
     },
     {
       id: "e2",
@@ -60,7 +62,8 @@ export default function TimesheetPage() {
       location: "Adam's House",
       hours: 2.75,
       amount: 55,
-      paid: false,
+      paid: true,
+      paidDate: "2025-12-09",
     },
     {
       id: "e3",
@@ -71,7 +74,8 @@ export default function TimesheetPage() {
       location: "Deliveries / Adam's Dad's House",
       hours: 1.5,
       amount: 30,
-      paid: false,
+      paid: true,
+      paidDate: "2025-12-09",
     },
     {
       id: "e4",
@@ -82,7 +86,8 @@ export default function TimesheetPage() {
       location: "Adam's House → Mendo Lake Food Bank → Road B Farm",
       hours: 2,
       amount: 40,
-      paid: false,
+      paid: true,
+      paidDate: "2025-12-09",
     },
     {
       id: "e5",
@@ -93,7 +98,8 @@ export default function TimesheetPage() {
       location: "Road B Farm",
       hours: 2.75,
       amount: 55,
-      paid: false,
+      paid: true,
+      paidDate: "2025-12-09",
     },
     {
       id: "e6",
@@ -104,7 +110,8 @@ export default function TimesheetPage() {
       location: "Road B Farm",
       hours: 3.75,
       amount: 75,
-      paid: false,
+      paid: true,
+      paidDate: "2025-12-09",
     },
     {
       id: "e7",
@@ -115,7 +122,8 @@ export default function TimesheetPage() {
       location: "Remote",
       hours: 1,
       amount: 20,
-      paid: false,
+      paid: true,
+      paidDate: "2025-12-09",
     },
     {
       id: "e8",
@@ -126,21 +134,9 @@ export default function TimesheetPage() {
       location: "Adam's House",
       hours: 2.5,
       amount: 50,
-      paid: false,
+      paid: true,
+      paidDate: "2025-12-09",
     },
-    // Example paid item (kept for demonstration). If paid items exist they'll appear in the Paid table.
-    // {
-    //   id: 'p1',
-    //   date: '2025-10-01',
-    //   start: '8:00 AM',
-    //   end: '12:00 PM',
-    //   description: 'Old work example',
-    //   location: 'Farm',
-    //   hours: 4,
-    //   amount: 80,
-    //   paid: true,
-    //   paidDate: '2025-10-15'
-    // }
   ];
 
   const unpaidEntries = entries.filter((e) => !e.paid);
