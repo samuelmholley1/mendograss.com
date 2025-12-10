@@ -206,49 +206,29 @@ export default function Subscriptions() {
                 Our signature curated blend of the freshest, most flavorful microgreens. A rotating selection that changes with the seasons, always delivering peak nutrition and taste.
               </p>
               <div className="space-y-2 text-sm">
-                <p><span className="font-semibold">Basic (5oz):</span> Feeds 1-2 people | $17.50/week</p>
-                <p><span className="font-semibold">Medium (8oz):</span> Feeds 2-3 people | $20.00/week</p>
-                <p><span className="font-semibold">Family (16oz):</span> Feeds 3-4 people | $30.00/week</p>
+                <p><span className="font-semibold">Basic (5oz):</span> Feeds 1-2 people | $20.00/week</p>
+                <p><span className="font-semibold">Medium (8oz):</span> Feeds 2-3 people | $30.00/week</p>
+                <p><span className="font-semibold">Family (16oz):</span> Feeds 3-4 people | $40.00/week</p>
               </div>
             </div>
 
-            {/* Pea Shoots */}
-            <div className="bg-white rounded-lg shadow-md p-6">
-              <h3 className="text-2xl font-bold text-green-700 mb-3">Pea Shoots</h3>
+            {/* Contact CTA for Specific Varieties */}
+            <div className="bg-white rounded-lg shadow-md p-6 md:col-span-2">
+              <h3 className="text-2xl font-bold text-green-700 mb-3">Specific Varieties Available</h3>
               <p className="text-gray-700 mb-4">
-                <strong>Oh so sweet and tender!</strong> Pea shoots are a great source of beta carotene, vitamin C, folate, and fiber. A single serving provides 50% of your daily vitamin C value. They have anti-inflammatory properties and are thought to be anti-carcinogenic.
+                Looking for specific microgreen varieties like Pea Shoots, Broccoli, Radish, or others? We grow a wide selection of individual varieties to meet your needs.
               </p>
-              <p className="text-gray-700 mb-4">
-                Low in fat, packed with high-quality protein and powerful antioxidants. Rich in folate, omega-3, and vitamins A, B, C, and E. Their long shoots are crisp and delicate leaves (similar texture to spinach) that plate beautifully on any dish.
+              <p className="text-gray-700 mb-6">
+                Our varieties include sweet and tender Pea Shoots, sulforaphane-rich Broccoli microgreens, spicy Radish, and more. Each variety offers unique flavors and nutritional benefits.
               </p>
-              <p className="text-sm"><span className="font-semibold">8oz:</span> $10.00/week</p>
-              <p className="text-xs text-gray-500 mt-2">Chop them up and add to salads, throw on your favorite sandwich, or blend into a delicious pesto!</p>
-            </div>
-
-            {/* Broccoli */}
-            <div className="bg-white rounded-lg shadow-md p-6">
-              <h3 className="text-2xl font-bold text-green-700 mb-3">Broccoli</h3>
-              <p className="text-gray-700 mb-4">
-                <strong>The healthiest microgreens on the block!</strong> These little guys pack a serious punch when it comes to improving your health. Broccoli microgreens contain <strong>10 to 100x more sulforaphane</strong> than adult broccoli—a naturally occurring compound with cancer preventative properties.
-              </p>
-              <p className="text-gray-700 mb-4">
-                Sulforaphane is a powerful antioxidant that combats inflammation, supports cardiovascular health, has rejuvenating properties, and reduces oxidative stress.
-              </p>
-              <p className="text-sm"><span className="font-semibold">8oz:</span> $15.00/week</p>
-              <p className="text-xs text-gray-500 mt-2">Delicious in sandwiches, wraps, smoothies, or salads. Chefs love using them as garnishes, and they&apos;re a fun way for kids to get their broccoli!</p>
-            </div>
-
-            {/* Radish */}
-            <div className="bg-white rounded-lg shadow-md p-6">
-              <h3 className="text-2xl font-bold text-green-700 mb-3">Radish</h3>
-              <p className="text-gray-700 mb-4">
-                <strong>Need a quick cleanse?</strong> A dose of radish micros sets you on the right path. Radish microgreens are visually appealing with their beautiful purple leaves and add a nice little peppery spice to any dish.
-              </p>
-              <p className="text-gray-700 mb-4">
-                They help your liver function more efficiently and are <strong>highest in vitamin E</strong> compared to adult radishes and other microgreens. Loaded with vitamins and nutrients which promote cardiovascular health, boost the immune system, healthier skin, and aid in weight loss efforts.
-              </p>
-              <p className="text-sm"><span className="font-semibold">8oz:</span> $15.00/week</p>
-              <p className="text-xs text-gray-500 mt-2"><strong>Spicy like wasabi!</strong> Pairs beautifully with fish and meat dishes</p>
+              <div className="text-center">
+                <a
+                  href="/contact"
+                  className="inline-block bg-green-600 text-white px-8 py-3 rounded-lg text-lg font-semibold hover:bg-green-700 transition-colors shadow-md"
+                >
+                  Contact Us for Variety Information
+                </a>
+              </div>
             </div>
           </div>
         </div>
@@ -403,12 +383,9 @@ function SubscriptionForm() {
   const [deliveryMethod, setDeliveryMethod] = useState('delivery');
 
   const plans = {
-    'mendo-magic-basic': { name: 'Mendo Magic Basic', price: 17.50, size: '5oz', feeds: '1-2 people', description: 'A curated blend of microgreens', stripeUrl: 'https://buy.stripe.com/3cI3cu87A9nt91c4e73ks01' },
-    'mendo-magic-medium': { name: 'Mendo Magic Medium', price: 20.00, size: '8oz', feeds: '2-3 people', description: 'A curated blend of microgreens', stripeUrl: undefined },
-    'mendo-magic-family': { name: 'Mendo Magic Family', price: 30.00, size: '16oz', feeds: '3-4 people', description: 'A curated blend of microgreens', stripeUrl: undefined },
-    'pea-shoots': { name: 'Pea Shoots', price: 10.00, size: '8oz', feeds: '2-3 people', description: 'Sweet, tender, and packed with antioxidants', stripeUrl: undefined },
-    'broccoli': { name: 'Broccoli', price: 15.00, size: '8oz', feeds: '2-3 people', description: '10-100x more sulforaphane than adult broccoli', stripeUrl: undefined },
-    'radish': { name: 'Radish', price: 15.00, size: '8oz', feeds: '2-3 people', description: 'Spicy like wasabi, highest in vitamin E', stripeUrl: undefined }
+    'mendo-magic-basic': { name: 'Mendo Magic Basic', price: 20.00, size: '5oz', feeds: '1-2 people', description: 'A curated blend of microgreens', stripeUrl: 'https://buy.stripe.com/3cI3cu87A9nt91c4e73ks01' },
+    'mendo-magic-medium': { name: 'Mendo Magic Medium', price: 30.00, size: '8oz', feeds: '2-3 people', description: 'A curated blend of microgreens', stripeUrl: undefined },
+    'mendo-magic-family': { name: 'Mendo Magic Family', price: 40.00, size: '16oz', feeds: '3-4 people', description: 'A curated blend of microgreens', stripeUrl: undefined },
   };
 
   const getSubtotal = () => {
