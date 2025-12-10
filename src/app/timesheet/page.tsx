@@ -200,7 +200,7 @@ export default function TimesheetPage() {
             </div>
             <div>
               <p className="text-gray-600">Status:</p>
-              <p className="font-semibold text-gray-900">Payment Pending</p>
+              <p className="font-semibold text-green-600">Paid Up to Date</p>
             </div>
           </div>
         </div>
@@ -209,58 +209,32 @@ export default function TimesheetPage() {
         <div className="mb-8">
           <h2 className="text-xl font-bold text-gray-900 mb-3">Current Period - Unpaid</h2>
           
-          {/* Mobile scroll indicator - more prominent */}
-          <div className="mb-3 p-3 bg-blue-50 border-l-4 border-blue-500 rounded">
-            <p className="text-sm font-semibold text-blue-900 flex items-center">
-              <span className="mr-2">👉</span>
-              Swipe left to see description & location
-            </p>
+          <div className="border-2 border-gray-300 rounded-md p-8 bg-gray-50">
+            <div className="text-center">
+              <p className="text-lg text-gray-600 mb-2">✓ All caught up!</p>
+              <p className="text-sm text-gray-500">No unpaid entries at this time.</p>
+            </div>
           </div>
-          
-          <div className="overflow-x-auto border-2 border-gray-900 rounded-md">
-            <table
-              role="table"
-              aria-label="Unpaid timesheet entries"
-              className="min-w-[900px] w-full border-collapse bg-white"
-            >
-              <thead>
-                <tr className="bg-gray-900 text-white">
-                  <th className="border border-gray-900 px-2 py-3 text-left text-xs font-bold w-24">Date</th>
-                  <th className="border border-gray-900 px-2 py-3 text-left text-xs font-bold w-20">Start</th>
-                  <th className="border border-gray-900 px-2 py-3 text-left text-xs font-bold w-20">End</th>
-                  <th className="border border-gray-900 px-2 py-3 text-left text-xs font-bold w-16">Hours</th>
-                  <th className="border border-gray-900 px-2 py-3 text-right text-xs font-bold w-20">Amount</th>
-                  <th className="border border-gray-900 px-2 py-3 text-center text-xs font-bold w-20">Paid?</th>
-                  <th className="border border-gray-900 px-3 py-3 text-left text-xs font-bold min-w-[200px]">Description</th>
-                  <th className="border border-gray-900 px-3 py-3 text-left text-xs font-bold min-w-[200px]">Location</th>
-                </tr>
-              </thead>
-              <tbody>
-                {unpaidEntries.map((row, idx) => (
-                  <tr key={row.id} className={idx % 2 === 0 ? "bg-gray-50" : "bg-white"}>
-                    <td className="border border-gray-300 px-2 py-2 text-xs text-gray-900 whitespace-nowrap">{row.date}</td>
-                    <td className="border border-gray-300 px-2 py-2 text-xs text-gray-900 whitespace-nowrap">{row.start ?? '—'}</td>
-                    <td className="border border-gray-300 px-2 py-2 text-xs text-gray-900 whitespace-nowrap">{row.end ?? '—'}</td>
-                    <td className="border border-gray-300 px-2 py-2 text-xs text-gray-900">{row.hours.toFixed(2)}</td>
-                    <td className="border border-gray-300 px-2 py-2 text-xs text-gray-900 text-right whitespace-nowrap">${row.amount.toFixed(2)}</td>
-                    <td className="border border-gray-300 px-2 py-2 text-xs text-gray-600 text-center whitespace-nowrap">{row.paid ? 'Yes' : 'Not yet'}</td>
-                    <td className="border border-gray-300 px-3 py-2 text-xs text-gray-900">{row.description}</td>
-                    <td className="border border-gray-300 px-3 py-2 text-xs text-gray-900">{row.location}</td>
-                  </tr>
-                ))}
+        </div>
 
-                {/* TOTAL */}
-                <tr className="bg-gray-900 text-white font-bold">
-                  <td className="border border-gray-900 px-2 py-3 text-xs" colSpan={3}>
-                    TOTAL
-                  </td>
-                  <td className="border border-gray-900 px-2 py-3 text-xs">{totalHours.toFixed(2)}</td>
-                  <td className="border border-gray-900 px-2 py-3 text-xs text-right">${totalAmount.toFixed(2)}</td>
-                  <td className="border border-gray-900 px-2 py-3 text-xs text-center">—</td>
-                  <td className="border border-gray-900 px-3 py-3 text-xs" colSpan={2}></td>
-                </tr>
-              </tbody>
-            </table>
+        {/* Latest Payment Information */}
+        <div className="mb-8">
+          <div className="bg-green-50 border-2 border-green-500 rounded-lg p-6">
+            <h2 className="text-xl font-bold text-green-800 mb-3">Latest Payment</h2>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-4 text-sm">
+              <div>
+                <p className="text-green-700 font-semibold">Date:</p>
+                <p className="text-gray-900">December 9, 2025</p>
+              </div>
+              <div>
+                <p className="text-green-700 font-semibold">Amount:</p>
+                <p className="text-gray-900">$420.00</p>
+              </div>
+              <div>
+                <p className="text-green-700 font-semibold">Method:</p>
+                <p className="text-gray-900">Redwood Credit Union Member to Member Transfer</p>
+              </div>
+            </div>
           </div>
         </div>
 
@@ -319,16 +293,16 @@ export default function TimesheetPage() {
         {/* Summary */}
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mt-4">
           <div className="p-4 bg-gray-100 border border-gray-300 rounded-lg">
-            <p className="text-xs text-gray-600 uppercase font-semibold mb-1">Total Hours</p>
+            <p className="text-xs text-gray-600 uppercase font-semibold mb-1">Unpaid Hours</p>
             <p className="text-3xl font-bold text-gray-900">{totalHours.toFixed(2)}</p>
           </div>
           <div className="p-4 bg-gray-100 border border-gray-300 rounded-lg">
-            <p className="text-xs text-gray-600 uppercase font-semibold mb-1">Total Amount Due</p>
+            <p className="text-xs text-gray-600 uppercase font-semibold mb-1">Current Balance</p>
             <p className="text-3xl font-bold text-gray-900">${totalAmount.toFixed(2)}</p>
           </div>
-          <div className="p-4 bg-gray-100 border border-gray-300 rounded-lg">
-            <p className="text-xs text-gray-600 uppercase font-semibold mb-1">Payment Status</p>
-            <p className="text-3xl font-bold text-gray-900">Pending</p>
+          <div className="p-4 bg-green-50 border border-green-500 rounded-lg">
+            <p className="text-xs text-green-700 uppercase font-semibold mb-1">Payment Status</p>
+            <p className="text-3xl font-bold text-green-600">Paid Up to Date</p>
           </div>
         </div>
       </div>
